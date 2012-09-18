@@ -17,6 +17,8 @@
     prompt = false
 [alias]
     d = diff
+    b = branch
+    r = remote
     dt = difftool
     co = checkout
     c = !git commit -am
