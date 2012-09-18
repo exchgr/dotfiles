@@ -19,7 +19,7 @@
     d = diff
     dt = difftool
     co = checkout
-    c = commit
+    c = !git commit -am
     s = status
     m = merge
     mt = mergetool
