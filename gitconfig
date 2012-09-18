@@ -18,6 +18,7 @@
 [alias]
     d = diff
     b = branch
+    rbd = !git push origin --delete
     r = remote
     dt = difftool
     co = checkout
