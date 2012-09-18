@@ -16,13 +16,15 @@
 [difftool]
     prompt = false
 [alias]
-    d = difftool
+    d = diff
+    dt = difftool
     co = checkout
-    c = commit -am
+    c = commit
     s = status
     m = merge
+    mt = mergetool
     l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     a = add
     p = push
     u = pull
-    
+    f = fetch

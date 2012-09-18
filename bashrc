@@ -44,20 +44,3 @@ fi
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
-
-# git aliases
-get_git_branch() {
-    echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)//'`
-}
-alias gs='git status'
-alias gl='git l'
-alias gd='git diff'
-alias gdt='git difftool'
-alias gc='git commit -am'
-alias gp='git push origin `get_git_branch`' # Pushes current branch only
-alias gu='git pull origin `get_git_branch`' # Pulls current branch only
-alias ga='git add'
-alias gaa='git add .'
-alias gm='git merge'
-alias gmt='git mergetool'
-alias gco='git checkout'
