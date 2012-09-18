@@ -11,3 +11,18 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    d = difftool
+    co = checkout
+    c = commit -am
+    s = status
+    m = merge
+    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    a = add
+    p = push
+    u = pull
+    

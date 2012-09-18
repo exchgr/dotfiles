@@ -1,4 +1,3 @@
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### BEGIN CUSTOMIZATIONS ###
@@ -56,4 +55,6 @@ alias gc='git commit -am'
 alias gp='git push origin `get_git_branch`' # Pushes current branch only
 alias gu='git pull origin `get_git_branch`' # Pulls current branch only
 alias ga='git add'
+alias gaa='git add .'
 alias gm='git merge'
+alias gco='git checkout'
