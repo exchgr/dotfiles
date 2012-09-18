@@ -1,0 +1,39 @@
+# .dotfiles
+
+## What is this?
+
+These are some of my configuration files. I've ones I thought other people might find interesting, such as ones for vim, git, tmux, and bash. These files aren't meant to replace yours, but they're meant to highlight some interesting customizations that you might want to use in your own files.
+
+## The files
+**in.sh** - Copies some of your dotfiles into this directory.
+
+**out.sh** - Copies the dotfiles in this directory to your home directory.  
+_WARNING_ - This shell script replaces some files in your home directory! Don't run this unless you know what you're doing!
+
+**README.mdown** - This file.
+
+**.gitignore_global** - Common files for `git` to ignore. To make use of this, make sure the file is in your `~` and type the following into a shell:
+
+    $ git config --global core.excludesfile ~/.gitignore_global
+
+**.bashrc** - Configuration file for bash.
+
+**.tmux.conf** - Configuration file for [tmux](http://tmux.sourceforge.net/).
+
+**.vim/** and **.vimrc** - Configuration files for vim, including several plugins managed by pathogen:
++ *[Markdown](https://github.com/vim-scripts/Markdown)*
+    - [Markdown](http://daringfireball.net/projects/markdown/) syntax highlighting.
++ *[vim-coffee-script](https://github.com/kchmck/vim-coffee-script)*
+    - [CoffeeScript](http://coffeescript.org/) syntax highlighting.
++ *[vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)*
+    - [Solarized](http://ethanschoonover.com/solarized) color scheme.
++ *[vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)*
+    - CSS3 syntax support
++ *[vim-endwise](https://github.com/tpope/vim-endwise)*
+    - Automatic addition of 'end' in common contexts in Ruby
++ *[vim-surround](http://github.com/tpope/vim-surround)*
+    - Delete, change, and add surrounding punctuation.
++ *[vrackets](https://github.com/vim-scripts/vrackets)*
+    - Automatic parenthesis, quotation mark, brace, and bracket matching.
+
+**.gemrc** - Configuration file for [RubyGems](http://www.rubygems.org/).

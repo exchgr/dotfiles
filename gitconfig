@@ -1,0 +1,13 @@
+[user]
+	name = Dan Mundy
+	email = drm.mundy@gmail.com
+[github]
+	user = exchgr
+	token = 1532add39e87f4139b9949f1cbe181be
+[core]
+	excludesfile = /Users/exchgr/.gitignore_global
+	quotepath = false
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
