@@ -1,7 +1,7 @@
 #! /bin/bash
 # from dpeticol's dotfiles, with mods
 
-ignore=( .git .gitmodules README.mdown backups )
+ignore=( install.sh .git .gitmodules README.mdown backups )
 
 DIR=~/dotfiles
 
