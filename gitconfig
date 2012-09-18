@@ -23,6 +23,8 @@
     rbd = !git push origin --delete
     r = remote
     co = checkout
+    cot = !git checkout --track
+    pu = !git push -u
     c = !git commit -am
     s = status
     m = merge
