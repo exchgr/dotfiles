@@ -17,10 +17,11 @@
     prompt = false
 [alias]
     d = diff
+    dt = difftool
     b = branch
+    bd = !git branch -D
     rbd = !git push origin --delete
     r = remote
-    dt = difftool
     co = checkout
     c = !git commit -am
     s = status
