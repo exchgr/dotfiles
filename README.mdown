@@ -17,29 +17,7 @@ These are some of my configuration files. I've ones I thought other people might
 
 **tmux.conf** - Configuration file for [tmux](http://tmux.sourceforge.net/).
 
-**vim/** and **vimrc** - Configuration files for vim, including several plugins managed by pathogen:
-+ *[Markdown](https://github.com/vim-scripts/Markdown)*
-    - [Markdown](http://daringfireball.net/projects/markdown/) syntax highlighting.
-+ *[HTML5](https://github.com/othree/html5.vim)*
-    - HTML5 syntax highlighting and omnicomplete
-+ *[nerdtree](https://github.com/scrooloose/nerdtree)*
-    - File tree explorer.
-+ *[vim-coffee-script](https://github.com/kchmck/vim-coffee-script)*
-    - [CoffeeScript](http://coffeescript.org/) syntax highlighting.
-+ *[vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)*
-    - CSS3 syntax support.
-+ *[vim-endwise](https://github.com/tpope/vim-endwise)*
-    - Automatic addition of 'end' in common contexts in Ruby.
-+ *[vim-fugitive](https://github.com/tpope/vim-fugitive)*
-    - Git wrapper.
-+ *[vim-jade](https://github.com/digitaltoad/vim-jade)*
-    - [Jade](http://jade-lang.com/) syntax highlighting.
-+ *[vim-powerline](https://github.com/Lokaltog/vim-powerline)*
-    - A much better status bar.
-+ *[vim-surround](http://github.com/tpope/vim-surround)*
-    - Delete, change, and add surrounding punctuation.
-+ *[vrackets](https://github.com/vim-scripts/vrackets)*
-    - Automatic parenthesis, quotation mark, brace, and bracket matching.
+**vim/** and **vimrc** - Configuration files for vim, including several plugins managed by pathogen
 
 **gemrc** - Configuration file for [RubyGems](http://www.rubygems.org/).
 
