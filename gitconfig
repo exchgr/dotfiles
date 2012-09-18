@@ -25,6 +25,8 @@
     co = checkout
     cot = !git checkout --track
     pu = !git push -u
+    cl = clone
+    sa = submodule add
     c = !git commit -am
     s = status
     m = merge
