@@ -11,6 +11,7 @@ set virtualedit=onemore
 set pastetoggle=<F2>
 set clipboard=unnamed
 set ignorecase
+set smartcase
 set number
 filetype plugin indent on
 let &t_Co=256
@@ -25,6 +26,7 @@ nnoremap <c-k> <c-w>k
 "Indentation"
 set autoindent
 set smartindent
+set smarttab
 set tabstop=4
 set shiftwidth=4
 set expandtab
