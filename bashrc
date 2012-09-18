@@ -51,10 +51,13 @@ get_git_branch() {
 }
 alias gs='git status'
 alias gl='git l'
+alias gd='git diff'
+alias gdt='git difftool'
 alias gc='git commit -am'
 alias gp='git push origin `get_git_branch`' # Pushes current branch only
 alias gu='git pull origin `get_git_branch`' # Pulls current branch only
 alias ga='git add'
 alias gaa='git add .'
 alias gm='git merge'
+alias gmt='git mergetool'
 alias gco='git checkout'
