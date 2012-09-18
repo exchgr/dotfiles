@@ -36,3 +36,10 @@
     p = push
     u = pull
     f = fetch
+    st = stash
+    sts = stash save
+    sta = stash apply
+    std = stash drop
+    stl = stash list
+    stc = stash clear
+    stp = stash pop
