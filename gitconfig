@@ -28,6 +28,7 @@
     cl = clone
     sa = submodule add
     c = !git commit -am
+    ca = !git commit --amend
     s = status
     m = merge
     mt = mergetool
