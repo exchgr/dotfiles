@@ -29,6 +29,7 @@
     sa = submodule add
     c = !git commit -am
     ca = !git commit --amend
+    rv = revert
     s = status
     m = merge
     mt = mergetool
