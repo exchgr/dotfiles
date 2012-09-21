@@ -2,20 +2,22 @@
 call pathogen#infect()
 
 "Basic settings"
-syntax on
-set history=300
-set backspace=indent,eol,start
-set hlsearch
-set ruler
-set virtualedit=onemore
-set pastetoggle=<F2>
-set clipboard=unnamed
-set ignorecase
-set smartcase
-set number
-filetype plugin indent on
-let &t_Co=256
-set cursorline
+syntax on "Syntax Highlighting"
+set history=300 "300 lines of history"
+set backspace=indent,eol,start "Backspace over autoindent, line breaks, and the start of insert"
+set ruler "Show the ruler"
+set virtualedit=onemore "Allows cursor placement over the line's end in normal mode"
+set pastetoggle=<F2> "F2 enters paste mode in Insert mode"
+set clipboard=unnamed "OS-level clipboard integration for yank and put"
+set number "Show line numbers"
+filetype plugin indent on "Automatic indentation based on filetype"
+let &t_Co=256 "256 colors in the terminal"
+set cursorline "Highlight the current line"
+
+"Search"
+set hlsearch "Highlights search results"
+set ignorecase "Case-insensitive search"
+set smartcase "If a search contains an uppercase character, it is case-sensitive"
 
 "Better split movement"
 nnoremap <c-h> <c-w>h
@@ -38,12 +40,7 @@ inoremap <S-Tab> <Esc><<i
 "Delete key no longer deletes in normal mode"
 nnoremap <del> <right>
 
-"Solarized color scheme"
-"set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized
-
-"Monokai color scheme"
+"Color scheme"
 colorscheme Monokai
 
 "Fix vim slowness in tmux"
@@ -52,4 +49,4 @@ set ttimeout
 set timeoutlen=50
 
 "Status settings"
-set laststatus=2
+set laststatus=2 "Always show the ruler in all splits"
