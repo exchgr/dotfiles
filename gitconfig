@@ -27,7 +27,8 @@
     pu = !git push -u
     cl = clone
     sa = submodule add
-    c = !git commit -am
+    c = !git commit -a
+    cm = !git commit -am
     ca = !git commit --amend
     rv = revert
     s = status
