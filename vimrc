@@ -24,6 +24,10 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+inoremap <c-h> <Esc><c-w>h
+inoremap <c-l> <Esc><c-w>l
+inoremap <c-j> <Esc><c-w>j
+inoremap <c-k> <Esc><c-w>k
 
 "Indentation"
 set autoindent
