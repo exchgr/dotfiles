@@ -33,9 +33,14 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"Tab remaps"
+
 "Shift-tab reverse-indenting"
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <Esc><<i
+"Tab always indents"
+nnoremap <Tab> >>
+inoremap <Tab> <Esc>>>i
 
 "Delete key no longer deletes in normal mode"
 nnoremap <del> <right>
