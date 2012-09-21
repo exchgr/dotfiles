@@ -61,3 +61,4 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
+let g:Powerline_symbols = 'fancy'
