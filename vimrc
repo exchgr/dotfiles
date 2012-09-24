@@ -72,7 +72,7 @@ let g:Powerline_mode_cv = 'VB'
 let g:Powerline_mode_s  = 'S'
 let g:Powerline_mode_S  = 'SL'
 let g:Powerline_mode_cs = 'SB'
-let g:Powerline_stl_path_style = 'filename'
+let g:Powerline_stl_path_style = 'relative'
 call Pl#Theme#RemoveSegment('fileformat')
 call Pl#Theme#RemoveSegment('fileencoding')
 call Pl#Theme#RemoveSegment('lineinfo')
