@@ -24,6 +24,7 @@
     r = remote
     ra = remote add
     rr = remote rm
+    rv = remote -v
     co = checkout
     cot = !git checkout --track
     cob = !git checkout -b
@@ -33,7 +34,6 @@
     c = !git commit -a
     cm = !git commit -am
     ca = !git commit --amend
-    rv = revert
     s = status
     m = merge
     mt = mergetool
