@@ -22,6 +22,8 @@
     bd = !git branch -D
     rbd = !git push origin --delete
     r = remote
+    ra = remote add
+    rr = remote rm
     co = checkout
     cot = !git checkout --track
     cob = !git checkout -b
