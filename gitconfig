@@ -50,3 +50,5 @@
     stl = stash list
     stc = stash clear
     stp = stash pop
+[push]
+	default = tracking
