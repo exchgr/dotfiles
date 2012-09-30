@@ -17,6 +17,7 @@ alias rm="rm -rf"
 alias cp="cp -R"
 alias mkdir="mkdir -p"
 alias reset="source $HOME/.bashrc && clear"
+alias lstree="tree" # It's a shortcut to save me from googling it every time.
 
 # MacVim with clipboard support
 alias vim='reattach-to-user-namespace vim'
