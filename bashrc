@@ -36,7 +36,7 @@ bind "set completion-ignore-case on" # Case-insensitive bash completion
 # Environment
 export EDITOR="vim" # like a boss
 PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
-PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\e[33m\W\e[34m$(__git_ps1 " ± %s")\e[m \$ ' # The best prompt ever, with colors and wd's git branch
+PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\e[33m\W\e[36m$(__git_ps1 " ± %s")\e[m \$ ' # The best prompt ever, with colors and wd's git branch
 # tmux on start
 if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
     tmux attach || tmux new; exit
