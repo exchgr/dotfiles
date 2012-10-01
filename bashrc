@@ -3,6 +3,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ### BEGIN CUSTOMIZATIONS ###
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # Shortcuts
 alias la="ls -a" # a: hidden files
@@ -34,7 +35,7 @@ alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders
 bind "set completion-ignore-case on" # Case-insensitive bash completion
 
 # Environment
-export editor="vim" # like a boss
+export EDITOR="vim" # like a boss
 PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\e[0;36m\u\e[m@\e[0;34m\h\e[m:\W/\e[0;35m$(__git_ps1 "*%s")\e[m\n\$ ' # The best prompt ever, with colors and wd's git branch
 # tmux on start
