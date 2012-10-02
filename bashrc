@@ -42,6 +42,9 @@ if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
     tmux attach || tmux new; exit
 fi
 
+# Colors
+~/.base16-monokai.dark.sh
+
 # bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
