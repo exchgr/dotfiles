@@ -61,7 +61,7 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'skwp'
+let g:Powerline_colorscheme = 'default'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols_override = {
         \ 'BRANCH': [0x00b1],
