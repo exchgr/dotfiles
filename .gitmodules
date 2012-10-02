@@ -43,6 +43,3 @@
 [submodule "vim/bundle/ruby-matchit"]
 	path = vim/bundle/ruby-matchit
 	url = git://github.com/vim-scripts/ruby-matchit.git
-[submodule "vim/bundle/vim-monokai"]
-	path = vim/bundle/vim-monokai
-	url = git://github.com/rickharris/vim-monokai.git
