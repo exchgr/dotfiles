@@ -19,6 +19,7 @@ let &t_Co=256 "256 colors in the terminal"
 set hlsearch "Highlights search results"
 set ignorecase "Case-insensitive search"
 set smartcase "If a search contains an uppercase character, it is case-sensitive"
+set incsearch "Incremental search: search as you type"
 
 "Better split movement"
 nnoremap <c-h> <c-w>h
@@ -40,7 +41,7 @@ nnoremap <up> gk
 vnoremap <down> gj
 vnoremap <up> gk
 
-"Indentation"
+"Indentation - please ignore how terrible this may be"
 set autoindent
 set smartindent
 set smarttab
