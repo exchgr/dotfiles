@@ -6,6 +6,7 @@ ignore=( install.sh .git .gitmodules README.mdown backups )
 DIR=~/dotfiles
 
 cd $DIR
+mkdir backups/
 for filename in *
 do
 	# check if the file should be ignored
