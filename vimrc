@@ -2,6 +2,7 @@
 call pathogen#infect()
 
 "Basic settings"
+set nocompatible "Apparently this is a good idea."
 syntax on "Syntax Highlighting"
 set history=300 "300 lines of history"
 set backspace=indent,eol,start "Backspace over autoindent, line breaks, and the start of insert"
