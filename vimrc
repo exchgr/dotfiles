@@ -30,6 +30,16 @@ inoremap <c-l> <Esc><c-w>l
 inoremap <c-j> <Esc><c-w>j
 inoremap <c-k> <Esc><c-w>k
 
+"Better wrapped line navigation"
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <down> gj
+nnoremap <up> gk
+vnoremap <down> gj
+vnoremap <up> gk
+
 "Indentation"
 set autoindent
 set smartindent
