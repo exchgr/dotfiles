@@ -49,3 +49,12 @@
 [submodule "vim/bundle/base16-vim"]
 	path = vim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim
+[submodule "vim/bundle/jellybeans"]
+	path = vim/bundle/jellybeans
+	url = git://github.com/nanotech/jellybeans.vim.git
+[submodule "vim/bundle/vim-wombat"]
+	path = vim/bundle/vim-wombat
+	url = git://github.com/cschlueter/vim-wombat.git
+[submodule "vim/bundle/molokai"]
+	path = vim/bundle/molokai
+	url = git://github.com/tomasr/molokai.git

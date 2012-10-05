@@ -64,8 +64,7 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
-set background=dark
-colorscheme base16-monokai
+colorscheme jellybeans
 
 "Fix vim slowness in tmux"
 set notimeout
