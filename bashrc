@@ -48,3 +48,6 @@ fi
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+
+# teamocil bash completion
+complete -W "$(teamocil --list)" teamocil
