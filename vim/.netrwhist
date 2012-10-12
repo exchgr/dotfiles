@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/exchgr/.vim/ftplugin'
 let g:netrw_dirhist_2='/home/exchgr/Projects/code/learn/rails/blog/app/views/comments'
+let g:netrw_dirhist_3='/Users/exchgr/Projects/code/web/tourneyapp/app/views'
