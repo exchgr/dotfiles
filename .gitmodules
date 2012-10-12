@@ -43,30 +43,24 @@
 [submodule "vim/bundle/ruby-matchit"]
 	path = vim/bundle/ruby-matchit
 	url = git://github.com/vim-scripts/ruby-matchit.git
-[submodule "vim/bundle/monokai"]
-	path = vim/bundle/monokai
-	url = git://github.com/sickill/vim-monokai.git
 [submodule "vim/bundle/jellybeans"]
 	path = vim/bundle/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
 [submodule "vim/bundle/vim-wombat"]
 	path = vim/bundle/vim-wombat
 	url = git://github.com/cschlueter/vim-wombat.git
-[submodule "vim/bundle/molokai"]
-	path = vim/bundle/molokai
-	url = git://github.com/tomasr/molokai.git
 [submodule "vim/bundle/vim-tomorrow-theme"]
 	path = vim/bundle/vim-tomorrow-theme
 	url = git://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "vim/bundle/vim-vividchalk"]
 	path = vim/bundle/vim-vividchalk
 	url = git://github.com/tpope/vim-vividchalk.git
-[submodule "vim/bundle/vim-monokai-refined"]
-	path = vim/bundle/vim-monokai-refined
-	url = git://github.com/jaromero/vim-monokai-refined.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
 [submodule "vim/bundle/Zenburn"]
 	path = vim/bundle/Zenburn
 	url = git://github.com/jnurmine/Zenburn.git
+[submodule "vim/bundle/base16-vim"]
+	path = vim/bundle/base16-vim
+	url = git@github.com:exchgr/base16-vim.git
