@@ -61,3 +61,9 @@
 [submodule "vim/bundle/vim-autoclose"]
 	path = vim/bundle/vim-autoclose
 	url = git://github.com/Townk/vim-autoclose.git
+[submodule "vim/bundle/HTML-AutoCloseTag"]
+	path = vim/bundle/HTML-AutoCloseTag
+	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
+[submodule "vim/bundle/rename.vim"]
+	path = vim/bundle/rename.vim
+	url = git://github.com/danro/rename.vim.git
