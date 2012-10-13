@@ -1,6 +1,3 @@
-[submodule "vim/bundle/vrackets"]
-	path = vim/bundle/vrackets
-	url = git://github.com/vim-scripts/vrackets.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
@@ -61,3 +58,6 @@
 [submodule "vim/bundle/base16-vim"]
 	path = vim/bundle/base16-vim
 	url = git@github.com:exchgr/base16-vim.git
+[submodule "vim/bundle/vim-autoclose"]
+	path = vim/bundle/vim-autoclose
+	url = git://github.com/Townk/vim-autoclose.git
