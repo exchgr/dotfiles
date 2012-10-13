@@ -92,3 +92,6 @@ let g:Powerline_stl_path_style = 'relative'
 call Pl#Theme#RemoveSegment('fileformat')
 call Pl#Theme#RemoveSegment('fileencoding')
 call Pl#Theme#RemoveSegment('lineinfo')
+
+"Autoclose pairs"
+let g:AutoClosePairs_add = "\" \'"
