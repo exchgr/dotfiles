@@ -58,9 +58,6 @@
 [submodule "vim/bundle/base16-vim"]
 	path = vim/bundle/base16-vim
 	url = git@github.com:exchgr/base16-vim.git
-[submodule "vim/bundle/vim-autoclose"]
-	path = vim/bundle/vim-autoclose
-	url = git://github.com/Townk/vim-autoclose.git
 [submodule "vim/bundle/HTML-AutoCloseTag"]
 	path = vim/bundle/HTML-AutoCloseTag
 	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
