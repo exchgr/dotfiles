@@ -67,3 +67,6 @@
 [submodule "vim/bundle/vrackets"]
 	path = vim/bundle/vrackets
 	url = git://github.com/vim-scripts/vrackets.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
