@@ -97,4 +97,4 @@ call Pl#Theme#RemoveSegment('lineinfo')
 let g:AutoClosePairs_add = "\" \'"
 
 "NERD tree"
-autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
