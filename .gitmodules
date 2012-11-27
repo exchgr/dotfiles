@@ -49,9 +49,6 @@
 [submodule "vim/bundle/vim-vividchalk"]
 	path = vim/bundle/vim-vividchalk
 	url = git://github.com/tpope/vim-vividchalk.git
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "vim/bundle/Zenburn"]
 	path = vim/bundle/Zenburn
 	url = git://github.com/jnurmine/Zenburn.git
@@ -73,3 +70,6 @@
 [submodule "vim/bundle/vim-nginx"]
 	path = vim/bundle/vim-nginx
 	url = git://github.com/jinfield/vim-nginx.git
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
