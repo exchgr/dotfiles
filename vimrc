@@ -67,6 +67,9 @@ nnoremap <del> <right>
 let g:solarized_contrast = 'high'
 colorscheme solarized
 
+"GUI Typeface and font size"
+set guifont=Inconsolata:h13
+
 "Fix vim slowness in tmux"
 set notimeout
 set ttimeout
@@ -74,7 +77,7 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'default'
+let g:Powerline_colorscheme = 'solarized16'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols_override = {
         \ 'BRANCH': [0x00b1],
