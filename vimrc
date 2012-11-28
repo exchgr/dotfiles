@@ -65,6 +65,7 @@ nnoremap <del> <right>
 
 "Color scheme"
 set background=dark
+let g:solarized_diffmode='high'
 colorscheme solarized
 
 "GUI Typeface and font size"
