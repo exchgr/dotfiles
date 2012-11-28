@@ -64,7 +64,7 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
-let g:solarized_contrast = 'high'
+set background=dark
 colorscheme solarized
 
 "GUI Typeface and font size"
