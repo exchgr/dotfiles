@@ -64,6 +64,7 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
+let g:solarized_contrast = 'high'
 colorscheme solarized
 
 "Fix vim slowness in tmux"
