@@ -19,6 +19,7 @@
     d = diff
     dt = difftool
     b = branch
+    ba = branch -a
     bd = !git branch -D
     rbd = !git push origin --delete
     r = remote
