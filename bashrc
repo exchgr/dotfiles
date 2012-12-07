@@ -34,6 +34,7 @@ alias htop="sudo htop"
 # Aesthetics
 alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
 bind "set completion-ignore-case on" # Case-insensitive bash completion
+~/.base16-solarized.dark.sh
 
 # Environment
 export EDITOR="reattach-to-user-namespace vim" # like a boss

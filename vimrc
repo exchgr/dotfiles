@@ -65,8 +65,8 @@ nnoremap <del> <right>
 
 "Color scheme"
 set background=dark
-let g:solarized_diffmode='high'
-colorscheme solarized
+let base16colorspace=256
+colorscheme base16-solarized
 
 "GUI Typeface and font size"
 set guifont=Inconsolata:h13
@@ -78,7 +78,7 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'solarized16'
+let g:Powerline_colorscheme = 'solarized256'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols_override = {
         \ 'BRANCH': [0x00b1],
