@@ -22,8 +22,9 @@ alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias weechat="weechat-curses"
 
 # MacVim
-alias vim='mvim'
-alias vimdiff='mvimdiff'
+alias vim='reattach-to-user-namespace mvim'
+alias vimdiff='reattach-to-user-namespace mvimdiff'
+alias git='reattach-to-user-namespace git'
 
 # Admin goodness
 alias killall="sudo killall"
