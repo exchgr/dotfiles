@@ -21,10 +21,9 @@ alias reset="source $HOME/.bashrc && clear"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias weechat="weechat-curses"
 
-# MacVim with clipboard support
-alias vim='reattach-to-user-namespace vim'
-alias vimdiff='reattach-to-user-namespace vimdiff'
-alias git='reattach-to-user-namespace git' # for mergetool/vimdiff
+# MacVim
+alias vim='mvim'
+alias vimdiff='mvimdiff'
 
 # Admin goodness
 alias killall="sudo killall"
@@ -37,7 +36,8 @@ bind "set completion-ignore-case on" # Case-insensitive bash completion
 ~/.base16-solarized.dark.sh
 
 # Environment
-export EDITOR="reattach-to-user-namespace vim" # like a boss
+export EDITOR="mvim" # like a boss
+export GIT_EDITOR='mvim -f'
 PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;32m\]\W\[\e[0;31m\]$(__git_ps1 " ± %s")\[\e[m\] \$ ' # The best prompt ever, with colors and wd's git branch
 # tmux on start

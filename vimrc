@@ -13,8 +13,10 @@ set clipboard=unnamed "OS-level clipboard integration for yank and put"
 set number "Show line numbers"
 filetype plugin indent on "Automatic indentation based on filetype"
 let &t_Co=256 "256 colors in the terminal"
-"set cursorline "Highlight the current line"
+set cursorline "Highlight the current line"
 set mouse=a
+set guioptions-=r
+set guioptions-=L
 
 "Search"
 set hlsearch "Highlights search results"

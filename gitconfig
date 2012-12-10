@@ -8,11 +8,11 @@
 	excludesfile = /Users/exchgr/.gitignore_global
 	quotepath = false
 [merge]
-	tool = vimdiff
+	tool = gvimdiff
 [mergetool]
 	prompt = false
 [diff]
-    tool = vimdiff
+    tool = gvimdiff
 [difftool]
     prompt = false
 [alias]
@@ -53,3 +53,7 @@
     stp = stash pop
 [push]
 	default = tracking
+[difftool "gvimdiff"]
+	path = /usr/local/bin/mvimdiff
+[mergetool "gvimdiff"]
+	path = /usr/local/bin/mvimdiff
