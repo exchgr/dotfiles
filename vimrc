@@ -68,8 +68,8 @@ nnoremap <del> <right>
 
 "Color scheme"
 set background=dark
-let base16colorspace=256
-colorscheme base16-solarized
+let g:solarized_diffmode="low"
+colorscheme solarized
 
 "GUI Typeface and font size"
 set guifont=Inconsolata:h13
