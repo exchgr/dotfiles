@@ -111,9 +111,4 @@ if has("gui_running")
     "Start in fullscreen"
     set fuoptions=maxvert,maxhorz
     au GUIEnter * set fullscreen
-
-    "Color scheme"
-    set background=dark
-    let g:solarized_diffmode="low"
-    colorscheme solarized
 endif
