@@ -12,7 +12,7 @@
 [mergetool]
 	prompt = false
 [diff]
-    tool = vimdiff
+    tool = gvimdiff
 [difftool]
     prompt = false
 [alias]
