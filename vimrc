@@ -68,11 +68,8 @@ nnoremap <del> <right>
 
 "Color scheme"
 set background=dark
-let g:solarized_diffmode="low"
-colorscheme solarized
-
-"GUI Typeface and font size"
-set guifont=Inconsolata:h13
+let base16colorspace=256
+colorscheme base16-solarized
 
 "Fix vim slowness in tmux"
 set notimeout
@@ -105,3 +102,18 @@ let g:AutoClosePairs_add = "\" \'"
 
 "NERD tree"
 autocmd vimenter * if !argc() | NERDTree | endif
+
+"GUI Options"
+
+if has("gui_running")
+    set guifont=Inconsolata:h13 "GUI Typeface and font size"
+
+    "Start in fullscreen"
+    set fuoptions=maxvert,maxhorz
+    au GUIEnter * set fullscreen
+
+    "Color scheme"
+    set background=dark
+    let g:solarized_diffmode="low"
+    colorscheme solarized
+endif
