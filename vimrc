@@ -108,7 +108,7 @@ autocmd vimenter * if !argc() | NERDTree | endif
 if has("gui_running")
     set guifont=Inconsolata:h13 "GUI Typeface and font size"
 
-    "Start in fullscreen"
+    "Start maximized"
     set fuoptions=maxvert,maxhorz
-    au GUIEnter * set fullscreen
+    "au GUIEnter * set fullscreen
 endif
