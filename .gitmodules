@@ -79,3 +79,6 @@
 [submodule "vim/bundle/base16-vim-powerline"]
 	path = vim/bundle/base16-vim-powerline
 	url = git://github.com/terlar/base16-vim-powerline.git
+[submodule "vim/bundle/tumblr-vim"]
+	path = vim/bundle/tumblr-vim
+	url = git://github.com/liamcurry/tumblr.vim.git
