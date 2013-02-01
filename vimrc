@@ -18,6 +18,10 @@ set mouse=a
 set guioptions-=r
 set guioptions-=L
 
+"Don't split words on line breaks"
+set formatoptions=l
+set lbr
+
 "Search"
 set hlsearch "Highlights search results"
 set ignorecase "Case-insensitive search"
