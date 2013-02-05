@@ -52,7 +52,7 @@ vnoremap <up> gk
 set autoindent
 set smartindent
 set smarttab
-set tabstop=4
+"set tabstop=4
 set shiftwidth=4
 set expandtab
 
