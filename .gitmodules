@@ -82,3 +82,9 @@
 [submodule "vim/bundle/tumblr-vim"]
 	path = vim/bundle/tumblr-vim
 	url = git://github.com/liamcurry/tumblr.vim.git
+[submodule "vim/bundle/vim-arduino"]
+	path = vim/bundle/vim-arduino
+	url = git://github.com/tclem/vim-arduino.git
+[submodule "vim/bundle/Arduino-syntax-file"]
+	path = vim/bundle/Arduino-syntax-file
+	url = git://github.com/vim-scripts/Arduino-syntax-file.git
