@@ -85,6 +85,3 @@
 [submodule "vim/bundle/Arduino-syntax-file"]
 	path = vim/bundle/Arduino-syntax-file
 	url = git://github.com/vim-scripts/Arduino-syntax-file.git
-[submodule "vim/bundle/auto-pairs"]
-	path = vim/bundle/auto-pairs
-	url = git://github.com/jiangmiao/auto-pairs.git
