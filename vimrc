@@ -73,7 +73,7 @@ nnoremap <del> <right>
 "Color scheme"
 set background=dark
 let base16colorspace=256
-colorscheme base16-solarized
+colorscheme base16-monokai
 
 "Fix vim slowness in tmux"
 set notimeout
