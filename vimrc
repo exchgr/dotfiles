@@ -17,6 +17,7 @@ set cursorline "Highlight the current line"
 set mouse=a
 set guioptions-=r
 set guioptions-=L
+Helptags
 
 "Don't split words on line breaks"
 set formatoptions=l
