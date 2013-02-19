@@ -72,7 +72,7 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
-set background=light
+set background=dark
 "let base16colorspace=256
 let g:solarized_diffmode="high"
 colorscheme solarized
@@ -84,7 +84,7 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'solarized'
+let g:Powerline_colorscheme = 'solarized256'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols_override = {
         \ 'BRANCH': [0x00b1],

@@ -22,8 +22,8 @@ alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias weechat="weechat-curses"
 
 # MacVim
-alias vim='reattach-to-user-namespace mvim'
-alias vimdiff='reattach-to-user-namespace mvimdiff'
+alias vim='reattach-to-user-namespace vim'
+alias vimdiff='reattach-to-user-namespace vimdiff'
 alias git='reattach-to-user-namespace git'
 
 # Admin goodness

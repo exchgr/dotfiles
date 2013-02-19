@@ -8,11 +8,11 @@
 	excludesfile = /Users/exchgr/.gitignore_global
 	quotepath = false
 [merge]
-	tool = gvimdiff
+	tool = vimdiff
 [mergetool]
 	prompt = false
 [diff]
-    tool = gvimdiff
+    tool = vimdiff
 [difftool]
     prompt = false
 [alias]
