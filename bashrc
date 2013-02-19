@@ -34,7 +34,7 @@ alias htop="sudo htop"
 # Aesthetics
 alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
 bind "set completion-ignore-case on" # Case-insensitive bash completion
-#~/.base16-monokai.dark.sh
+~/.base16-monokai.dark.sh
 
 # Environment
 export EDITOR="mvim" # like a boss
