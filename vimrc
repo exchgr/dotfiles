@@ -13,7 +13,7 @@ set clipboard=unnamed "OS-level clipboard integration for yank and put"
 set number "Show line numbers"
 filetype plugin indent on "Automatic indentation based on filetype"
 let &t_Co=256 "256 colors in the terminal"
-set cursorline "Highlight the current line"
+"set cursorline "Highlight the current line"
 set mouse=a
 set guioptions-=r
 set guioptions-=L
@@ -72,10 +72,10 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
-set background=dark
+"set background=dark
 "let base16colorspace=256
-let g:solarized_diffmode="high"
-colorscheme solarized
+"let g:solarized_diffmode="high"
+colorscheme quiet-light
 
 "Fix vim slowness in tmux"
 set notimeout
@@ -84,7 +84,7 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'solarized256'
+let g:Powerline_colorscheme = 'default'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols_override = {
         \ 'BRANCH': [0x00b1],
