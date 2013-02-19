@@ -71,9 +71,10 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
-"set background=dark
+set background=light
 "let base16colorspace=256
-colorscheme molokai
+let g:solarized_diffmode="high"
+colorscheme solarized
 
 "Fix vim slowness in tmux"
 set notimeout
@@ -82,7 +83,7 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'default'
+let g:Powerline_colorscheme = 'solarized'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_symbols_override = {
         \ 'BRANCH': [0x00b1],
