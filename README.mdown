@@ -2,7 +2,7 @@
 
 ## What is this?
 
-These are some of my configuration files. I've ones I thought other people might find interesting, such as ones for vim, git, tmux, and bash. These files aren't meant to replace yours, but they're meant to highlight some interesting customizations that you might want to use in your own files.
+These are some of my configuration files. I've included ones I thought other people might find interesting, such as ones for vim, git, tmux, and bash. These files aren't meant to replace yours, but they're meant to highlight some interesting customizations that you might want to use in your own files.
 
 ## The files
 **install.sh** - Installs the dotfiles as symlinks and moves the relevant ones that already exist into dotfiles/backups.
