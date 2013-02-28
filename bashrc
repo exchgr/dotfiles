@@ -43,7 +43,8 @@ PATH=~/bin:/usr/local/bin:/usr/local/share/python:/usr/local/sbin:/usr/local/sha
 PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;32m\]\W\[\e[0;31m\]$(__git_ps1 " ± %s")\[\e[m\] \$ ' # The best prompt ever, with colors and wd's git branch
 # tmux on start
 if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach || tmux new; exit
+    #tmux attach || tmux new; exit
+    tmux new; exit
 fi
 
 # bash completion
