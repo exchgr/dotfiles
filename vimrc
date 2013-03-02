@@ -62,12 +62,16 @@ set expandtab
 "Tab always indents"
 nnoremap <Tab> >>
 inoremap <Tab> <Esc>>>i
-vnoremap <Tab> >
+vnoremap <Tab> >gv
+vnoremap > >gv
+"gv reselects the previous selection"
 
 "Shift-tab reverse-indenting"
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <Esc><<i
-vnoremap <S-Tab> <
+vnoremap <S-Tab> <gv
+vnoremap < <gv
+"gv reselects the previous selection"
 
 "Delete key no longer deletes in normal mode"
 nnoremap <del> <right>
