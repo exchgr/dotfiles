@@ -14,9 +14,9 @@ set number "Show line numbers"
 filetype plugin indent on "Automatic indentation based on filetype"
 let &t_Co=256 "256 colors in the terminal"
 "set cursorline "Highlight the current line"
-set mouse=a
-set guioptions-=r
-set guioptions-=L
+set mouse=a "Mouse support"
+set guioptions-=r "Remove the right scrollbar in MacVim"
+set guioptions-=L "Remove the left scrollbar in MacVim"
 Helptags
 
 "Don't split words on line breaks"
@@ -63,6 +63,7 @@ set expandtab
 nnoremap <Tab> >>
 inoremap <Tab> <Esc>>>i
 vnoremap <Tab> >
+
 "Shift-tab reverse-indenting"
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <Esc><<i
@@ -72,9 +73,6 @@ vnoremap <S-Tab> <
 nnoremap <del> <right>
 
 "Color scheme"
-"set background=dark
-"let base16colorspace=256
-"let g:solarized_diffmode="high"
 colorscheme quiet-light
 
 "Fix vim slowness in tmux"
@@ -101,20 +99,11 @@ let g:Powerline_mode_cs = 'SB'
 let g:Powerline_stl_path_style = 'short'
 call Pl#Theme#RemoveSegment('fileformat')
 call Pl#Theme#RemoveSegment('fileencoding')
-call Pl#Theme#RemoveSegment('lineinfo')
-
-"Autoclose pairs"
-let g:AutoClosePairs_add = "\" \'"
-
-"NERD tree"
-autocmd vimenter * if !argc() | NERDTree | endif
 
 "GUI Options"
-
 if has("gui_running")
     set guifont=Inconsolata:h13 "GUI Typeface and font size"
 
     "Start maximized"
     set fuoptions=maxvert,maxhorz
-    "au GUIEnter * set fullscreen
 endif
