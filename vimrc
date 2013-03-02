@@ -15,8 +15,6 @@ filetype plugin indent on "Automatic indentation based on filetype"
 let &t_Co=256 "256 colors in the terminal"
 "set cursorline "Highlight the current line"
 set mouse=a "Mouse support"
-set guioptions-=r "Remove the right scrollbar in MacVim"
-set guioptions-=L "Remove the left scrollbar in MacVim"
 Helptags
 
 "Don't split words on line breaks"
@@ -62,13 +60,12 @@ set smarttab
 set shiftwidth=4
 set expandtab
 
-"Tab remaps"
-
 "Tab always indents"
 nnoremap <Tab> >>
 inoremap <Tab> <Esc>>>i
 vnoremap <Tab> >gv
 vnoremap > >gv
+vnoremap = =gv
 "gv reselects the previous selection"
 
 "Shift-tab reverse-indenting"
@@ -115,4 +112,6 @@ if has("gui_running")
 
     "Start maximized"
     set fuoptions=maxvert,maxhorz
+    set guioptions-=r "Remove the right scrollbar in MacVim"
+    set guioptions-=L "Remove the left scrollbar in MacVim"
 endif
