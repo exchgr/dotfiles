@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/exchgr/.vim/ftplugin'
-let g:netrw_dirhist_2='/home/exchgr/Projects/code/learn/rails/blog/app/views/comments'
-let g:netrw_dirhist_3='/Users/exchgr/Projects/code/web/tourneyapp/app/views'
-let g:netrw_dirhist_4='/Users/exchgr/Projects/code/web/r12-team-505/app/views/devise/registrations'
-let g:netrw_dirhist_5='/Users/exchgr/dotfiles/vim/bundle'
-let g:netrw_dirhist_6='/Users/exchgr/Projects/code/web/tourneyapp/config'
-let g:netrw_dirhist_7='/Users/exchgr/dotfiles/vim/bundle/vim-colors-solarized'
-let g:netrw_dirhist_8='/Users/exchgr/dotfiles/vim/bundle/MatchTag'
-let g:netrw_dirhist_9='/Users/exchgr/dotfiles/vim/bundle/matchit'
+let g:netrw_dirhist_cnt =0
