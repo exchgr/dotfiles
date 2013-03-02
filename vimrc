@@ -79,7 +79,7 @@ vnoremap < <gv
 nnoremap <del> <right>
 
 "Color scheme"
-colorscheme tango-bright
+colorscheme quiet-light
 
 "Fix vim slowness in tmux"
 set notimeout
