@@ -29,6 +29,11 @@ set ignorecase "Case-insensitive search"
 set smartcase "If a search contains an uppercase character, it is case-sensitive"
 set incsearch "Incremental search: search as you type"
 
+"Remaps"
+
+"Make Y behave like other capitals"
+nnoremap Y y$
+
 "Better split movement"
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
