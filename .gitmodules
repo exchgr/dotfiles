@@ -37,9 +37,6 @@
 [submodule "vim/bundle/vim-wombat"]
 	path = vim/bundle/vim-wombat
 	url = git://github.com/cschlueter/vim-wombat.git
-[submodule "vim/bundle/vim-tomorrow-theme"]
-	path = vim/bundle/vim-tomorrow-theme
-	url = git://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "vim/bundle/vim-vividchalk"]
 	path = vim/bundle/vim-vividchalk
 	url = git://github.com/tpope/vim-vividchalk.git
