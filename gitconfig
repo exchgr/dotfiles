@@ -32,6 +32,8 @@
     pu = !git push -u
     cl = clone
     sa = submodule add
+    su = submodule update
+    sui = submodule update --init
     c = !git commit -a
     cm = !git commit -am
     ca = !git commit --amend
