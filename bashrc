@@ -50,6 +50,8 @@ if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
     tmux new; exit
 fi
 #~/.base16-monokai.dark.sh
+export HISTCONTROL=ignoredups:erasedups # Keeps history concise
+export HISTFILESIZE=2048 # Gives history more room
 
 # bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
