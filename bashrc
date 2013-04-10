@@ -43,9 +43,9 @@ export EDITOR="mvim" # like a boss
 export GIT_EDITOR='mvim -f'
 PATH=~/bin:/usr/local/bin:/usr/local/share/python:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
-PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;32m\]\W\[\e[0;31m\]$(__git_ps1 " ± %s")\[\e[m\] \$ ' # The best prompt ever, with colors and wd's git branch
+PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 # tmux on start
-if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ]; then
     #tmux attach || tmux new; exit
     tmux new; exit
 fi
