@@ -39,6 +39,7 @@
     ca = !git commit --amend
     s = status
     rb = rebase
+    rl = reflog
     m = merge
     mt = mergetool
     l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
