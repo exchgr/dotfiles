@@ -39,6 +39,8 @@
     ca = !git commit --amend
     s = status
     rb = rebase
+    rbc = rebase --continue
+    rba = rebase --abort
     rl = reflog
     m = merge
     mt = mergetool
