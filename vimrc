@@ -79,6 +79,7 @@ vnoremap < <gv
 nnoremap <del> <right>
 
 "Color scheme"
+let g:molokai_original = 1
 colorscheme molokai
 
 "Fix vim slowness in tmux"
