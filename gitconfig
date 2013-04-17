@@ -41,6 +41,7 @@
     rb = rebase
     rbc = rebase --continue
     rba = rebase --abort
+    rbs = rebase --skip
     rl = reflog
     m = merge
     mt = mergetool
