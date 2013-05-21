@@ -18,6 +18,7 @@
 [alias]
     d = diff
     dt = difftool
+    dtc = difftool --cached
     b = branch
     ba = branch -a
     bd = !git branch -D
