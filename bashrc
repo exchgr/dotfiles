@@ -21,6 +21,7 @@ alias mkdir="mkdir -p"
 alias reset="source $HOME/.bashrc && clear"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias cat="less" # For those times when I cat something huge
+alias rake="bundle exec rake"
 
 # MacVim and clipboard support
 reattach_path=$(which reattach-to-user-namespace)
