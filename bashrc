@@ -35,9 +35,7 @@ fi
 alias killall="sudo killall"
 alias kill="sudo kill"
 alias htop="sudo htop"
-
-# sudo DYLD workaround
-sudo () { ( unset LD_LIBRARY_PATH DYLD_LIBRARY_PATH; exec command sudo $* ) }
+sudo () { ( unset LD_LIBRARY_PATH DYLD_LIBRARY_PATH; exec command sudo $* ) } # sudo DYLD workaround
 
 # Aesthetics
 
@@ -58,6 +56,7 @@ fi
 #~/.base16-monokai.dark.sh
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
 export HISTFILESIZE=2048 # Gives history more room
+alias cpnginx="sudo nginx -c /Users/exchgr/Projects/code/web/challengepost-platform/config/nginx/nginx.conf"
 
 # bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
