@@ -36,6 +36,9 @@ alias killall="sudo killall"
 alias kill="sudo kill"
 alias htop="sudo htop"
 
+# sudo DYLD workaround
+sudo () { ( unset LD_LIBRARY_PATH DYLD_LIBRARY_PATH; exec command sudo $* ) }
+
 # Aesthetics
 
 # Environment
