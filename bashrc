@@ -22,6 +22,7 @@ alias reset="source $HOME/.bashrc && clear"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias rake="bundle exec rake"
 alias dotfiles="cd ~/dotfiles"
+alias haste="haste | reattach-to-user-namespace pbcopy"
 
 # MacVim and clipboard support
 reattach_path=$(which reattach-to-user-namespace)
