@@ -16,6 +16,8 @@ let &t_Co=256 "256 colors in the terminal"
 set cursorline "Highlight the current line"
 set mouse=a "Mouse support"
 Helptags
+set hidden "Allow switching from unsaved buffers"
+set confirm "Confirmation dialog instead of fail on unwritten buffers"
 
 "Don't split words on line breaks"
 set formatoptions=l
