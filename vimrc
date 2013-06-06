@@ -19,9 +19,6 @@ Helptags
 set hidden "Allow switching from unsaved buffers"
 set confirm "Confirmation dialog instead of fail on unwritten buffers"
 
-"Strip trailing whitespace on write
-au BufWritePre * :Stripper
-
 "Objective-C Alternate"
 autocmd FileType objc let g:alternateExtensions_h = "m"
 autocmd FileType objc let g:alternateExtensions_m = "h"
