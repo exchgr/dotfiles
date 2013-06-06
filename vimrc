@@ -11,7 +11,7 @@ set virtualedit=onemore "Allows cursor placement over the line's end in normal m
 set pastetoggle=<F2> "F2 enters paste mode in Insert mode"
 set clipboard=unnamed "OS-level clipboard integration for yank and put"
 set number "Show line numbers"
-filetype plugin indent on "Automatic indentation based on filetype"
+"filetype plugin indent on "Automatic indentation based on filetype"
 let &t_Co=256 "256 colors in the terminal"
 set cursorline "Highlight the current line"
 set mouse=a "Mouse support"
@@ -54,8 +54,8 @@ vnoremap <up> gk
 
 "Indentation - please ignore how terrible this may be"
 set autoindent
-set smartindent
-set smarttab
+set smartindent "conflicts with filetype plugin indent on"
+set smarttab "Tab key does indents"
 "set tabstop=4
 set shiftwidth=4
 set expandtab
