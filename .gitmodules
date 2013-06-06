@@ -79,3 +79,6 @@
 [submodule "vim/bundle/a"]
 	path = vim/bundle/a
 	url = git://github.com/vim-scripts/a.vim.git
+[submodule "vim/bundle/vim-stripper"]
+	path = vim/bundle/vim-stripper
+	url = git://github.com/itspriddle/vim-stripper.git
