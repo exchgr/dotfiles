@@ -63,7 +63,7 @@ set autoindent
 set smartindent "conflicts with filetype plugin indent on"
 set smarttab "Tab key does indents"
 "set tabstop=4
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 
 "Tab always indents"
