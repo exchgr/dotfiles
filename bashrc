@@ -59,7 +59,6 @@ fi
 #~/.base16-monokai.dark.sh
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
 export HISTFILESIZE=2048 # Gives history more room
-alias jbuild='cd /web/platform && build/schedule_build.sh -s'
 
 # bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -68,3 +67,5 @@ fi
 
 # teamocil bash completion
 complete -W "$(teamocil --list)" teamocil
+
+. ~/.bashrc_p
