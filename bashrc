@@ -50,7 +50,15 @@ export PATH=~/bin:/usr/local/bin:/usr/local/share/python:/usr/local/sbin:/usr/lo
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
-PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+
+# Mac/Linux PS1s that account for different hostname commands
+OS=$(uname -s)
+if [ "$OS" = "Darwin" ]; then
+  export PS1='\[\e[0;32m\]$(scutil --get ComputerName): $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+elif [ "$OS" = "Linux" ]; then
+  export PS1='\[\e[0;32m\]\h: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+fi
+
 # tmux on start
 if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ]; then
     #tmux attach || tmux new; exit
