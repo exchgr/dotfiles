@@ -60,7 +60,7 @@ elif [ "$OS" = "Linux" ]; then
 fi
 
 # tmux on start
-if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ]; then
+if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" ]; then
     #tmux attach || tmux new; exit
     tmux new; exit
 fi
