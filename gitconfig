@@ -51,6 +51,7 @@
     a = add
     p = push
     u = pull
+    urb = pull --rebase
     f = fetch
     st = stash
     sts = stash save
