@@ -36,9 +36,6 @@ fi
 
 # Admin goodness
 sudo () { ( unset LD_LIBRARY_PATH DYLD_LIBRARY_PATH; exec command sudo $* ) } # sudo DYLD workaround
-alias killall="sudo killall"
-alias kill="sudo kill"
-alias htop="sudo htop"
 
 # Aesthetics
 
