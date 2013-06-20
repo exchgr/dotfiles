@@ -85,3 +85,6 @@
 [submodule "vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/vim-handlebars"]
+	path = vim/bundle/vim-handlebars
+	url = git://github.com/nono/vim-handlebars.git
