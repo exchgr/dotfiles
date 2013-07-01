@@ -36,6 +36,7 @@
     su = submodule update
     sui = submodule update --init
     c = !git commit -a
+    cv = !git commit -av
     cm = !git commit -am
     ca = !git commit --amend
     s = status
