@@ -39,6 +39,7 @@
 # Vim files #
 #############
 *.swp
+*.swo
 *~
 *.vis
 
