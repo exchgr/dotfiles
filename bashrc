@@ -25,6 +25,7 @@ alias dotfiles="cd ~/dotfiles"
 alias pbcopy="reattach-to-user-namespace pbcopy"
 alias pbpaste="reattach-to-user-namespace pbpaste"
 alias haste="haste | pbcopy"
+alias brup="brew update; brew upgrade"
 
 # MacVim and clipboard support
 reattach_path=$(which reattach-to-user-namespace)
