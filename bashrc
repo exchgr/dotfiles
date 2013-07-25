@@ -73,3 +73,6 @@ if [ "$OS" = "Darwin" ]; then
   fi
 fi
 . ~/.bashrc_p
+
+# teamocil workspace bash completion
+complete -W "$(teamocil --list)" teamocil
