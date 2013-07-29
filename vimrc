@@ -84,6 +84,10 @@ vnoremap < <gv
 "Delete key no longer deletes in normal mode"
 nnoremap <del> <right>
 
+" NERDTree
+nnoremap <space><space> :NERDTreeToggle<cr>
+nnoremap <space>f :NERDTreeFind<cr>
+
 "Color scheme"
 let g:molokai_original = 1
 colorscheme molokai
