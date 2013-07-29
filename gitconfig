@@ -19,6 +19,7 @@
     prompt = false
 [alias]
     d = diff
+    dc = diff --cached
     dt = difftool
     dtc = difftool --cached
     b = branch
