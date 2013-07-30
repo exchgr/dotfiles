@@ -60,6 +60,8 @@ vnoremap <up> gk
 
 "Indentation - please ignore how terrible this may be"
 set autoindent
+set cindent
+set copyindent "copy the previous indentation on enter
 set smartindent "conflicts with filetype plugin indent on"
 set smarttab "Tab key does indents"
 "set tabstop=4
