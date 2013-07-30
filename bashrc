@@ -26,6 +26,7 @@ alias pbcopy="reattach-to-user-namespace pbcopy"
 alias pbpaste="reattach-to-user-namespace pbpaste"
 alias haste="haste | pbcopy"
 alias brup="brew update; brew upgrade"
+alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 
 # MacVim and clipboard support
 reattach_path=$(which reattach-to-user-namespace)
