@@ -1,0 +1,5 @@
+#!/bin/bash
+
+trap "rm -f .git/tags.$$" EXIT
+ctags --tag-relative -Rf.git/tags.$$ --exclude=.git --exclude='*.min.*'
+mv .git/tags.$$ .git/tags
