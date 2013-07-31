@@ -18,6 +18,10 @@ set mouse=a "Mouse support"
 Helptags
 set hidden "Allow switching from unsaved buffers"
 set confirm "Confirmation dialog instead of fail on unwritten buffers"
+set splitbelow "split under insteaad of over"
+set splitright "vsplit to the right instead of the left"
+set scrolloff=3 "Mininum number of lines to keep above or below the cursor"
+set showcmd "shows partial commands and visual selection dimensions"
 
 "Objective-C Alternate"
 autocmd FileType objc let g:alternateExtensions_h = "m"
