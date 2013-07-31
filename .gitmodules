@@ -97,3 +97,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/file-line.git"]
+	path = vim/bundle/file-line.git
+	url = https://github.com/bogado/file-line.git
