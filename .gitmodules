@@ -100,3 +100,6 @@
 [submodule "vim/bundle/file-line.git"]
 	path = vim/bundle/file-line.git
 	url = https://github.com/bogado/file-line.git
+[submodule "vim/bundle/argtextobj.vim"]
+	path = vim/bundle/argtextobj.vim
+	url = https://github.com/vim-scripts/argtextobj.vim.git
