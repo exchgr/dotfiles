@@ -68,7 +68,7 @@ set cindent
 set copyindent "copy the previous indentation on enter
 set smartindent "conflicts with filetype plugin indent on"
 set smarttab "Tab key does indents"
-"set tabstop=4
+set tabstop=2 "Tabs appear as 2 spaces"
 set shiftwidth=2
 set expandtab
 
