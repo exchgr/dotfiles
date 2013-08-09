@@ -15,7 +15,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 shopt -s autocd # Change to a directory without "cd"
-alias rm="rm -rf"
 alias cp="cp -R"
 alias mkdir="mkdir -p"
 alias reset="source $HOME/.bashrc && clear"
@@ -28,6 +27,23 @@ alias haste="haste | pbcopy"
 alias brup="brew update; brew upgrade"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias less="less -FX" # tame less
+
+# rm moves files to trash
+function rm () {
+  local path
+  for path in "$@"; do
+    # ignore any arguments
+    if [[ "$path" = -* ]]; then :
+    else
+      local dst=${path##*/}
+      # append the time if necessary
+      while [ -e ~/.Trash/"$dst" ]; do
+        dst="$dst "$(date +%H-%M-%S)
+      done
+      mv "$path" ~/.Trash/"$dst"
+    fi
+  done
+}
 
 # MacVim and clipboard support
 reattach_path=$(which reattach-to-user-namespace)
