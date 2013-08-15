@@ -86,8 +86,11 @@ fi
 
 # tmux on start
 if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" ]; then
-    #tmux attach || tmux new; exit
-    tmux new; exit
+  #tmux attach || tmux new; exit
+  tmux new; exit
+
+  # teamocil workspace bash completion
+  complete -W "$(teamocil --list)" teamocil
 fi
 #~/.base16-monokai.dark.sh
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
@@ -100,6 +103,3 @@ if [ "$OS" = "Darwin" ]; then
   fi
 fi
 . ~/.bashrc_p
-
-# teamocil workspace bash completion
-complete -W "$(teamocil --list)" teamocil
