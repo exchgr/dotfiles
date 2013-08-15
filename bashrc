@@ -4,6 +4,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# System information
+OS=$(uname -s)
+
 # Shortcuts
 alias la="ls -a" # a: hidden files
 alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
@@ -54,21 +57,27 @@ if [ -x "$reattach_path" ] ; then
 fi
 
 # Admin goodness
-sudo () { ( unset LD_LIBRARY_PATH DYLD_LIBRARY_PATH; exec command sudo $* ) } # sudo DYLD workaround
+if [ "$OS" = "Darwin" ]; then
+  sudo () { ( unset LD_LIBRARY_PATH DYLD_LIBRARY_PATH; exec command sudo $* ) } # sudo DYLD workaround
+fi
 
 # Aesthetics
 
 # Environment
 bind "set completion-ignore-case on" # Case-insensitive bash completion
-export EDITOR="mvim" # like a boss
-export GIT_EDITOR='mvim -f'
+if [ "$OS" = "Darwin" ]; then
+  export EDITOR='reattach-to-user-namespace mvim' # like a boss
+  export GIT_EDITOR='reattach-to-user-namespace mvim -f'
+elif [ "$OS" = "Linux" ]; then
+  export EDITOR='vim' # like a boss
+  export GIT_EDITOR='vim'
+fi
 export PATH=~/bin:/usr/local/bin:/usr/local/share/python:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
 
 # Mac/Linux PS1s that account for different hostname commands
-OS=$(uname -s)
 if [ "$OS" = "Darwin" ]; then
   export PS1='\[\e[0;32m\]$(scutil --get ComputerName): $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 elif [ "$OS" = "Linux" ]; then
