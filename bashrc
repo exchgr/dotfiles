@@ -76,6 +76,14 @@ export PATH=~/bin:/usr/local/bin:/usr/local/share/python:/usr/local/sbin:/usr/lo
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
+if [ "$OS" = "Linux" ]; then
+  SSHAGENT=/usr/bin/ssh-agent
+  SSHAGENTARGS="-s"
+  if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+    eval `$SSHAGENT $SSHAGENTARGS`
+    trap "kill $SSH_AGENT_PID" 0
+  fi
+fi
 
 # Mac/Linux PS1s that account for different hostname commands
 if [ "$OS" = "Darwin" ]; then
