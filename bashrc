@@ -76,7 +76,8 @@ export PATH=~/bin:/usr/local/bin:/usr/local/share/python:/usr/local/sbin:/usr/lo
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
-if [ "$OS" = "Linux" ]; then
+# ssh-agent on linux
+if [ "$OS" = "Linux" ] && [ $TERM != "dumb" ]; then
   SSHAGENT=/usr/bin/ssh-agent
   SSHAGENTARGS="-s"
   if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
