@@ -82,6 +82,7 @@ if [ "$OS" = "Linux" ] && [ $TERM != "dumb" ]; then
   SSHAGENTARGS="-s"
   if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
     eval `$SSHAGENT $SSHAGENTARGS`
+    ssh-add
     trap "kill $SSH_AGENT_PID" 0
   fi
 fi
