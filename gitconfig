@@ -8,10 +8,11 @@
 	excludesfile = /Users/exchgr/.gitignore_global
 	quotepath = false
 	pager = less -FX
+	editor = $EDITOR -v
 [color]
   diff = auto
 [merge]
-	tool = gvimdiff
+	tool = vimdiff
 [mergetool]
 	prompt = false
 [diff]
@@ -67,10 +68,10 @@
   stp = stash pop
 [push]
 	default = tracking
-[difftool "gvimdiff"]
-	path = /usr/local/bin/mvimdiff
-[mergetool "gvimdiff"]
-	path = /usr/local/bin/mvimdiff
+[difftool "vimdiff"]
+	cmd = $(echo $EDITOR)diff -vR $LOCAL $REMOTE
+[mergetool "vimdiff"]
+	cmd = $(echo $EDITOR)diff -v $LOCAL $MERGED $REMOTE
 	keepBackup = false
 [web]
 	browser = open
