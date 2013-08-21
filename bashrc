@@ -24,8 +24,6 @@ alias reset="source $HOME/.bashrc && clear"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias rake="bundle exec rake"
 alias dotfiles="cd ~/dotfiles"
-alias pbcopy="reattach-to-user-namespace pbcopy"
-alias pbpaste="reattach-to-user-namespace pbpaste"
 alias haste="haste | pbcopy"
 alias brup="brew update; brew upgrade"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
@@ -48,12 +46,10 @@ function rm () {
   done
 }
 
-# MacVim and clipboard support
-reattach_path=$(which reattach-to-user-namespace)
-if [ -x "$reattach_path" ] ; then
-    alias vim='reattach-to-user-namespace mvim'
-    alias vimdiff='reattach-to-user-namespace mvimdiff'
-    alias git='reattach-to-user-namespace git'
+# MacVim
+if [ "$OS" = "Darwin" ]; then
+    alias vim='mvim'
+    alias vimdiff='mvimdiff'
 fi
 
 # Admin goodness
@@ -66,8 +62,8 @@ fi
 # Environment
 bind "set completion-ignore-case on" # Case-insensitive bash completion
 if [ "$OS" = "Darwin" ]; then
-  export EDITOR='reattach-to-user-namespace mvim' # like a boss
-  export GIT_EDITOR='reattach-to-user-namespace mvim -f'
+  export EDITOR='mvim' # like a boss
+  export GIT_EDITOR='mvim -v'
 elif [ "$OS" = "Linux" ]; then
   export EDITOR='vim' # like a boss
   export GIT_EDITOR='vim'
