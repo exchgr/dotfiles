@@ -71,5 +71,6 @@
 	path = /usr/local/bin/mvimdiff
 [mergetool "gvimdiff"]
 	path = /usr/local/bin/mvimdiff
+	keepBackup = false
 [web]
 	browser = open
