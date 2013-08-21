@@ -9,62 +9,62 @@
 	quotepath = false
 	pager = less -FX
 [color]
-    diff = auto
+  diff = auto
 [merge]
 	tool = gvimdiff
 [mergetool]
 	prompt = false
 [diff]
-    tool = gvimdiff
+  tool = gvimdiff
 [difftool]
-    prompt = false
+  prompt = false
 [alias]
-    d = diff
-    dc = diff --cached
-    dt = difftool
-    dtc = difftool --cached
-    b = branch
-    ba = branch -a
-    bd = !git branch -D
-    rbd = !git push origin --delete
-    r = remote
-    ra = remote add
-    rr = remote rm
-    rv = remote -v
-    co = checkout
-    cot = !git checkout --track
-    cob = !git checkout -b
-    pu = !git push -u
-    cl = clone
-    sa = submodule add
-    su = submodule update
-    sui = submodule update --init
-    c = !git commit -a
-    cv = !git commit -av
-    cm = !git commit -am
-    ca = !git commit --amend
-    s = status
-    rb = rebase
-    rbc = rebase --continue
-    rba = rebase --abort
-    rbs = rebase --skip
-    rl = reflog
-    m = merge
-    mt = mergetool
-    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
-    lh = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit | head
-    a = add
-    p = push
-    u = pull
-    urb = pull --rebase
-    f = fetch
-    st = stash
-    sts = stash save
-    sta = stash apply
-    std = stash drop
-    stl = stash list
-    stc = stash clear
-    stp = stash pop
+  d = diff
+  dc = diff --cached
+  dt = difftool
+  dtc = difftool --cached
+  b = branch
+  ba = branch -a
+  bd = !git branch -D
+  rbd = !git push origin --delete
+  r = remote
+  ra = remote add
+  rr = remote rm
+  rv = remote -v
+  co = checkout
+  cot = !git checkout --track
+  cob = !git checkout -b
+  pu = !git push -u
+  cl = clone
+  sa = submodule add
+  su = submodule update
+  sui = submodule update --init
+  c = !git commit -a
+  cv = !git commit -av
+  cm = !git commit -am
+  ca = !git commit --amend
+  s = status
+  rb = rebase
+  rbc = rebase --continue
+  rba = rebase --abort
+  rbs = rebase --skip
+  rl = reflog
+  m = merge
+  mt = mergetool
+  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lh = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit | head
+  a = add
+  p = push
+  u = pull
+  urb = pull --rebase
+  f = fetch
+  st = stash
+  sts = stash save
+  sta = stash apply
+  std = stash drop
+  stl = stash list
+  stc = stash clear
+  stp = stash pop
 [push]
 	default = tracking
 [difftool "gvimdiff"]
