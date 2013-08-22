@@ -25,7 +25,7 @@ alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias rake="bundle exec rake"
 alias dotfiles="cd ~/dotfiles"
 alias haste="haste | pbcopy"
-alias brup="brew update; brew upgrade"
+alias brup="brew update && brew upgrade"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias less="less -FX" # tame less
 
