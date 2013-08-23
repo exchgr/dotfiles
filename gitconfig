@@ -16,7 +16,7 @@
 [mergetool]
 	prompt = false
 [diff]
-  tool = gvimdiff
+  tool = vimdiff
 [difftool]
   prompt = false
 [alias]
