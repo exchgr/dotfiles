@@ -1,8 +1,47 @@
-"Pathogen"
-call pathogen#infect()
+"Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"Vundle packages
+Bundle 'vim-scripts/Arduino-syntax-file'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'gregsexton/MatchTag'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'a.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'argtextobj.vim'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'closetag'
+Bundle 'kien/ctrlp.vim'
+Bundle 'file:line'
+Bundle 'othree/html5.vim'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tomasr/molokai'
+Bundle 'scrooloose/nerdtree'
+Bundle 'danro/rename.vim'
+Bundle 'sonesuke/tumblr-vim'
+Bundle 'tclem/vim-arduino'
+Bundle 'tpope/vim-bundler'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nginx.vim'
+Bundle 'tpope/vim-rails'
+Bundle 'itspriddle/vim-stripper'
+Bundle 'wavded/vim-stylus'
+Bundle 'tpope/vim-surround'
+Bundle 'bling/vim-airline'
 
 "Basic settings"
-set nocompatible "Apparently this is a good idea."
+filetype plugin indent on
 syntax on "Syntax Highlighting"
 set history=300 "300 lines of history"
 set backspace=indent,eol,start "Backspace over autoindent, line breaks, and the start of insert"
@@ -11,7 +50,6 @@ set virtualedit=onemore "Allows cursor placement over the line's end in normal m
 set pastetoggle=<F2> "F2 enters paste mode in Insert mode"
 set clipboard=unnamed "OS-level clipboard integration for yank and put"
 set number "Show line numbers"
-filetype plugin indent on "Automatic indentation based on filetype"
 let &t_Co=256 "256 colors in the terminal"
 set cursorline "Highlight the current line"
 set mouse=a "Mouse support"
