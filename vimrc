@@ -14,9 +14,9 @@ Bundle 'a.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'argtextobj.vim'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'closetag'
+Bundle 'closetag.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'file:line'
+Bundle 'file-line'
 Bundle 'othree/html5.vim'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'tomasr/molokai'
@@ -39,6 +39,7 @@ Bundle 'itspriddle/vim-stripper'
 Bundle 'wavded/vim-stylus'
 Bundle 'tpope/vim-surround'
 Bundle 'bling/vim-airline'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 "Basic settings"
 filetype plugin indent on
@@ -131,7 +132,7 @@ nnoremap <space>f :NERDTreeFind<cr>
 
 "Color scheme"
 let g:molokai_original = 1
-colorscheme molokai
+colorscheme Tomorrow
 
 "Fix vim slowness in tmux"
 set notimeout
@@ -140,6 +141,14 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline#extensions#branch#symbol = '±'
+let g:airline#extensions#readonly#symbol = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
 
 "Session fuckery
 set sessionoptions-=options  " Don't save options
