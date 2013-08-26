@@ -146,9 +146,23 @@ let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
 let g:airline_right_sep = '⮂'
 let g:airline_right_alt_sep = '⮃'
-let g:airline#extensions#branch#symbol = '±'
+let g:airline#extensions#branch#symbol = '± '
 let g:airline#extensions#readonly#symbol = '⭤'
-let g:airline_linecolumn_prefix = '⭡'
+let g:airline_linecolumn_prefix = '⭡ '
+let g:airline#extensions#paste#symbol = '⮁ PASTE'
+let g:airline_mode_map = {
+      \ '__' : '-',
+      \ 'n'  : 'N',
+      \ 'i'  : 'I',
+      \ 'R'  : 'R',
+      \ 'c'  : 'C',
+      \ 'v'  : 'V',
+      \ 'V'  : 'VL',
+      \ '' : 'VB',
+      \ 's'  : 'S',
+      \ 'S'  : 'S',
+      \ '' : 'S',
+      \ }
 
 "Session fuckery
 set sessionoptions-=options  " Don't save options
