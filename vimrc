@@ -53,7 +53,6 @@ set number "Show line numbers"
 let &t_Co=256 "256 colors in the terminal"
 set cursorline "Highlight the current line"
 set mouse=a "Mouse support"
-Helptags
 set hidden "Allow switching from unsaved buffers"
 set confirm "Confirmation dialog instead of fail on unwritten buffers"
 set scrolloff=3 "Mininum number of lines to keep above or below the cursor"
@@ -141,23 +140,6 @@ set timeoutlen=50
 
 "Status settings"
 set laststatus=2 "Always show the ruler in all splits"
-let g:Powerline_colorscheme = 'default'
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_symbols_override = {
-        \ 'BRANCH': [0x00b1],
-        \ }
-let g:Powerline_mode_n  = 'N'
-let g:Powerline_mode_i  = 'I'
-let g:Powerline_mode_R  = 'R'
-let g:Powerline_mode_v  = 'V'
-let g:Powerline_mode_V  = 'VL'
-let g:Powerline_mode_cv = 'VB'
-let g:Powerline_mode_s  = 'S'
-let g:Powerline_mode_S  = 'SL'
-let g:Powerline_mode_cs = 'SB'
-let g:Powerline_stl_path_style = 'short'
-call Pl#Theme#RemoveSegment('fileformat')
-call Pl#Theme#RemoveSegment('fileencoding')
 
 "Session fuckery
 set sessionoptions-=options  " Don't save options
