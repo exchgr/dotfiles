@@ -53,7 +53,6 @@ if [ "$OS" = "Darwin" ]; then
 fi
 
 # Environment
-bind "set completion-ignore-case on" # Case-insensitive bash completion
 export GIT_EDITOR='vim'
 if [ "$OS" = "Darwin" ]; then
   export EDITOR='vim -g' # MacVim GUI
@@ -91,7 +90,7 @@ if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" 
 fi
 #~/.base16-monokai.dark.sh
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
-export HISTFILESIZE=2048 # Gives history more room
+export HISTFILESIZE=4096 # Gives history more room
 
 # bash completion
 if [ "$OS" = "Darwin" ]; then
