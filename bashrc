@@ -48,20 +48,17 @@ function rm () {
 
 # MacVim
 if [ "$OS" = "Darwin" ]; then
-    alias vim='mvim'
-    alias vimdiff='mvimdiff'
+    alias vim='vim -g'
+    alias vimdiff='vimdiff -g'
 fi
-
-# Aesthetics
 
 # Environment
 bind "set completion-ignore-case on" # Case-insensitive bash completion
+export GIT_EDITOR='vim'
 if [ "$OS" = "Darwin" ]; then
-  export EDITOR='mvim' # like a boss
-  export GIT_EDITOR='mvim -v'
+  export EDITOR='vim -g' # MacVim GUI
 elif [ "$OS" = "Linux" ]; then
-  export EDITOR='vim' # like a boss
-  export GIT_EDITOR='vim'
+  export EDITOR='vim'
 fi
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:$PATH
 export GOPATH=~/Projects/code/go

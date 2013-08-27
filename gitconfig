@@ -1,20 +1,20 @@
 [user]
-	name = Dan Mundy
-	email = drm.mundy@gmail.com
+  name = Dan Mundy
+  email = drm.mundy@gmail.com
 [github]
-	user = exchgr
-	token = 1532add39e87f4139b9949f1cbe181be
+  user = exchgr
+  token = 1532add39e87f4139b9949f1cbe181be
 [core]
-	excludesfile = /Users/exchgr/.gitignore_global
-	quotepath = false
-	pager = less -FX
-	editor = $EDITOR -v
+  excludesfile = /Users/exchgr/.gitignore_global
+  quotepath = false
+  pager = less -FX
+  editor = $GIT_EDITOR
 [color]
   diff = auto
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [mergetool]
-	prompt = false
+  prompt = false
 [diff]
   tool = vimdiff
 [difftool]
@@ -67,11 +67,11 @@
   stc = stash clear
   stp = stash pop
 [push]
-	default = tracking
+  default = tracking
 [difftool "vimdiff"]
-	cmd = $(echo $EDITOR)diff -vR $LOCAL $REMOTE
+  cmd = $(echo $GIT_EDITOR)diff -R $LOCAL $REMOTE
 [mergetool "vimdiff"]
-	cmd = $(echo $EDITOR)diff -v $LOCAL $MERGED $REMOTE
-	keepBackup = false
+  cmd = $(echo $GIT_EDITOR)diff $LOCAL $MERGED $REMOTE
+  keepBackup = false
 [web]
-	browser = open
+  browser = open
