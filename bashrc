@@ -76,9 +76,9 @@ fi
 
 # Mac/Linux PS1s that account for different hostname commands
 if [ "$OS" = "Darwin" ]; then
-  export PS1='\[\e[0;32m\]$(scutil --get ComputerName): $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+  export PS1='\[\e[0;35m\]$(scutil --get ComputerName): $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;32m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[0;33m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 elif [ "$OS" = "Linux" ]; then
-  export PS1='\[\e[0;32m\]\h: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;33m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[1;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+  export PS1='\[\e[0;35m\]\h: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;32m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[0;33m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 fi
 
 # tmux on start
