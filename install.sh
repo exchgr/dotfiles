@@ -4,6 +4,7 @@
 ignore=( install.sh uninstall.sh .git .gitmodules README.mdown backups )
 
 DIR=~/dotfiles
+OS=$(uname -s)
 
 cd $DIR
 mkdir backups/
@@ -35,5 +36,15 @@ do
     fi
 done
 
-# update the submodules
-git submodule update --init
+# Install Vundle and packages
+git clone https://github.com/gmarik/vundle ${DIR}/vim/bundle/vundle
+vim +BundleInstall +qa
+
+# Compile YouCompleteMe
+if [ "$OS" = "Linux" ]; then
+  sudo apt-get install build-essential cmake python-dev
+fi
+
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
+cd -
