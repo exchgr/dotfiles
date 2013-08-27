@@ -6,4 +6,4 @@ set show-all-if-unmodified on
 set mark-symlinked-directories on
 set page-completions on
 set skip-completed-text on
-set -o vi
+set editing-mode vi
