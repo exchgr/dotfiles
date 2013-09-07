@@ -28,6 +28,7 @@ alias haste="haste | pbcopy"
 alias brup="brew update && brew upgrade"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias less="less -FX" # tame less
+alias vac="source ENV/bin/activate"
 
 # rm moves files to trash
 function rm () {
