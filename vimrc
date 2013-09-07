@@ -40,6 +40,11 @@ Bundle 'wavded/vim-stylus'
 Bundle 'tpope/vim-surround'
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-commentary'
 
 "Basic settings"
 filetype plugin indent on
