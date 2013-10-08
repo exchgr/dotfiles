@@ -52,7 +52,6 @@ fi
 export GIT_EDITOR='vim'
 if [ "$OS" = "Darwin" ]; then
   export EDITOR='vim -g' # MacVim GUI
-  export EDITOR='vim' # Temporarily disable MacVim GUI
 elif [ "$OS" = "Linux" ]; then
   export EDITOR='vim'
 fi
