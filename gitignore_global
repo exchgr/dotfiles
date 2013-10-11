@@ -44,7 +44,11 @@
 *.vis
 
 # Image editor files #
-########################
+######################
 *.psd
 *.xcf
 *.pxm
+
+# Cool stuff #
+##############
+.editorconfig

@@ -45,6 +45,7 @@ Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-commentary'
+Bundle 'editorconfig/editorconfig-vim'
 
 "Basic settings"
 filetype plugin indent on
