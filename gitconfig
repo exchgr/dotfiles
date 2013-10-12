@@ -24,6 +24,7 @@
   dc = diff --cached
   dt = difftool
   dtc = difftool --cached
+  dhh = diff HEAD^ HEAD
   b = branch
   ba = branch -a
   bd = !git branch -D
