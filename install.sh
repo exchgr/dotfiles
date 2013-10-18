@@ -48,7 +48,7 @@ fi
 
 # Compile YouCompleteMe
 if [ "$OS" = "Linux" ]; then
-  sudo apt-get install build-essential cmake python-dev
+  sudo apt-get install build-essential cmake python-dev libclang-dev
 fi
 
 if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/python/ycm_core.so ]; then
