@@ -4,8 +4,13 @@
 OS=$(uname -s)
 
 # Shortcuts
+if [ "$OS" = "Darwin" ]; then
+  alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
+elif [ "$OS" = "Linux" ]; then
+  alias ls="ls -hl --color" # h: human-readable size; l: long; color: color files and folders`
+fi
+
 alias la="ls -a" # a: hidden files
-alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
 alias :q="exit" # Vim is in
 alias :qa="echo 'Are you sure? (add ! to quit)'"
 alias :qa!="tmux kill-session"
