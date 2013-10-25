@@ -32,6 +32,7 @@ alias vac="source ENV/bin/activate"
 alias ssh="ssh -AXC" # A: agent key forwarding. X: X11 forwarding. C: compression.
 alias shutdown="sudo shutdown -h now"
 alias reboot="sudo reboot"
+alias df="df -H"
 
 # rm moves files to trash
 function rm () {
