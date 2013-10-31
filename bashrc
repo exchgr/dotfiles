@@ -6,8 +6,11 @@ OS=$(uname -s)
 # Shortcuts
 if [ "$OS" = "Darwin" ]; then
   alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
+  alias brup="brew update && brew upgrade"
 elif [ "$OS" = "Linux" ]; then
   alias ls="ls -hl --color" # h: human-readable size; l: long; color: color files and folders`
+  alias apt-get="sudo apt-get -y"
+  alias aptup="sudo apt-get -y update && sudo apt-get -y upgrade"
 fi
 
 alias la="ls -a" # a: hidden files
@@ -25,7 +28,6 @@ alias reset="source $HOME/.bashrc && clear"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias dotfiles="cd ~/dotfiles"
 alias haste="haste | pbcopy"
-alias brup="brew update && brew upgrade"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias less="less -FX" # tame less
 alias vac="source ENV/bin/activate"
