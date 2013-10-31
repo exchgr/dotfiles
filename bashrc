@@ -11,6 +11,7 @@ elif [ "$OS" = "Linux" ]; then
   alias ls="ls -hl --color" # h: human-readable size; l: long; color: color files and folders`
   alias apt-get="sudo apt-get -y"
   alias aptup="sudo apt-get -y update && sudo apt-get -y upgrade"
+  alias aptclean="apt-get autoremove && apt-get clean"
 fi
 
 alias la="ls -a" # a: hidden files
