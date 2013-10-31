@@ -7,6 +7,7 @@ OS=$(uname -s)
 if [ "$OS" = "Darwin" ]; then
   alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
   alias brup="brew update && brew upgrade"
+  alias brclean="brew cleanup --force -s"
 elif [ "$OS" = "Linux" ]; then
   alias ls="ls -hl --color" # h: human-readable size; l: long; color: color files and folders`
   alias apt-get="sudo apt-get -y"
