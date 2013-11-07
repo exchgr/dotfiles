@@ -5,7 +5,7 @@
   user = exchgr
   token = 1532add39e87f4139b9949f1cbe181be
 [core]
-  excludesfile = /Users/exchgr/.gitignore_global
+	excludesfile = ~/.gitignore_global
   quotepath = false
   pager = less -FX
   editor = $GIT_EDITOR
