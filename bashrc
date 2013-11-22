@@ -37,6 +37,7 @@ alias ssh="ssh -AXC" # A: agent key forwarding. X: X11 forwarding. C: compressio
 alias shutdown="sudo shutdown -h now"
 alias reboot="sudo reboot"
 alias df="df -H"
+alias ip="curl icanhazip.com"
 
 # rm moves files to trash
 function rm () {
