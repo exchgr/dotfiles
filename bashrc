@@ -38,6 +38,7 @@ alias shutdown="sudo shutdown -h now"
 alias reboot="sudo reboot"
 alias df="df -H"
 alias ip="curl icanhazip.com"
+alias js="node"
 
 # rm moves files to trash
 function rm () {
