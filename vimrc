@@ -127,6 +127,9 @@ nnoremap <del> <right>
 nnoremap <space><space> :NERDTreeToggle<cr>
 nnoremap <space>f :NERDTreeFind<cr>
 
+" lite-dfm
+nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
+
 "Indentation - please ignore how terrible this may be"
 set autoindent
 set cindent
