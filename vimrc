@@ -46,6 +46,7 @@ Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-commentary'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'bilalq/lite-dfm'
 
 "Basic settings"
 filetype plugin indent on
@@ -139,6 +140,7 @@ nnoremap <space>f :NERDTreeFind<cr>
 "Color scheme"
 let g:molokai_original = 1
 colorscheme Tomorrow
+highlight clear SignColumn " Clears git gutter's ugly dark grey
 
 "Fix vim slowness in tmux"
 set notimeout
