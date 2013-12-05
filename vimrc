@@ -105,16 +105,6 @@ nnoremap <up> gk
 vnoremap <down> gj
 vnoremap <up> gk
 
-"Indentation - please ignore how terrible this may be"
-set autoindent
-set cindent
-set copyindent "copy the previous indentation on enter
-set smartindent "conflicts with filetype plugin indent on"
-set smarttab "Tab key does indents"
-set tabstop=2 "Tabs appear as 2 spaces"
-set shiftwidth=2
-set expandtab
-
 "Tab always indents"
 nnoremap <Tab> >>
 inoremap <Tab> <Esc>>>i
@@ -136,6 +126,16 @@ nnoremap <del> <right>
 " NERDTree
 nnoremap <space><space> :NERDTreeToggle<cr>
 nnoremap <space>f :NERDTreeFind<cr>
+
+"Indentation - please ignore how terrible this may be"
+set autoindent
+set cindent
+set copyindent "copy the previous indentation on enter
+set smartindent "conflicts with filetype plugin indent on"
+set smarttab "Tab key does indents"
+set tabstop=2 "Tabs appear as 2 spaces"
+set shiftwidth=2
+set expandtab
 
 "Color scheme"
 let g:molokai_original = 1
