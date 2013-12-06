@@ -100,9 +100,10 @@ export HISTCONTROL=ignoredups:erasedups # Keeps history concise
 export HISTFILESIZE=4096 # Gives history more room
 
 # bash completion
-if [ "$OS" = "Darwin" ]; then
-  if [ -f `brew --prefix`/etc/bash_completion ]; then
-      . `brew --prefix`/etc/bash_completion
-  fi
+if [ "$OS" = "Darwin" ] && [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; then
+  . /usr/share/bash-completion/bash_completion
 fi
+
 . ~/.bashrc_p
