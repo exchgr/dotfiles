@@ -40,9 +40,6 @@ do
   fi
 done
 
-# Use .gitignore_global
-git config --global core.excludesfile ~/.gitignore_global
-
 # Install Vundle and packages
 if [ ! -e ${DIR}/vim/bundle/vundle ]; then
   git clone https://github.com/gmarik/vundle ${DIR}/vim/bundle/vundle
