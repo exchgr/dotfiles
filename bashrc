@@ -103,7 +103,8 @@ export HISTFILESIZE=4096 # Gives history more room
 if [ "$OS" = "Darwin" ] && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; then
-  . /usr/share/bash-completion/bash_completion
+  . /usr/share/bash-completion/completions/git
+  . /usr/share/git/git-prompt.sh # for __git_ps1
 fi
 
 . ~/.bashrc_p
