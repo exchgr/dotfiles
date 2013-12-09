@@ -12,6 +12,12 @@ if [ ! -e ${DIR}/backups ]; then
   mkdir backups
 fi
 
+# Install dependencies
+if [ "$OS" = "Linux" ]; then
+  sudo apt-get install build-essential cmake python-dev libclang-dev || sudo pacman -Syu gvim base-devel cmake python2 clang
+fi
+
+
 for filename in *
 do
   # check if the file should be ignored
@@ -47,10 +53,6 @@ if [ ! -e ${DIR}/vim/bundle/vundle ]; then
 fi
 
 # Compile YouCompleteMe
-if [ "$OS" = "Linux" ]; then
-  sudo apt-get install build-essential cmake python-dev libclang-dev || sudo pacman -Syu base-devel cmake python2 clang
-fi
-
 if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/python/ycm_core.so ]; then
   cd ${DIR}/vim/bundle/YouCompleteMe
   ./install.sh --clang-completer
