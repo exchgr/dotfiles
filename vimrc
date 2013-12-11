@@ -183,8 +183,8 @@ if has("gui_running")
     set guifont=Inconsolata:h13 "GUI Typeface and font size"
 
     "Start maximized"
-    " set fu
-    " set fuoptions=maxvert,maxhorz
+    set fu
+    set fuoptions=maxvert,maxhorz
     set guioptions-=r "Remove the right scrollbar in MacVim"
     set guioptions-=L "Remove the left scrollbar in MacVim"
 endif
