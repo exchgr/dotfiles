@@ -175,6 +175,17 @@ let g:airline_mode_map = {
       \ '' : 'S',
       \ }
 
+" Fast word count in airline
+function! WordCount()
+  let s:old_status = v:statusmsg
+  exe "silent normal g\<c-g>"
+  let s:word_count = str2nr(split(v:statusmsg)[11])
+  let v:statusmsg = s:old_status
+  return s:word_count
+endfunction
+
+let g:airline_section_y = '%{WordCount()} words'
+
 "Session fuckery
 set sessionoptions-=options  " Don't save options
 
