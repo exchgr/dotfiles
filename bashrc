@@ -70,7 +70,7 @@ if [ "$OS" = "Darwin" ]; then
 elif [ "$OS" = "Linux" ]; then
   export EDITOR='vim'
 fi
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.rvm/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:~/.cabal/bin:$HOME/.rvm/bin:$PATH
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
 # ssh-agent on linux
