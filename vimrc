@@ -131,6 +131,9 @@ nnoremap <Leader><space> :NERDTree<cr>
 " lite-dfm
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 
+" Abolish
+nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g " Dumb down characters
+
 "Indentation - please ignore how terrible this may be"
 set autoindent
 set cindent
