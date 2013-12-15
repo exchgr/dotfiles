@@ -126,6 +126,7 @@ nnoremap <del> <right>
 " NERDTree
 nnoremap <space><space> :NERDTreeToggle<cr>
 nnoremap <space>f :NERDTreeFind<cr>
+nnoremap <Leader><space> :NERDTree<cr>
 
 " lite-dfm
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
