@@ -131,9 +131,6 @@ nnoremap <Leader><space> :NERDTree<cr>
 " lite-dfm
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 
-" Markdown preview
-nnoremap <Leader>m :w!<CR>:!markdown "%" \| smartypants > "%".html && open "%".html<CR><CR>
-
 "Indentation - please ignore how terrible this may be"
 set autoindent
 set cindent
