@@ -132,7 +132,7 @@ nnoremap <Leader><space> :NERDTree<cr>
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 
 " Abolish
-nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g " Dumb down characters
+nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g<CR>i<Esc> " Dumb down characters
 
 "Indentation - please ignore how terrible this may be"
 set autoindent
