@@ -65,6 +65,7 @@ set hidden "Allow switching from unsaved buffers"
 set confirm "Confirmation dialog instead of fail on unwritten buffers"
 set scrolloff=3 "Mininum number of lines to keep above or below the cursor"
 set showcmd "shows partial commands and visual selection dimensions"
+set display=lastline " Show parts of wrapped lines that go offscreen instead of a useless column of @s.
 
 "Objective-C Alternate"
 autocmd FileType objc let g:alternateExtensions_h = "m"
