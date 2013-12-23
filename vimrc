@@ -43,6 +43,7 @@ Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-abolish'
+" vim-abolish: Substitution, Abbreviation, Coercion.
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-commentary'
 Bundle 'editorconfig/editorconfig-vim'
