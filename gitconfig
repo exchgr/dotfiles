@@ -41,10 +41,9 @@
   sa = submodule add
   su = submodule update
   sui = submodule update --init
-  c = !git commit -a
-  cv = !git commit -av
+  c = !git commit -av
   cm = !git commit -am
-  ca = !git commit --amend
+  ca = !git commit --amend -v
   s = status
   rb = rebase
   rbc = rebase --continue
