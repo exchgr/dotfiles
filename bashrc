@@ -39,6 +39,7 @@ alias reboot="sudo reboot"
 alias df="df -H"
 alias myip="curl icanhazip.com"
 alias js="node"
+alias emptytrash="`which rm` -rf ~/.Trash/*"
 
 # rm moves files to trash
 function rm () {
