@@ -51,7 +51,7 @@ Bundle 'bilalq/lite-dfm'
 
 " Basic settings
 filetype plugin indent on
-syntax on " Syntax Highlighting"
+syntax on " Syntax Highlighting
 set history=300 "300 lines of history"
 set backspace=indent,eol,start " Backspace over autoindent, line breaks, and the start of insert
 set ruler " Show the ruler
@@ -59,7 +59,7 @@ set virtualedit=onemore " Allows cursor placement over the line's end in normal 
 set pastetoggle=<F2> " F2 enters paste mode in Insert mode
 set clipboard=unnamed " OS-level clipboard integration for yank and put
 set number " Show line numbers
-let &t_Co=256 "256 colors in the terminal"
+let &t_Co=256 " 256 colors in the terminal
 set cursorline " Highlight the current line
 set mouse=a " Mouse support
 set hidden " Allow switching from unsaved buffers
