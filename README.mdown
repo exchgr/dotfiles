@@ -2,23 +2,34 @@
 
 ## What is this?
 
-These are some of my configuration files. I've included ones I thought other people might find interesting, such as ones for vim, git, tmux, and bash. These files aren't meant to replace yours, but they're meant to highlight some interesting customizations that you might want to use in your own files.
+These are some of my configuration files. I've included ones I thought other people might find interesting, such as ones for vim, git, tmux, and bash. These files aren't meant to replace yours, but they're meant to highlight some interesting customizations that you might want to use in your own files. Also, this repo provides an easy way for me to get up and running on a new machine.
+
+## Supported platforms
++ OS X
++ Ubuntu
++ Arch Linux
++ Raspbian
+
+## How to install
+
+    cd ~
+    git clone https://github.com/exchgr/dotfiles.git
+    cd dotfiles
+    ./install.sh
 
 ## The files
+**bashrc** - Configuration file for `bash`.
+
+**gemrc** - Configuration file for [RubyGems](http://www.rubygems.org/).
+
+**gitconfig**  - Configuration file for `git`, including a bunch of handy aliases.
+
+**gitignore_global** - Common files for `git` to ignore.
+
 **install.sh** - Installs the dotfiles as symlinks and moves the relevant ones that already exist into dotfiles/backups.
 
 **README.mdown** - This file.
 
-**gitignore_global** - Common files for `git` to ignore. To make use of this, make sure the file is in your `~` and type the following into a shell:
+**tmux.conf** - Configuration file for [`tmux`](http://tmux.sourceforge.net/).
 
-    $ git config --global core.excludesfile ~/.gitignore_global
-
-**bashrc** - Configuration file for bash.
-
-**tmux.conf** - Configuration file for [tmux](http://tmux.sourceforge.net/).
-
-**vim/** and **vimrc** - Configuration files for vim, including several plugins managed by pathogen
-
-**gemrc** - Configuration file for [RubyGems](http://www.rubygems.org/).
-
-**gitconfig**  - Configuration file for git, including a bunch of handy aliases.
+**vim/** and **vimrc** - Configuration files for `vim`, including several plugins managed by Vundle.
