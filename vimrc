@@ -1,11 +1,11 @@
-"Vundle
+" Vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-"Vundle packages
+" Vundle packages
 Bundle 'vim-scripts/Arduino-syntax-file'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'gregsexton/MatchTag'
@@ -49,45 +49,45 @@ Bundle 'tpope/vim-commentary'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'bilalq/lite-dfm'
 
-"Basic settings"
+" Basic settings
 filetype plugin indent on
-syntax on "Syntax Highlighting"
+syntax on " Syntax Highlighting"
 set history=300 "300 lines of history"
-set backspace=indent,eol,start "Backspace over autoindent, line breaks, and the start of insert"
-set ruler "Show the ruler"
-set virtualedit=onemore "Allows cursor placement over the line's end in normal mode"
-set pastetoggle=<F2> "F2 enters paste mode in Insert mode"
-set clipboard=unnamed "OS-level clipboard integration for yank and put"
-set number "Show line numbers"
+set backspace=indent,eol,start " Backspace over autoindent, line breaks, and the start of insert
+set ruler " Show the ruler
+set virtualedit=onemore " Allows cursor placement over the line's end in normal mode
+set pastetoggle=<F2> " F2 enters paste mode in Insert mode
+set clipboard=unnamed " OS-level clipboard integration for yank and put
+set number " Show line numbers
 let &t_Co=256 "256 colors in the terminal"
-set cursorline "Highlight the current line"
-set mouse=a "Mouse support"
-set hidden "Allow switching from unsaved buffers"
-set confirm "Confirmation dialog instead of fail on unwritten buffers"
-set scrolloff=3 "Mininum number of lines to keep above or below the cursor"
-set showcmd "shows partial commands and visual selection dimensions"
+set cursorline " Highlight the current line
+set mouse=a " Mouse support
+set hidden " Allow switching from unsaved buffers
+set confirm " Confirmation dialog instead of fail on unwritten buffers
+set scrolloff=3 " Mininum number of lines to keep above or below the cursor
+set showcmd " shows partial commands and visual selection dimensions
 set display=lastline " Show parts of wrapped lines that go offscreen instead of a useless column of @s.
 
-"Objective-C Alternate"
+" Objective-C Alternate
 autocmd FileType objc let g:alternateExtensions_h = "m"
 autocmd FileType objc let g:alternateExtensions_m = "h"
 
-"Don't split words on line breaks"
+" Don't split words on line breaks
 set formatoptions=l
 set lbr
 
-"Search"
-set hlsearch "Highlights search results"
-set ignorecase "Case-insensitive search"
-set smartcase "If a search contains an uppercase character, it is case-sensitive"
-set incsearch "Incremental search: search as you type"
+" Search
+set hlsearch " Highlights search results
+set ignorecase " Case-insensitive search
+set smartcase " If a search contains an uppercase character, it is case-sensitive
+set incsearch " Incremental search: search as you type
 
-"Remaps"
+" Remaps
 
-"Make Y behave like other capitals"
+" Make Y behave like other capitals
 nnoremap Y y$
 
-"Better split movement"
+" Better split movement
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
@@ -97,7 +97,7 @@ inoremap <c-l> <Esc><c-w>l
 inoremap <c-j> <Esc><c-w>j
 inoremap <c-k> <Esc><c-w>k
 
-"Better wrapped line navigation"
+" Better wrapped line navigation
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
@@ -107,22 +107,22 @@ nnoremap <up> gk
 vnoremap <down> gj
 vnoremap <up> gk
 
-"Tab always indents"
+" Tab always indents
 nnoremap <Tab> >>
 inoremap <Tab> <Esc>>>i
 vnoremap <Tab> >gv
 vnoremap > >gv
 vnoremap = =gv
-"gv reselects the previous selection"
+" gv reselects the previous selection
 
-"Shift-tab reverse-indenting"
+" Shift-tab reverse-indenting
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <Esc><<i
 vnoremap <S-Tab> <gv
 vnoremap < <gv
-"gv reselects the previous selection"
+" gv reselects the previous selection
 
-"Delete key no longer deletes in normal mode"
+" Delete key no longer deletes in normal mode
 nnoremap <del> <right>
 
 " NERDTree
@@ -136,28 +136,28 @@ nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 " Abolish
 nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g<CR>i<Esc> " Dumb down characters
 
-"Indentation - please ignore how terrible this may be"
+" Indentation - please ignore how terrible this may be
 set autoindent
 set cindent
-set copyindent "copy the previous indentation on enter
-set smartindent "conflicts with filetype plugin indent on"
-set smarttab "Tab key does indents"
-set tabstop=2 "Tabs appear as 2 spaces"
+set copyindent " copy the previous indentation on ente
+set smartindent " conflicts with filetype plugin indent on
+set smarttab " Tab key does indents
+set tabstop=2 " Tabs appear as 2 spaces
 set shiftwidth=2
 set expandtab
 
-"Color scheme"
+" Color scheme
 let g:molokai_original = 1
 colorscheme Tomorrow
 highlight clear SignColumn " Clears git gutter's ugly dark grey
 
-"Fix vim slowness in tmux"
+" Fix vim slowness in tmux
 set notimeout
 set ttimeout
 set timeoutlen=50
 
-"Status settings"
-set laststatus=2 "Always show the ruler in all splits"
+" Status settings
+set laststatus=2 " Always show the ruler in all splits
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
@@ -198,16 +198,16 @@ endfunction
 
 let g:airline_section_y = '%{WordCount()} words'
 
-"Session fuckery
+" Session fucker
 set sessionoptions-=options  " Don't save options
 
-"GUI Options"
+" GUI Options
 if has("gui_running")
-    set guifont=Inconsolata:h13 "GUI Typeface and font size"
+    set guifont=Inconsolata:h13 " GUI Typeface and font size
 
-    "Start maximized"
+    " Start maximized
     set fu
     set fuoptions=maxvert,maxhorz
-    set guioptions-=r "Remove the right scrollbar in MacVim"
-    set guioptions-=L "Remove the left scrollbar in MacVim"
+    set guioptions-=r " Remove the right scrollbar in MacVim
+    set guioptions-=L " Remove the left scrollbar in MacVim
 endif
