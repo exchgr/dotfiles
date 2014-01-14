@@ -1,5 +1,3 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # System information
 OS=$(uname -s)
 
@@ -111,5 +109,7 @@ elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; t
   . /usr/share/bash-completion/completions/git
   . /usr/share/git/git-prompt.sh # for __git_ps1
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # RVM
 
 . ~/.bashrc_p
