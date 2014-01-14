@@ -38,9 +38,10 @@ alias df="df -H"
 alias myip="curl icanhazip.com"
 alias js="node"
 alias emptytrash="`which rm` -rf ~/.Trash/*"
+alias rm="rm -rf"
 
 # rm moves files to trash
-function rm () {
+function trash () {
   local path
   for path in "$@"; do
     # ignore any arguments
