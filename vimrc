@@ -48,6 +48,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-commentary'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'bilalq/lite-dfm'
+Bundle 'sjl/gundo.vim'
 
 " Basic settings
 filetype plugin indent on
@@ -135,6 +136,10 @@ nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 
 " Abolish
 nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g<CR>i<Esc> " Dumb down characters
+
+" Gundo
+nnoremap <Leader>g :GundoToggle
+nnoremap <Leader>G :GundoRenderGraph
 
 " Indentation - please ignore how terrible this may be
 set autoindent
