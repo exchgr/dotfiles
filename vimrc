@@ -138,8 +138,8 @@ nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g<CR>i<Esc> " Dumb down characters
 
 " Gundo
-nnoremap <Leader>g :GundoToggle
-nnoremap <Leader>G :GundoRenderGraph
+nnoremap <Leader>g :GundoToggle<CR>
+nnoremap <Leader>G :GundoRenderGraph<CR>
 
 " Indentation - please ignore how terrible this may be
 set autoindent
