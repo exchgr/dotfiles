@@ -39,6 +39,8 @@ alias myip="curl icanhazip.com"
 alias js="node"
 alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias rm="rm -rf"
+alias recd="cd .. && cd -"
+alias back="cd -"
 
 # rm moves files to trash
 function trash () {
