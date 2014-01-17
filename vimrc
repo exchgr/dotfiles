@@ -141,6 +141,9 @@ nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...
 nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>G :GundoRenderGraph<CR>
 
+" vim-commentary
+autocmd FileType go set commentstring=//\ %s
+
 " Indentation - please ignore how terrible this may be
 set autoindent
 set cindent
