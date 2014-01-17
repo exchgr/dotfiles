@@ -203,7 +203,7 @@ endfunction
 
 let g:airline_section_y = '%{WordCount()} words'
 
-" Session fucker
+" Session fuckery
 set sessionoptions-=options  " Don't save options
 
 " GUI Options
