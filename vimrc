@@ -49,7 +49,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'bilalq/lite-dfm'
 Bundle 'sjl/gundo.vim'
-Bundle 'chriskempson/base16-vim'
+Bundle 'exchgr/base16-vim'
 
 " Basic settings
 filetype plugin indent on
