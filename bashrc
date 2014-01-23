@@ -92,16 +92,6 @@ if [ "$OS" = "Darwin" ]; then
 elif [ "$OS" = "Linux" ]; then
   export PS1='\[\e[0;35m\]\h: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;32m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[0;33m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 fi
-
-# tmux on start
-if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" ]; then
-  #tmux attach || tmux new; exit
-  tmux new; exit
-
-  # teamocil workspace bash completion
-  complete -W "$(teamocil --list)" teamocil
-fi
-#~/.base16-monokai.dark.sh
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
 export HISTFILESIZE=4096 # Gives history more room
 
@@ -116,3 +106,17 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # RVM
 
 . ~/.bashrc_p
+
+# tmux on start
+if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" ]; then
+  # Base16 Shell
+  BASE16_SCHEME="solarized"
+  BASE16_SHELL="$HOME/.base16-$BASE16_SCHEME.dark.sh"
+  [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
+
+  # teamocil workspace bash completion
+  complete -W "$(teamocil --list)" teamocil
+
+  #tmux attach || tmux new; exit
+  tmux -2 new; exit
+fi

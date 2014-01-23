@@ -49,6 +49,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'bilalq/lite-dfm'
 Bundle 'sjl/gundo.vim'
+Bundle 'chriskempson/base16-vim'
 
 " Basic settings
 filetype plugin indent on
@@ -155,8 +156,10 @@ set shiftwidth=2
 set expandtab
 
 " Color scheme
-let g:molokai_original = 1
-colorscheme Tomorrow
+" let g:molokai_original = 1
+let base16colorspace=256
+set background=dark
+colorscheme base16-solarized
 highlight clear SignColumn " Clears git gutter's ugly dark grey
 
 " Fix vim slowness in tmux
