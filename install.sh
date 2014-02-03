@@ -14,11 +14,11 @@ fi
 
 # Install dependencies
 if [ "$OS" = "Linux" ]; then
-  sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants || sudo pacman -Syu gvim base-devel cmake python2 clang
+  sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || sudo pacman -Syu gvim base-devel cmake python2 clang python-markdown python2-smartypants multimarkdown
 fi
 
 if [ "$OS" = "Linux" ]; then
-  brew install markdown smartypants
+  brew install markdown smartypants multimarkdown
 fi
 
 for filename in *

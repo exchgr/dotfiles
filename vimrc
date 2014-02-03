@@ -50,6 +50,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'bilalq/lite-dfm'
 Bundle 'sjl/gundo.vim'
 Bundle 'exchgr/base16-vim'
+Bundle 'jngeist/vim-multimarkdown'
 
 " Basic settings
 filetype plugin indent on
