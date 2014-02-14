@@ -222,4 +222,5 @@ if has("gui_running")
     set fuoptions=maxvert,maxhorz
     set guioptions-=r " Remove the right scrollbar in MacVim
     set guioptions-=L " Remove the left scrollbar in MacVim
+    set guioptions-=e " Display tabs textually instead of graphically
 endif
