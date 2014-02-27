@@ -141,6 +141,10 @@ nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...
 nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>G :GundoRenderGraph<CR>
 
+" Dash
+nmap <Leader>d <Plug>DashSearch
+nmap <Leader>D <Plug>DashGlobalSearch
+
 " vim-commentary
 autocmd FileType go set commentstring=//\ %s
 
