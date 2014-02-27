@@ -52,6 +52,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'exchgr/base16-vim'
 Bundle 'jngeist/vim-multimarkdown'
 Bundle 'scrooloose/syntastic'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 " Basic settings
 filetype plugin indent on
