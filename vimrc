@@ -114,7 +114,11 @@ vnoremap <up> gk
 vnoremap > >gv
 vnoremap = =gv
 vnoremap < <gv
-" gv reselects the previous selection
+
+nnoremap <C-Tab> gt
+nnoremap <C-S-Tab> gT
+inoremap <C-Tab> <Esc>gt
+inoremap <C-S-Tab> <Esc>gT
 
 " Delete key no longer deletes in normal mode
 nnoremap <del> <right>
