@@ -110,18 +110,9 @@ nnoremap <up> gk
 vnoremap <down> gj
 vnoremap <up> gk
 
-" Tab always indents
-nnoremap <Tab> >>
-inoremap <Tab> <Esc>>>i
-vnoremap <Tab> >gv
+" Indenting from visual mode reselects the previous selection
 vnoremap > >gv
 vnoremap = =gv
-" gv reselects the previous selection
-
-" Shift-tab reverse-indenting
-nnoremap <S-Tab> <<
-inoremap <S-Tab> <Esc><<i
-vnoremap <S-Tab> <gv
 vnoremap < <gv
 " gv reselects the previous selection
 
