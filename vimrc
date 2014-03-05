@@ -189,6 +189,9 @@ nmap <Leader>D <Plug>DashGlobalSearch
 " vim-commentary
 autocmd FileType go set commentstring=//\ %s
 
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+
 " Indentation - please ignore how terrible this may be
 set autoindent
 set cindent
