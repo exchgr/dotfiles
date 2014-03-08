@@ -17,7 +17,7 @@ if [ "$OS" = "Linux" ]; then
   sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || (sudo pacman -Syu gvim base-devel cmake python2 python2-pip clang python-markdown fakeroot jshon expac && wget https://aur.archlinux.org/packages/pa/packer/PKGBUILD && makepkg && sudo pacman -U packer-*.pkg.tar.gz && sudo packer -S python2-smartypants multimarkdown)
 fi
 
-if [ "$OS" = "Linux" ]; then
+if [ "$OS" = "Darwin" ]; then
   brew install markdown smartypants multimarkdown
 fi
 
