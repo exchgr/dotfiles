@@ -41,6 +41,7 @@ alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias rm="rm -rf"
 alias recd="cd .. && cd -"
 alias back="cd -"
+alias pacman="sudo pacman"
 
 # rm moves files to trash
 function trash () {
