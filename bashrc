@@ -42,6 +42,7 @@ alias rm="rm -rf"
 alias recd="cd .. && cd -"
 alias back="cd -"
 alias pacman="sudo pacman"
+alias sshfs="sshfs -o follow_symlinks"
 
 # rm moves files to trash
 function trash () {
