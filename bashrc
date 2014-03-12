@@ -11,6 +11,7 @@ elif [ "$OS" = "Linux" ]; then
   alias apt-get="sudo apt-get -y"
   alias aptup="sudo apt-get -y update && sudo apt-get -y upgrade"
   alias aptclean="apt-get autoremove && apt-get clean"
+  alias pacman="sudo pacman"
 fi
 
 alias la="ls -a" # a: hidden files
@@ -41,7 +42,6 @@ alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias rm="rm -rf"
 alias recd="cd .. && cd -"
 alias back="cd -"
-alias pacman="sudo pacman"
 alias sshfs="sshfs -o follow_symlinks"
 
 # rm moves files to trash
