@@ -258,7 +258,7 @@ function! WordCount()
   return s:word_count
 endfunction
 
-let g:airline_section_y = '%{WordCount()} words'
+nnoremap <Leader>w :echo WordCount() . " words"<CR>
 
 " Session fuckery
 set sessionoptions-=options  " Don't save options
