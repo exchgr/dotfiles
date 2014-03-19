@@ -7,6 +7,7 @@ set mark-symlinked-directories on
 set page-completions on
 set skip-completed-text on
 set editing-mode vi
+set show-mode-in-prompt on
 
 # Keybindings
 \C-l: clear-screen
