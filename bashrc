@@ -24,6 +24,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 shopt -s autocd # Change to a directory without "cd"
 alias cp="cp -R"
+alias scp="scp -r"
 alias mkdir="mkdir -p"
 alias reset="source $HOME/.bashrc && clear"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
