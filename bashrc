@@ -44,6 +44,7 @@ alias rm="rm -rf"
 alias recd="cd .. && cd -"
 alias back="cd -"
 alias sshfs="sshfs -o follow_symlinks"
+alias scp="rsync -Pre"
 
 # rm moves files to trash
 function trash () {
