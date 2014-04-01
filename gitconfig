@@ -64,6 +64,7 @@
   f = fetch
   st = stash
   sts = stash show
+  stsp = stash show -p
   sta = stash apply
   std = stash drop
   stl = stash list
