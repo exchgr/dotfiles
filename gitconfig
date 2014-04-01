@@ -63,7 +63,7 @@
   urb = pull --rebase
   f = fetch
   st = stash
-  sts = stash save
+  sts = stash show
   sta = stash apply
   std = stash drop
   stl = stash list
