@@ -44,7 +44,7 @@ alias rm="rm -rf"
 alias recd="cd .. && cd -"
 alias back="cd -"
 alias sshfs="sshfs -o follow_symlinks"
-alias scp="rsync -Pre"
+alias scp="rsync -Pre ssh"
 alias pgp="gpg"
 
 # rm moves files to trash
