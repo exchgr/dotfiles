@@ -31,7 +31,7 @@ Bundle 'file-line'
 " HTML5 syntax, indent, omnicomplete
 Bundle 'othree/html5.vim'
 " Enhanced % matching
-Bundle 'tsaleh/vim-matchit'
+Bundle 'edsono/vim-matchit'
 " File browser sidebar
 Bundle 'scrooloose/nerdtree'
 " Rename files/buffers
