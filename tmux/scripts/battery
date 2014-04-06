@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts ("%i%%%s" % `pmset -g ps`.scan(/(\d+)%; (\w*);/).flatten).gsub("discharging", "-").gsub("charging", "+").gsub("charged", "=")
+print ("%i%%%s" % `pmset -g ps`.scan(/(\d+)%; (\w*);/).flatten).gsub("discharging", "-").gsub("charging", "+").gsub("charged", "=")
+print ' '
+print (`pmset -g batt | grep Internal | awk '{print $4}'`)
