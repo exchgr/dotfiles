@@ -243,22 +243,7 @@ let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline_theme='lucius'
 
-" Fast word count in airline
-function! WordCount()
-  let s:old_status = v:statusmsg
-  let position = getpos(".")
-  exe ":silent normal g\<c-g>"
-  let stat = v:statusmsg
-  let s:word_count = 0
-  if stat != '--No lines in buffer--'
-    let s:word_count = str2nr(split(v:statusmsg)[11])
-    let v:statusmsg = s:old_status
-  end
-  call setpos('.', position)
-  return s:word_count
-endfunction
-
-nnoremap <Leader>w :echo WordCount() . " words"<CR>
+nnoremap <Leader>w :!wc %<CR>
 
 " Session fuckery
 set sessionoptions-=options  " Don't save options
