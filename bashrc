@@ -63,19 +63,9 @@ function trash () {
   done
 }
 
-# MacVim
-if [ "$OS" = "Darwin" ]; then
-    alias vim='vim -g'
-    alias vimdiff='vimdiff -g'
-fi
-
 # Environment
 export GIT_EDITOR='vim'
-if [ "$OS" = "Darwin" ]; then
-  export EDITOR='vim -g' # MacVim GUI
-elif [ "$OS" = "Linux" ]; then
-  export EDITOR='vim'
-fi
+export EDITOR='vim'
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:~/.cabal/bin:$HOME/.rvm/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 export GOPATH=~/Projects/code/go
