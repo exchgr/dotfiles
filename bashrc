@@ -112,6 +112,6 @@ if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" 
   # teamocil workspace bash completion
   complete -W "$(teamocil --list)" teamocil
 
-  #tmux attach || tmux new; exit
+  # tmux attach || tmux new; exit
   tmux -2 new; exit
 fi
