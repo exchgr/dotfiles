@@ -193,9 +193,6 @@ autocmd FileType go set commentstring=//\ %s
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-" Automatically generate ctags on write
-autocmd BufWritePost *.asm,*.asp,*.c,*.cpp,*.h,*.cs,*.html,*.java,*.js,*.pl,*.php,*.py,*.rb,*.sh,*.vim :silent execute "!(ctags -R --fields=+l -o newtags && cp newtags tags && rm newtags) >> tags.log 2>&1 &" | redraw
-
 " Indentation - please ignore how terrible this may be
 set autoindent
 set cindent
@@ -262,4 +259,8 @@ if has("gui_running")
     set guioptions-=r " Remove the right scrollbar in MacVim
     set guioptions-=L " Remove the left scrollbar in MacVim
     set guioptions-=e " Display tabs textually instead of graphically
+endif
+
+if filereadable(".vim.custom")
+  so .vim.custom
 endif

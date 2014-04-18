@@ -42,6 +42,7 @@
 *.swo
 *~
 *.vis
+.vim.custom
 
 # Image editor files #
 ######################
