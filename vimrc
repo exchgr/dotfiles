@@ -95,6 +95,8 @@ Bundle 'scrooloose/syntastic'
 " Next 2: Dash.app integration
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+" Extended ruby magic
+Bundle 'vim-ruby/vim-ruby'
 
 " Basic settings
 filetype plugin indent on
