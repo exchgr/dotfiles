@@ -66,7 +66,7 @@ function trash () {
 # Environment
 export GIT_EDITOR='vim'
 export EDITOR='vim'
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:~/.cabal/bin:$HOME/.rvm/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
@@ -98,7 +98,7 @@ elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; t
   . /usr/share/git/git-prompt.sh # for __git_ps1
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # RVM
+eval "$(rbenv init -)"
 
 . ~/.bashrc_p
 
