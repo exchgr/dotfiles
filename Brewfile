@@ -3,6 +3,7 @@ install autoconf
 install automake
 install bash
 install bash-completion
+install coreutils
 install cmake
 install cscope
 install ctags
@@ -17,7 +18,9 @@ install libevent
 install libpng
 install libtool
 install macvim --override-system-vim
+install markdown
 install memcached
+install multimarkdown
 install mysql
 install nginx
 install openssl
@@ -29,5 +32,6 @@ install readline
 install reattach-to-user-namespace
 install redis
 install ruby-build
+install smartypants
 install sqlite
 install tmux

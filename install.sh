@@ -20,7 +20,7 @@ if [ "$OS" = "Linux" ]; then
 fi
 
 if [ "$OS" = "Darwin" ]; then
-  brew install markdown smartypants multimarkdown coreutils
+  brew bundle
 fi
 
 for filename in *
