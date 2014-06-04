@@ -45,6 +45,7 @@ alias back="cd -"
 alias sshfs="sshfs -o follow_symlinks"
 alias scp="rsync -Pae ssh"
 alias pgp="gpg"
+alias rr="rbenv rehash"
 
 # rm moves files to trash
 function trash () {
