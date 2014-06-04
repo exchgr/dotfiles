@@ -1,31 +1,18 @@
 install ack
-install autoconf
-install automake
 install bash
 install bash-completion
 install coreutils
 install cmake
 install cscope
 install ctags
-install dnsmasq
 install freetype
-install gdbm
 install git
 install htop-osx
-install imagemagick
-install jpeg
-install libevent
-install libpng
-install libtool
 install macvim --override-system-vim
 install markdown
 install memcached
 install multimarkdown
-install mysql
 install nginx
-install openssl
-install pcre
-install pkg-config
 install python
 install rbenv
 install readline
@@ -33,5 +20,4 @@ install reattach-to-user-namespace
 install redis
 install ruby-build
 install smartypants
-install sqlite
 install tmux
