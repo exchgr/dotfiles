@@ -71,8 +71,6 @@
   stl = stash list
   stc = stash clear
   stp = stash pop
-[push]
-  default = tracking
 [difftool "vimdiff"]
   cmd = $(echo $GIT_EDITOR)diff -R $LOCAL $REMOTE
 [mergetool "vimdiff"]
@@ -80,3 +78,5 @@
   keepBackup = false
 [web]
   browser = open
+[push]
+	default = simple
