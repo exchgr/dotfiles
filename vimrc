@@ -253,7 +253,7 @@ set sessionoptions-=options  " Don't save options
 
 " GUI Options
 if has("gui_running")
-    set guifont=Inconsolata:h11 " GUI Typeface and font size
+    set guifont=Inconsolata:h13 " GUI Typeface and font size
 
     " Start maximized
     set fu
