@@ -22,8 +22,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'argtextobj.vim'
 " Automatically type matching punctuation like in Sublime Text
 Bundle 'jiangmiao/auto-pairs'
-" C-_ to close HTML tags
-Bundle 'closetag.vim'
+" Automatically close HTML tags
+Bundle 'tpope/vim-ragtag'
 " Fuzzy file (etc) matching
 Bundle 'kien/ctrlp.vim'
 " Open files at specific lines from
