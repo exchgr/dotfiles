@@ -106,8 +106,8 @@ eval "$(rbenv init -)"
 # tmux on start
 if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" ]; then
   # Base16 Shell
-  BASE16_SCHEME="atelierforest"
-  BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.sh"
+  BASE16_SCHEME="eighties"
+  BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.dark.sh"
   [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
 
   # teamocil workspace bash completion

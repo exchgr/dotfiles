@@ -208,8 +208,8 @@ set expandtab
 " Color scheme
 " let g:molokai_original = 1
 let base16colorspace=256
-set background=light
-colorscheme base16-atelierforest
+set background=dark
+colorscheme base16-eighties
 highlight clear SignColumn " Clears git gutter's ugly dark grey
 
 " Fix vim slowness in tmux
