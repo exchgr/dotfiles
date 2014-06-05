@@ -1,4 +1,4 @@
-install ack
+install ag
 install bash
 install bash-completion
 install coreutils

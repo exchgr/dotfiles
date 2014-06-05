@@ -16,8 +16,8 @@ Bundle 'gregsexton/MatchTag'
 Bundle 'Valloric/YouCompleteMe'
 " Switch between alternate files
 Bundle 'a.vim'
-" Ack from within Vim
-Bundle 'mileszs/ack.vim'
+" The Silver Searcher from within Vim
+Bundle 'rking/ag.vim'
 " Delete and change method arguments
 Bundle 'argtextobj.vim'
 " Automatically type matching punctuation like in Sublime Text
