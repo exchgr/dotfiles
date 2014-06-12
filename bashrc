@@ -99,7 +99,7 @@ elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; t
   . /usr/share/git/git-prompt.sh # for __git_ps1
 fi
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"
 
 . ~/.bashrc_p
 
