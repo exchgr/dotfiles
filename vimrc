@@ -117,6 +117,9 @@ set scrolloff=3 " Mininum number of lines to keep above or below the cursor
 set showcmd " shows partial commands and visual selection dimensions
 set display=lastline " Show parts of wrapped lines that go offscreen instead of a useless column of @s.
 
+" git commit length limiter
+autocmd FileType gitcommit set colorcolumn=72
+
 " Objective-C Alternate
 autocmd FileType objc let g:alternateExtensions_h = "m"
 autocmd FileType objc let g:alternateExtensions_m = "h"
