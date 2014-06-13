@@ -97,6 +97,8 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 " Extended ruby magic
 Bundle 'vim-ruby/vim-ruby'
+" Write HTML quickly
+Bundle 'rstacruz/sparkup'
 
 " Basic settings
 filetype plugin indent on
