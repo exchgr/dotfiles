@@ -23,3 +23,4 @@ install redis
 install ruby-build
 install smartypants
 install tmux
+install tree
