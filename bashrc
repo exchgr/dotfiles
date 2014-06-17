@@ -68,8 +68,7 @@ function trash () {
 # Environment
 export GIT_EDITOR='vim'
 export EDITOR='vim'
-export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$PATH"
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
 # ssh-agent on linux
