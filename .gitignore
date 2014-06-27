@@ -2,3 +2,4 @@ backups/*
 bashrc_p
 vim/.netrwhist
 vim/bundle
+vim/spell
