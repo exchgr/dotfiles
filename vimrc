@@ -7,100 +7,100 @@ Bundle 'gmarik/vundle'
 
 " Vundle packages
 " Arduino syntax highlighting
-Bundle 'vim-scripts/Arduino-syntax-file'
+Plugin 'vim-scripts/Arduino-syntax-file'
 " Move between words in CamelCase and snake_case
-Bundle 'bkad/CamelCaseMotion'
+Plugin 'bkad/CamelCaseMotion'
 " Highlight matching HTML tags
-Bundle 'gregsexton/MatchTag'
+Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 " Switch between alternate files
-Bundle 'a.vim'
+Plugin 'a.vim'
 " The Silver Searcher from within Vim
-Bundle 'rking/ag.vim'
+Plugin 'rking/ag.vim'
 " Delete and change method arguments
-Bundle 'argtextobj.vim'
+Plugin 'argtextobj.vim'
 " Automatically type matching punctuation like in Sublime Text
-Bundle 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 " Automatically close HTML tags
-Bundle 'tpope/vim-ragtag'
+Plugin 'tpope/vim-ragtag'
 " Fuzzy file (etc) matching
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Open files at specific lines from
-Bundle 'file-line'
+Plugin 'file-line'
 " HTML5 syntax, indent, omnicomplete
-Bundle 'othree/html5.vim'
+Plugin 'othree/html5.vim'
 " Enhanced % matching
-Bundle 'edsono/vim-matchit'
+Plugin 'edsono/vim-matchit'
 " File browser sidebar
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " Rename files/buffers
-Bundle 'danro/rename.vim'
+Plugin 'danro/rename.vim'
 " Tumblr syntax highlighting
-Bundle 'sonesuke/tumblr-vim'
+Plugin 'sonesuke/tumblr-vim'
 " Arduino compilation and delpoyment
-Bundle 'tclem/vim-arduino'
-" Invoke Bundler from Vim
-Bundle 'tpope/vim-bundler'
+Plugin 'tclem/vim-arduino'
+" Invoke Pluginr from Vim
+Plugin 'tpope/vim-bundler'
 " Coffeescript syntax
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 " CSS3 syntax
-Bundle 'hail2u/vim-css3-syntax'
+Plugin 'hail2u/vim-css3-syntax'
 " Like auto-pairs, but for `end` in Ruby
-Bundle 'tpope/vim-endwise'
+Plugin 'tpope/vim-endwise'
 " Git from Vim
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " Show what's changed in the siderail
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 " Go syntax
-Bundle 'jnwhiteh/vim-golang'
+Plugin 'jnwhiteh/vim-golang'
 " Jade syntax
-Bundle 'digitaltoad/vim-jade'
+Plugin 'digitaltoad/vim-jade'
 " Better JavaScript syntax and indentation
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 " Nginx syntax
-Bundle 'nginx.vim'
+Plugin 'nginx.vim'
 " Rails IDE for Vim
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 " Trim trailing spaces on save except in Markdown
-Bundle 'itspriddle/vim-stripper'
+Plugin 'itspriddle/vim-stripper'
 " Stylus syntax
-Bundle 'wavded/vim-stylus'
+Plugin 'wavded/vim-stylus'
 " Surround objects/selections with punctuation, or change it
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 " Enhanced statusline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 " Repeat more stuff with .
-Bundle 'tpope/vim-repeat'
+Plugin 'tpope/vim-repeat'
 " Increment and decrement dates
-Bundle 'tpope/vim-speeddating'
+Plugin 'tpope/vim-speeddating'
 " Substitution, Abbreviation, Coercion.
-Bundle 'tpope/vim-abolish'
+Plugin 'tpope/vim-abolish'
 " Useful mappings
-Bundle 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-unimpaired'
 " Quickly (un)comment lines
-Bundle 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 " Cross-editor space/tab configuration for projects
-Bundle 'editorconfig/editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 " Distraction-free mode
-Bundle 'bilalq/lite-dfm'
+Plugin 'bilalq/lite-dfm'
 " Graphical undo tree
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 " Base16 colorschemes
-Bundle 'exchgr/base16-vim'
+Plugin 'exchgr/base16-vim'
 " MultiMarkdown syntax
-Bundle 'jngeist/vim-multimarkdown'
+Plugin 'jngeist/vim-multimarkdown'
 " Syntax checker in the siderail
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 " Next 2: Dash.app integration
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/dash.vim'
 " Extended ruby magic
-Bundle 'vim-ruby/vim-ruby'
+Plugin 'vim-ruby/vim-ruby'
 " Write HTML quickly
-Bundle 'rstacruz/sparkup'
+Plugin 'rstacruz/sparkup'
 " Tomorrow theme
-Bundle "chriskempson/vim-tomorrow-theme"
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 " Basic settings
 filetype plugin indent on
