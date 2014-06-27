@@ -99,6 +99,8 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'vim-ruby/vim-ruby'
 " Write HTML quickly
 Bundle 'rstacruz/sparkup'
+" Tomorrow theme
+Bundle "chriskempson/vim-tomorrow-theme"
 
 " Basic settings
 filetype plugin indent on
@@ -266,6 +268,7 @@ if has("gui_running")
     set guioptions-=r " Remove the right scrollbar in MacVim
     set guioptions-=L " Remove the left scrollbar in MacVim
     set guioptions-=e " Display tabs textually instead of graphically
+    colorscheme Tomorrow-Night-Eighties
 endif
 
 if filereadable(".vim.custom")
