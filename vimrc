@@ -251,7 +251,6 @@ let g:airline_mode_map = {
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline_theme='lucius'
 
 nnoremap <Leader>w :!wc %<CR>
 
@@ -260,15 +259,17 @@ set sessionoptions-=options  " Don't save options
 
 " GUI Options
 if has("gui_running")
-    set guifont=Inconsolata:h13 " GUI Typeface and font size
+  set guifont=Inconsolata:h13 " GUI Typeface and font size
 
-    " Start maximized
-    " set fu
-    set fuoptions=maxvert,maxhorz
-    set guioptions-=r " Remove the right scrollbar in MacVim
-    set guioptions-=L " Remove the left scrollbar in MacVim
-    set guioptions-=e " Display tabs textually instead of graphically
-    colorscheme Tomorrow-Night-Eighties
+  " Start maximized
+  " set fu
+  set fuoptions=maxvert,maxhorz
+  set guioptions-=r " Remove the right scrollbar in MacVim
+  set guioptions-=L " Remove the left scrollbar in MacVim
+  set guioptions-=e " Display tabs textually instead of graphically
+  colorscheme Tomorrow-Night-Eighties
+else
+  let g:airline_theme='lucius'
 endif
 
 if filereadable(".vim.custom")
