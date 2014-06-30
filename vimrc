@@ -43,7 +43,7 @@ Plugin 'danro/rename.vim'
 Plugin 'sonesuke/tumblr-vim'
 " Arduino compilation and delpoyment
 Plugin 'tclem/vim-arduino'
-" Invoke Pluginr from Vim
+" Invoke Bundler from Vim
 Plugin 'tpope/vim-bundler'
 " Coffeescript syntax
 Plugin 'kchmck/vim-coffee-script'
