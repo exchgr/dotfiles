@@ -14,6 +14,9 @@ Plugin 'bkad/CamelCaseMotion'
 Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
 Plugin 'Valloric/YouCompleteMe'
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 " Switch between alternate files
 Plugin 'a.vim'
 " The Silver Searcher from within Vim
