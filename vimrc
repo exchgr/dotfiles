@@ -205,15 +205,15 @@ autocmd FileType go set commentstring=//\ %s
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-" Indentation - please ignore how terrible this may be
+" Indentation
 set autoindent
 set cindent
 set copyindent " copy the previous indentation on ente
 set smartindent " conflicts with filetype plugin indent on
-set smarttab " Tab key does indents
-set tabstop=2 " Tabs appear as 2 spaces
-set shiftwidth=2
-set expandtab
+set smarttab " Tab key inserts <shiftwidth> spaces
+set tabstop=2 " Tab characters appear as 2 columns
+set shiftwidth=2 " Indents are two space characters
+set expandtab " Inserts spaces instead of tabs
 
 " Color scheme
 " let g:molokai_original = 1
