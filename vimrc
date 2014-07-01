@@ -104,6 +104,10 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'rstacruz/sparkup'
 " Tomorrow theme
 Plugin 'chriskempson/vim-tomorrow-theme'
+" Create your own text objects
+Plugin 'kana/vim-textobj-user'
+" Ruby block text objects
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " Basic settings
 filetype plugin indent on
