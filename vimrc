@@ -109,6 +109,10 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'kana/vim-textobj-user'
 " Ruby block text objects
 Plugin 'nelstrom/vim-textobj-rubyblock'
+" rbenv integration with path, tags, tab complete
+Plugin 'tpope/vim-rbenv'
+" Align
+Plugin 'Align'
 
 " Basic settings
 filetype plugin indent on
