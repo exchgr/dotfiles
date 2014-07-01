@@ -83,6 +83,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-unimpaired'
 " Quickly (un)comment lines
 Plugin 'tpope/vim-commentary'
+Plugin 'scrooloose/nerdcommenter'
 " Cross-editor space/tab configuration for projects
 Plugin 'editorconfig/editorconfig-vim'
 " Distraction-free mode
