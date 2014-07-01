@@ -263,6 +263,7 @@ let g:airline_mode_map = {
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline_theme='bubblegum'
 
 nnoremap <Leader>w :!wc %<CR>
 
@@ -280,8 +281,6 @@ if has("gui_running")
   set guioptions-=L " Remove the left scrollbar in MacVim
   set guioptions-=e " Display tabs textually instead of graphically
   colorscheme Tomorrow-Night-Eighties
-else
-  let g:airline_theme='lucius'
 endif
 
 if filereadable(".vim.custom")
