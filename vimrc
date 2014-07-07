@@ -245,7 +245,6 @@ set expandtab " Inserts spaces instead of tabs
 let base16colorspace=256
 set background=dark
 colorscheme base16-eighties
-highlight clear SignColumn " Clears git gutter's ugly dark grey
 
 " Fix vim slowness in tmux
 set notimeout
@@ -296,7 +295,6 @@ if has("gui_running")
   set guioptions-=r " Remove the right scrollbar in MacVim
   set guioptions-=L " Remove the left scrollbar in MacVim
   set guioptions-=e " Display tabs textually instead of graphically
-  colorscheme Tomorrow-Night-Eighties
 endif
 
 if filereadable(".vim.custom")
