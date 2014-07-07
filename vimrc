@@ -113,6 +113,9 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'tpope/vim-rbenv'
 " Align
 Plugin 'Align'
+" Quickly run specs in tmux
+Plugin 'jgdavey/tslime.vim'
+Plugin 'jgdavey/vim-turbux'
 
 " Basic settings
 filetype plugin indent on
@@ -216,6 +219,9 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<C-j>'
+
+" Turbux
+let g:turbux_command_prefix = 'bundle exec'
 
 " Indentation
 set autoindent
