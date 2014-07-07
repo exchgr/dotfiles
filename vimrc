@@ -226,8 +226,9 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<C-j>'
 
-" Turbux
+" Turbux/tslime
 let g:turbux_command_prefix = 'bundle exec'
+nmap <C-c>r <Plug>SetTmuxVars
 
 " Indentation
 set autoindent
