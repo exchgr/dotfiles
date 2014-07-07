@@ -128,13 +128,19 @@ set pastetoggle=<F2> " F2 enters paste mode in Insert mode
 set clipboard=unnamed " OS-level clipboard integration for yank and put
 set number " Show line numbers
 let &t_Co=256 " 256 colors in the terminal
-set cursorline " Highlight the current line
 set mouse=a " Mouse support
 set hidden " Allow switching from unsaved buffers
 set confirm " Confirmation dialog instead of fail on unwritten buffers
 set scrolloff=3 " Mininum number of lines to keep above or below the cursor
 set showcmd " shows partial commands and visual selection dimensions
 set display=lastline " Show parts of wrapped lines that go offscreen instead of a useless column of @s.
+
+" Cursorline in active window only
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
 
 " git commit length limiter
 autocmd FileType gitcommit set colorcolumn=72
