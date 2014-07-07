@@ -280,7 +280,8 @@ let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline_theme='bubblegum'
 
-nnoremap <Leader>w :!wc %<CR>
+" Word count
+nnoremap <Leader>ww :!wc %<CR>
 
 " Session fuckery
 set sessionoptions-=options  " Don't save options
