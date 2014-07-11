@@ -1,8 +1,9 @@
 install ag
 install bash
 install bash-completion
-install coreutils
 install cmake
+install colordiff
+install coreutils
 install cscope
 install ctags
 install freetype

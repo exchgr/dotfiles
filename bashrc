@@ -47,6 +47,7 @@ alias scp="rsync -Pae ssh"
 alias pgp="gpg"
 alias rr="rbenv rehash"
 alias be="bundle exec"
+alias diff="colordiff"
 
 # rm moves files to trash
 function trash () {
