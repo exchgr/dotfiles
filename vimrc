@@ -228,6 +228,9 @@ let g:UltiSnipsExpandTrigger='<C-j>'
 
 " Turbux/tslime
 let g:turbux_command_prefix = 'bundle exec'
+let g:no_turbux_mappings = 1
+nmap <Leader>r <Plug>SendTestToTmux
+nmap <Leader>R <Plug>SendFocusedTestToTmux
 nmap <C-c>r <Plug>SetTmuxVars
 
 " Close inactive buffers
