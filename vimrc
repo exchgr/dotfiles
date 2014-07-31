@@ -116,6 +116,8 @@ Plugin 'Align'
 " Quickly run specs in tmux
 Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
+" AppleScript
+Plugin 'applescript.vim'
 
 " Basic settings
 filetype plugin indent on
