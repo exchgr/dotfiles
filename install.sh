@@ -21,6 +21,8 @@ fi
 
 if [ "$OS" = "Darwin" ]; then
   brew bundle
+  sudo bash -c "echo `which bash` >> /etc/shells"
+  chsh -s `which bash`
 fi
 
 for filename in *
