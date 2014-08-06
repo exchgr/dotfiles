@@ -17,7 +17,6 @@ install nginx
 install python
 install rbenv
 install rbenv-vars
-install rbenv-bundler
 install readline
 install reattach-to-user-namespace
 install redis
