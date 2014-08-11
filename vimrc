@@ -29,6 +29,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-ragtag'
 " Fuzzy file (etc) matching
 Plugin 'kien/ctrlp.vim'
+Plugin 'JazzCore/ctrlp-cmatcher'
 " Open files at specific lines from
 Plugin 'file-line'
 " HTML5 syntax, indent, omnicomplete
@@ -295,6 +296,17 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline_theme='bubblegum'
+
+" CtrlP
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+
+let g:ctrlp_match_func = { 'match': 'matcher#cmatch' }
 
 " Word count
 nnoremap <Leader>ww :!wc %<CR>

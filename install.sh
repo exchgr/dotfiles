@@ -65,3 +65,15 @@ if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/third_party/ycmd/ycm_core.so ]; then
   ./install.sh --clang-completer
   cd -
 fi
+
+# Compile ctrlp-cmatcher
+if [ ! -e ${DIR}/vim/bundle/ctrlp-cmatcher/autoload/build/lib* ]; then
+  cd ${DIR}/vim/bundle/ctrlp-cmatcher
+
+  if [ "$OS" = "Darwin" ]; then
+    CFLAGS=-Qunused-arguments
+    CPPFLAGS=-Qunused-arguments
+  fi
+
+  ./install.sh
+fi
