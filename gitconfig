@@ -7,7 +7,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   quotepath = false
-  pager = less -FX
+  pager = less -FRX
   editor = $GIT_EDITOR
 [color]
   diff = auto
