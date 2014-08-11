@@ -60,7 +60,7 @@ if [ ! -e ${DIR}/vim/bundle/vundle ]; then
 fi
 
 # Compile YouCompleteMe
-if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/python/ycm_core.so ]; then
+if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/third_party/ycmd/ycm_core.so ]; then
   cd ${DIR}/vim/bundle/YouCompleteMe
   ./install.sh --clang-completer
   cd -
