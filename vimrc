@@ -324,7 +324,7 @@ if has("gui_running")
   set guioptions-=r " Remove the right scrollbar in MacVim
   set guioptions-=L " Remove the left scrollbar in MacVim
   set guioptions-=e " Display tabs textually instead of graphically
-  set transparency=15
+  set transparency=2
 endif
 
 if filereadable(".vim.custom")
