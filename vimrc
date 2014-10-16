@@ -44,8 +44,6 @@ Plugin 'danro/rename.vim'
 Plugin 'sonesuke/tumblr-vim'
 " Arduino compilation and delpoyment
 Plugin 'tclem/vim-arduino'
-" Invoke Bundler from Vim
-Plugin 'tpope/vim-bundler'
 " Coffeescript syntax
 Plugin 'kchmck/vim-coffee-script'
 " CSS3 syntax
@@ -87,8 +85,6 @@ Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/nerdcommenter'
 " Cross-editor space/tab configuration for projects
 Plugin 'editorconfig/editorconfig-vim'
-" Distraction-free mode
-Plugin 'bilalq/lite-dfm'
 " Graphical undo tree
 Plugin 'sjl/gundo.vim'
 " Base16 colorschemes
@@ -97,15 +93,10 @@ Plugin 'exchgr/base16-vim'
 Plugin 'jngeist/vim-multimarkdown'
 " Syntax checker in the siderail
 Plugin 'scrooloose/syntastic'
-" Next 2: Dash.app integration
-Plugin 'rizzatti/funcoo.vim'
-Plugin 'rizzatti/dash.vim'
 " Extended ruby magic
 Plugin 'vim-ruby/vim-ruby'
 " Write HTML quickly
 Plugin 'rstacruz/sparkup'
-" Tomorrow theme
-Plugin 'chriskempson/vim-tomorrow-theme'
 " Create your own text objects
 Plugin 'kana/vim-textobj-user'
 " Ruby block text objects
