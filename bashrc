@@ -49,6 +49,7 @@ alias rr="rbenv rehash"
 alias be="bundle exec"
 alias diff="colordiff"
 alias rtfm="man"
+alias oblique="fortune oblique"
 
 # rm moves files to trash
 function trash () {
