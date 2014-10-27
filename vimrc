@@ -87,8 +87,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'editorconfig/editorconfig-vim'
 " Graphical undo tree
 Plugin 'sjl/gundo.vim'
-" Base16 colorschemes
-Plugin 'exchgr/base16-vim'
 " MultiMarkdown syntax
 Plugin 'jngeist/vim-multimarkdown'
 " Syntax checker in the siderail
@@ -110,6 +108,16 @@ Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
 " AppleScript
 Plugin 'applescript.vim'
+
+" Colorschemes
+Plugin 'exchgr/base16-vim'
+
+if ! has("gui_running")
+  let base16colorspace=256
+endif
+
+set background=light
+colorscheme base16-bright
 
 " Basic settings
 filetype plugin indent on
@@ -248,12 +256,6 @@ set tabstop=2 " Tab characters appear as 2 columns
 set shiftwidth=2 " Indents are two space characters
 set expandtab " Inserts spaces instead of tabs
 
-" Color scheme
-" let g:molokai_original = 1
-let base16colorspace=256
-set background=dark
-colorscheme base16-eighties
-
 " Fix vim slowness in tmux
 set notimeout
 set ttimeout
@@ -286,7 +288,7 @@ let g:airline_mode_map = {
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline_theme='bubblegum'
+let g:airline_theme='base16'
 
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
