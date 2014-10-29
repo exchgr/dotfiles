@@ -235,6 +235,9 @@ nmap <Leader>r <Plug>SendTestToTmux
 nmap <Leader>R <Plug>SendFocusedTestToTmux
 nmap <C-c>r <Plug>SetTmuxVars
 
+" gitgutter
+let g:gitgutter_diff_args = '-w'
+
 " Close inactive buffers
 function DeleteHiddenBuffers()
   let tpbl=[]
