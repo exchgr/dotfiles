@@ -70,6 +70,8 @@ Plugin 'itspriddle/vim-stripper'
 Plugin 'wavded/vim-stylus'
 " Surround objects/selections with punctuation, or change it
 Plugin 'tpope/vim-surround'
+" Split and join one/multi-liners
+Plugin 'AndrewRadev/splitjoin.vim'
 " Enhanced statusline
 Plugin 'bling/vim-airline'
 " Repeat more stuff with .
@@ -146,9 +148,6 @@ augroup END
 
 " git commit length limiter
 autocmd FileType gitcommit set colorcolumn=72
-
-" surround with ruby blocks
-autocmd FileType ruby let b:surround_100 = "do\n\r\nend"
 
 " Objective-C Alternate
 autocmd FileType objc let g:alternateExtensions_h = "m"
