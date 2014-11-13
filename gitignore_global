@@ -43,6 +43,7 @@
 *~
 *.vis
 .vim.custom
+engines/*/config/environment.rb
 
 # Image editor files #
 ######################
