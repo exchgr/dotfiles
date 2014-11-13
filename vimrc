@@ -64,6 +64,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nginx.vim'
 " Rails IDE for Vim
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
 " Trim trailing spaces on save except in Markdown
 Plugin 'itspriddle/vim-stripper'
 " Stylus syntax
