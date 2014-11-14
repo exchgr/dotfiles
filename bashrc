@@ -50,6 +50,7 @@ alias be="bundle exec"
 alias diff="colordiff"
 alias rtfm="man"
 alias oblique="fortune oblique"
+alias rmswp="find . -name \"*.swp\" -exec rm {} \;"
 
 # rm moves files to trash
 function trash () {
