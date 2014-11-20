@@ -51,6 +51,7 @@ alias diff="colordiff"
 alias rtfm="man"
 alias oblique="fortune oblique"
 alias rmswp="find . -name \"*.swp\" -exec rm {} \;"
+alias rebundle="rm Gemfile.dev.lock && cp Gemfile.lock Gemfile.dev.lock && bundle"
 
 # rm moves files to trash
 function trash () {
