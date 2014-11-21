@@ -111,6 +111,8 @@ Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
 " AppleScript
 Plugin 'applescript.vim'
+" Automatically scan tags on save
+Plugin 'craigemery/vim-autotag'
 
 " Colorschemes
 Plugin 'exchgr/base16-vim'
