@@ -27,6 +27,7 @@
   dhh = diff HEAD^ HEAD
   b = branch
   ba = branch -a
+  bc = rev-parse --abbrev-ref HEAD
   bd = !git branch -D
   rbd = !git push origin --delete
   r = remote
