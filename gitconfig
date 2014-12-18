@@ -76,7 +76,7 @@
 [difftool "vimdiff"]
   cmd = $(echo $GIT_EDITOR)diff -R $LOCAL $REMOTE
 [mergetool "vimdiff"]
-  cmd = $(echo $GIT_EDITOR)diff $LOCAL $MERGED $REMOTE
+  cmd = $(echo $GIT_EDITOR)diff $MERGED
   keepBackup = false
 [web]
   browser = open
