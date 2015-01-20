@@ -35,6 +35,7 @@
   co = checkout
   cob = !git checkout -b
   cot = !git checkout --track
+  cp = cherry-pick
   d = diff
   dc = diff --cached
   dhh = diff HEAD^ HEAD
