@@ -54,6 +54,7 @@ alias oblique="fortune oblique"
 alias rmswp="find . -name \"*.swp\" -exec rm {} \;"
 alias rebundle="rm Gemfile.dev.lock && cp Gemfile.lock Gemfile.dev.lock && bundle"
 alias ag="ag -C3"
+alias ss="spring stop"
 
 # rm moves files to trash
 function trash () {
