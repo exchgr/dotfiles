@@ -3,58 +3,59 @@ OS=$(uname -s)
 
 # Shortcuts
 if [ "$OS" = "Darwin" ]; then
-  alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
-  alias brup="brew update && brew upgrade"
   alias brclean="brew cleanup --force -s"
+  alias brup="brew update && brew upgrade"
+  alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
 elif [ "$OS" = "Linux" ]; then
-  alias ls="ls -hl --color" # h: human-readable size; l: long; color: color files and folders`
   alias apt-get="sudo apt-get -y"
-  alias aptup="sudo apt-get -y update && sudo apt-get -y upgrade"
   alias aptclean="apt-get autoremove && apt-get clean"
+  alias aptup="sudo apt-get -y update && sudo apt-get -y upgrade"
+  alias ls="ls -hl --color" # h: human-readable size; l: long; color: color files and folders`
   alias pacman="sudo pacman"
 fi
 
-alias la="ls -a" # a: hidden files
-alias :q="exit" # Vim is in
-alias :qa="echo 'Are you sure? (add ! to quit)'"
-alias :qa!="tmux kill-session"
-alias vi="vim"
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-shopt -s autocd # Change to a directory without "cd"
-alias cp="cp -R"
-alias mkdir="mkdir -p"
-alias reset="source $HOME/.bashrc && clear"
-alias lstree="tree" # It's a shortcut to save me from googling it every time.
-alias dotfiles="cd ~/dotfiles"
-alias haste="haste | pbcopy"
-alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
-alias less="less -FRX" # tame less with colors
-alias vac="source ENV/bin/activate"
-alias ssh="ssh -AC" # A: agent key forwarding. C: compression.
-alias shutdown="sudo shutdown -h now"
-alias reboot="sudo reboot"
-alias df="df -H"
-alias myip="curl ipv4.icanhazip.com"
-alias myip6="curl ipv6.icanhazip.com"
-alias js="node"
-alias emptytrash="`which rm` -rf ~/.Trash/*"
-alias rm="rm -rf"
-alias recd="cd .. && cd -"
-alias back="cd -"
-alias sshfs="sshfs -o follow_symlinks"
-alias scp="rsync -Pae ssh"
-alias pgp="gpg"
-alias rr="rbenv rehash"
-alias be="bundle exec"
-alias diff="colordiff"
-alias rtfm="man"
-alias oblique="fortune oblique"
-alias rmswp="find . -name \"*.swp\" -exec rm {} \;"
-alias rebundle="rm Gemfile.dev.lock && cp Gemfile.lock Gemfile.dev.lock && bundle"
+alias :q="exit" # Vim is in
+alias :qa!="tmux kill-session"
+alias :qa="echo 'Are you sure? (add ! to quit)'"
 alias ag="ag -C3"
+alias back="cd -"
+alias be="bundle exec"
+alias cp="cp -R"
+alias df="df -H"
+alias diff="colordiff"
+alias dotfiles="cd ~/dotfiles"
+alias emptytrash="`which rm` -rf ~/.Trash/*"
+alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
+alias haste="haste | pbcopy"
+alias js="node"
+alias la="ls -a" # a: hidden files
+alias less="less -FRX" # tame less with colors
+alias lstree="tree" # It's a shortcut to save me from googling it every time.
+alias mkdir="mkdir -p"
+alias myip6="curl ipv6.icanhazip.com"
+alias myip="curl ipv4.icanhazip.com"
+alias oblique="fortune oblique"
+alias pgp="gpg"
+alias reboot="sudo reboot"
+alias rebundle="rm Gemfile.dev.lock && cp Gemfile.lock Gemfile.dev.lock && bundle"
+alias recd="cd .. && cd -"
+alias reset="source $HOME/.bashrc && clear"
+alias rm="rm -rf"
+alias rmswp="find . -name \"*.swp\" -exec rm {} \;"
+alias rr="rbenv rehash"
+alias rtfm="man"
+alias scp="rsync -Pae ssh"
+alias shutdown="sudo shutdown -h now"
 alias ss="spring stop"
+alias ssh="ssh -AC" # A: agent key forwarding. C: compression.
+alias sshfs="sshfs -o follow_symlinks"
+alias vac="source ENV/bin/activate"
+alias vi="vim"
+
+shopt -s autocd # Change to a directory without "cd"
 
 # rm moves files to trash
 function trash () {
