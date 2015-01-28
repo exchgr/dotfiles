@@ -55,7 +55,7 @@ Plugin 'tpope/vim-fugitive'
 " Show what's changed in the siderail
 Plugin 'airblade/vim-gitgutter'
 " Go syntax
-Plugin 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 " Jade syntax
 Plugin 'digitaltoad/vim-jade'
 " Better JavaScript syntax and indentation
