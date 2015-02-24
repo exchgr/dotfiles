@@ -9,6 +9,7 @@ install ctags
 install freetype
 install git
 install htop-osx
+install httpie
 install macvim --override-system-vim
 install markdown
 install memcached
