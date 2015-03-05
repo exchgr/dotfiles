@@ -296,7 +296,11 @@ let g:airline_mode_map = {
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline_theme='base16'
+if has("gui_running")
+  let g:airline_theme='base16'
+else
+  let g:airline_theme='tomorrow'
+endif
 
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
