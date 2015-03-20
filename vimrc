@@ -270,16 +270,6 @@ set ttimeout
 set timeoutlen=50
 
 " Status settings
-set laststatus=2 " Always show the ruler in all splits
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = '' " '⮀'
-let g:airline_left_alt_sep = '' " '⮁'
-let g:airline_right_sep = '' " '⮂'
-let g:airline_right_alt_sep = '' " '⮃'
-let g:airline#extensions#branch#symbol = '± '
-let g:airline#extensions#readonly#symbol = '⭤'
-let g:airline_linecolumn_prefix = '⭡'
-let g:airline#extensions#paste#symbol =  'PASTE' "'⮁ PASTE'
 let g:airline_mode_map = {
       \ '__' : '-',
       \ 'n'  : 'N',
@@ -293,6 +283,21 @@ let g:airline_mode_map = {
       \ 'S'  : 'S',
       \ '' : 'S',
       \ }
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+set laststatus=2 " Always show the ruler in all splits
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = '' " '⮀'
+let g:airline_left_alt_sep = '' " '⮁'
+let g:airline_right_sep = '' " '⮂'
+let g:airline_right_alt_sep = '' " '⮃'
+let g:airline#extensions#branch#symbol = '± '
+let g:airline#extensions#readonly#symbol = '⭤'
+let g:airline_symbols.linenr = '⭡'
+let g:airline#extensions#paste#symbol =  'PASTE' "'⮁ PASTE'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
