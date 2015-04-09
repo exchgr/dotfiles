@@ -48,7 +48,7 @@
   ma = merge --abort
   mt = mergetool
   p = push
-  pu = !git push -u
+  pu = !git push -u origin `git bc`
   r = remote
   ra = remote add
   rb = rebase
