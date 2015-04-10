@@ -14,13 +14,15 @@ elif [ "$OS" = "Linux" ]; then
   alias pacman="sudo pacman"
 fi
 
+export PAGER="less -FRX"
+
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias :q="exit" # Vim is in
 alias :qa!="tmux kill-session"
 alias :qa="echo 'Are you sure? (add ! to quit)'"
-alias ag="ag -C3"
+alias ag="ag -C3 --pager \"$PAGER\""
 alias back="cd -"
 alias be="bundle exec"
 alias cp="cp -R"
@@ -32,7 +34,7 @@ alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias haste="haste | pbcopy"
 alias js="node"
 alias la="ls -a" # a: hidden files
-alias less="less -FRX" # tame less with colors
+alias less="$PAGER" # tame less with colors
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias mkdir="mkdir -p"
 alias myip6="curl ipv6.icanhazip.com"
