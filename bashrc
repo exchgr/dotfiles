@@ -95,12 +95,12 @@ fi
 
 # Mac/Linux PS1s that account for different hostname commands
 if [ "$OS" = "Darwin" ]; then
-  host=$(scutil --get ComputerName)
+  host=$(hostname -s)
 elif [ "$OS" = "Linux" ]; then
-  host='\h'
+  host=$(hostname)
 fi
 
-export PS1='\[\e[0;35m\]$host: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;32m\]$(__git_ps1 " ± %s")\[\e[m\] \[\e[0;33m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+export PS1='\[\e[0;35m\]$host: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;32m\] $(git config user.email):$(__git_ps1 " ± %s")\[\e[m\] \[\e[0;33m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
 export HISTFILESIZE=4096 # Gives history more room
