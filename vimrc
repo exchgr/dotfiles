@@ -115,7 +115,7 @@ Plugin 'applescript.vim'
 Plugin 'craigemery/vim-autotag'
 
 " Colorschemes
-Plugin 'exchgr/base16-vim'
+Plugin 'chriskempson/base16-vim'
 
 if ! has("gui_running")
   let base16colorspace=256
