@@ -135,12 +135,18 @@ set pastetoggle=<F2> " F2 enters paste mode in Insert mode
 set clipboard=unnamed " OS-level clipboard integration for yank and put
 set number " Show line numbers
 let &t_Co=256 " 256 colors in the terminal
-set mouse=a " Mouse support
 set hidden " Allow switching from unsaved buffers
 set confirm " Confirmation dialog instead of fail on unwritten buffers
 set scrolloff=3 " Mininum number of lines to keep above or below the cursor
 set showcmd " shows partial commands and visual selection dimensions
 set display=lastline " Show parts of wrapped lines that go offscreen instead of a useless column of @s.
+
+"mouse support
+set mouse=a
+
+if &term =~ '^screen'
+  set ttymouse=xterm2 " Fixes window resizing in tmux
+end
 
 " Cursorline in active window only
 augroup CursorLine
