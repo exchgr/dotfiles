@@ -4,7 +4,7 @@ OS=$(uname -s)
 # Shortcuts
 if [ "$OS" = "Darwin" ]; then
   alias brclean="brew cleanup --force -s"
-  alias brup="brew update && brew upgrade"
+  alias brup="brew update && brew upgrade --all"
   alias ls="ls -hGl" # h: human-readable size; l: long; G: color files and folders`
 elif [ "$OS" = "Linux" ]; then
   alias apt-get="sudo apt-get -y"
