@@ -60,6 +60,8 @@ Plugin 'fatih/vim-go'
 Plugin 'digitaltoad/vim-jade'
 " Better JavaScript syntax and indentation
 Plugin 'pangloss/vim-javascript'
+" JST highlighting
+Plugin 'briancollins/vim-jst'
 " Nginx syntax
 Plugin 'nginx.vim'
 " Rails IDE for Vim
