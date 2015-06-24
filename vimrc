@@ -145,6 +145,10 @@ set scrolloff=3 " Mininum number of lines to keep above or below the cursor
 set showcmd " shows partial commands and visual selection dimensions
 set display=lastline " Show parts of wrapped lines that go offscreen instead of a useless column of @s.
 
+" Show tab-complete options in command mode
+set wildmode=longest,list,full
+set wildmenu
+
 "mouse support
 set mouse=a
 
