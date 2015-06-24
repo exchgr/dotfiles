@@ -115,6 +115,8 @@ Plugin 'jgdavey/vim-turbux'
 Plugin 'applescript.vim'
 " Automatically scan tags on save
 Plugin 'craigemery/vim-autotag'
+" Air pairing
+Plugin 'floobits/floobits-vim'
 
 " Colorschemes
 Plugin 'chriskempson/base16-vim'
