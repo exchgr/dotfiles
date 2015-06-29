@@ -44,7 +44,7 @@
   f = fetch
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
   lh = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit | head
-  m = merge
+  m = merge --no-ff
   ma = merge --abort
   mt = mergetool
   p = push
