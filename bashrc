@@ -114,6 +114,7 @@ elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; t
 fi
 
 eval "$(rbenv init - --no-rehash)"
+eval "$(direnv hook bash)"
 
 . ~/.bashrc_p
 
