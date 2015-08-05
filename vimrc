@@ -113,8 +113,6 @@ Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
 " AppleScript
 Plugin 'applescript.vim'
-" Automatically scan tags on save
-Plugin 'craigemery/vim-autotag'
 " Air pairing
 Plugin 'floobits/floobits-vim'
 
@@ -241,8 +239,8 @@ nmap <Leader>D <Plug>DashGlobalSearch
 autocmd FileType go set commentstring=//\ %s
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<C-j>'
