@@ -119,16 +119,4 @@ eval "$(direnv hook bash)"
 
 . ~/.bashrc_p
 
-# tmux on start
-if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ] && [ $TERM != "dumb" ]; then
-  # Base16 Shell
-  BASE16_SCHEME="bright"
-  BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.light.sh"
-  [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
-
-  # teamocil workspace bash completion
-  complete -W "$(teamocil --list)" teamocil
-
-  # tmux attach || tmux new; exit
-  tmux -2 new; exit
-fi
+complete -W "$(teamocil --list)" teamocil
