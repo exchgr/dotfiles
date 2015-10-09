@@ -118,13 +118,16 @@ Plugin 'floobits/floobits-vim'
 
 " Colorschemes
 Plugin 'chriskempson/base16-vim'
-
-if ! has("gui_running")
-  let base16colorspace=256
-endif
+Plugin 'jonathanfilip/vim-lucius'
 
 set background=light
-colorscheme base16-bright
+
+if has("gui_running")
+  colorscheme base16-bright
+else
+  colorscheme lucius
+  LuciusWhiteLowContrast
+endif
 
 " Basic settings
 filetype plugin indent on
