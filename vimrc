@@ -219,6 +219,10 @@ inoremap <C-S-Tab> <Esc>gT
 " Delete key no longer deletes in normal mode
 nnoremap <del> <right>
 
+" ag
+let g:ag_qhandler="botright copen"
+let g:ag_lhandler="botright lopen"
+
 " NERDTree
 nnoremap <space><space> :NERDTreeToggle<cr>
 nnoremap <space>f :NERDTreeFind<cr>
