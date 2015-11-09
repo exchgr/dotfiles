@@ -271,7 +271,7 @@ function DeleteHiddenBuffers()
   endfor
 endfunction
 
-nmap <Leader>b :call DeleteHiddenBuffers()<CR>i<Esc>`^
+nmap <Leader>d :call DeleteHiddenBuffers()<CR>i<Esc>`^
 
 " Indentation
 set autoindent
