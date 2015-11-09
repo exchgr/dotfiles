@@ -45,6 +45,10 @@
 .vim.custom
 engines/*/config/environment.rb
 
+# Ruby files #
+##############
+Gemfile.dev*
+
 # Image editor files #
 ######################
 *.psd
