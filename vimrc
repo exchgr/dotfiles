@@ -106,8 +106,6 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 " rbenv integration with path, tags, tab complete
 Plugin 'tpope/vim-rbenv'
-" Align
-Plugin 'Align'
 " Quickly run specs in tmux
 Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
@@ -338,7 +336,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 let g:ctrlp_match_func = { 'match': 'matcher#cmatch' }
 
 " Word count
-nnoremap <Leader>ww :!wc %<CR>
+nnoremap <Leader>cw :!wc %<CR>
 
 " Session fuckery
 set sessionoptions-=options  " Don't save options
