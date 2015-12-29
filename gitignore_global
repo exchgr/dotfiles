@@ -48,6 +48,7 @@ engines/*/config/environment.rb
 # Ruby files #
 ##############
 Gemfile.dev*
+.rbenv-vars
 
 # Image editor files #
 ######################
