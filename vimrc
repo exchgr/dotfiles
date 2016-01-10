@@ -234,6 +234,19 @@ nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
 " Abolish
 nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g<CR>i<Esc> " Dumb down characters
 
+" CamelCaseMotion
+map <silent> <Leader>w <Plug>CamelCaseMotion_w
+map <silent> <Leader>b <Plug>CamelCaseMotion_b
+map <silent> <Leader>e <Plug>CamelCaseMotion_e
+map <silent> <Leader>ge <Plug>CamelCaseMotion_ge
+
+omap <silent> <Leader>iw <Plug>CamelCaseMotion_iw
+xmap <silent> <Leader>iw <Plug>CamelCaseMotion_iw
+omap <silent> <Leader>ib <Plug>CamelCaseMotion_ib
+xmap <silent> <Leader>ib <Plug>CamelCaseMotion_ib
+omap <silent> <Leader>ie <Plug>CamelCaseMotion_ie
+xmap <silent> <Leader>ie <Plug>CamelCaseMotion_ie
+
 " Gundo
 nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>G :GundoRenderGraph<CR>
