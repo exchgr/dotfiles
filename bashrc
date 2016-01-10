@@ -59,6 +59,7 @@ alias vac="source ENV/bin/activate"
 alias vi="vim"
 
 shopt -s autocd # Change to a directory without "cd"
+shopt -s globstar # Enable recursive globstar
 
 # rm moves files to trash
 function trash () {
