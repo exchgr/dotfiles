@@ -106,6 +106,8 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 " rbenv integration with path, tags, tab complete
 Plugin 'tpope/vim-rbenv'
+" automatic ctags generation
+Plugin 'szw/vim-tags'
 " Quickly run specs in tmux
 Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
