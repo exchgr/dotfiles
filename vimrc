@@ -368,6 +368,5 @@ if has("gui_running")
   set guioptions-=e " Display tabs textually instead of graphically
 endif
 
-if filereadable(".vim.custom")
-  so .vim.custom
-endif
+set exrc
+set secure

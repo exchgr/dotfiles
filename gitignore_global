@@ -42,7 +42,7 @@
 *.swo
 *~
 *.vis
-.vim.custom
+.vimrc
 engines/*/config/environment.rb
 
 # Ruby files #
