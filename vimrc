@@ -115,7 +115,7 @@ Plugin 'jgdavey/vim-turbux'
 " AppleScript
 Plugin 'applescript.vim'
 " Air pairing
-Plugin 'floobits/floobits-vim'
+" Plugin 'floobits/floobits-vim'
 
 " Colorschemes
 Plugin 'chriskempson/base16-vim'
