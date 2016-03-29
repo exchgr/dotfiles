@@ -77,6 +77,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'AndrewRadev/splitjoin.vim'
 " Enhanced statusline
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Repeat more stuff with .
 Plugin 'tpope/vim-repeat'
 " Increment and decrement dates
