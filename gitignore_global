@@ -50,6 +50,7 @@ engines/*/config/environment.rb
 Gemfile.dev*
 .rbenv-vars
 .byebug_history
+.rspec
 
 # Image editor files #
 ######################
