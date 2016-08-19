@@ -62,7 +62,7 @@ fi
 # Compile YouCompleteMe
 if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/third_party/ycmd/ycm_core.so ]; then
   cd ${DIR}/vim/bundle/YouCompleteMe
-  ./install.sh --clang-completer --system-libclang
+  ./install.py --clang-completer
   cd -
 fi
 
