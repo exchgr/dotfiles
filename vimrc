@@ -62,6 +62,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
 " JST highlighting
 Plugin 'briancollins/vim-jst'
+" JSX highlighting
+Plugin 'mxw/vim-jsx'
 " Nginx syntax
 Plugin 'nginx.vim'
 " Rails IDE for Vim
@@ -232,6 +234,9 @@ nnoremap <Leader><space> :NERDTree<cr>
 
 " lite-dfm
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
+
+" JSX
+let g:jsx_ext_required = 0
 
 " Abolish
 nnoremap <Leader>q :%Subvert/{“,”,‘,’,–,—,…}/{\",\",',',--,---,...}/g<CR>i<Esc> " Dumb down characters
