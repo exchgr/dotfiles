@@ -76,6 +76,7 @@
   sui = submodule update --init
   u = pull
   urb = pull --rebase
+  urbi = pull --rebase=interactive
 [difftool "vimdiff"]
   cmd = $(echo $GIT_EDITOR)diff -R $LOCAL $REMOTE
 [mergetool "vimdiff"]
