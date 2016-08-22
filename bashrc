@@ -121,3 +121,6 @@ eval "$(direnv hook bash)"
 . ~/.bashrc_p
 
 complete -W "$(teamocil --list)" teamocil
+
+export NVM_DIR="/Users/exchgr/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
