@@ -8,6 +8,8 @@ set page-completions on
 set skip-completed-text on
 set editing-mode vi
 set show-mode-in-prompt on
+set vi-cmd-mode-string :
+set vi-ins-mode-string +
 
 # Keybindings
 \C-l: clear-screen
