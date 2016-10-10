@@ -14,13 +14,14 @@ Plugin 'bkad/CamelCaseMotion'
 Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
 Plugin 'Valloric/YouCompleteMe'
+
 " Snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " Switch between alternate files
 Plugin 'a.vim'
 " The Silver Searcher from within Vim
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
 " Delete and change method arguments
 Plugin 'argtextobj.vim'
 " Automatically type matching punctuation like in Sublime Text
@@ -223,9 +224,18 @@ inoremap <C-S-Tab> <Esc>gT
 " Delete key no longer deletes in normal mode
 nnoremap <del> <right>
 
-" ag
-let g:ag_qhandler="botright copen"
-let g:ag_lhandler="botright lopen"
+" ag instead of ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+
+let g:ack_qhandler="botright copen"
+let g:ack_lhandler="botright lopen"
 
 " NERDTree
 nnoremap <space><space> :NERDTreeToggle<cr>
