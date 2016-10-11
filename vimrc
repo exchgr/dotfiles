@@ -128,7 +128,7 @@ Plugin 'jonathanfilip/vim-lucius'
 set background=light
 
 if has("gui_running")
-  colorscheme base16-bright
+  colorscheme base16-summerfruit-light
 else
   colorscheme lucius
   LuciusWhiteLowContrast
