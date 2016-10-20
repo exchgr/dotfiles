@@ -78,6 +78,11 @@ function trash () {
   done
 }
 
+# check whether a command exists
+commandExists () {
+  command -v $@ >/dev/null 2>&1 || { echo >&2 "I require $@ but it's not installed."; return 1; }
+}
+
 # Environment
 export GIT_EDITOR='vim'
 export EDITOR='vim'
@@ -118,12 +123,12 @@ elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; t
   . /usr/share/git/git-prompt.sh # for __git_ps1
 fi
 
-eval "$(rbenv init - --no-rehash)"
-eval "$(direnv hook bash)"
+commandExists "rbenv" && eval "$(rbenv init - --no-rehash)"
+commandExists "direnv" && eval "$(direnv hook bash)"
 
 . ~/.bashrc_p
 
-complete -W "$(teamocil --list)" teamocil
+commandExists "teamocil" && complete -W "$(teamocil --list)" teamocil
 
 export NVM_DIR="/Users/exchgr/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
