@@ -13,7 +13,7 @@ Plugin 'bkad/CamelCaseMotion'
 " Highlight matching HTML tags
 Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neocomplete.vim'
 " Snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -272,10 +272,10 @@ nmap <Leader>D <Plug>DashGlobalSearch
 " vim-commentary
 autocmd FileType go set commentstring=//\ %s
 
-" YouCompleteMe
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_cache_omnifunc = 0
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 1
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger='<C-j>'
