@@ -114,6 +114,8 @@ Plugin 'szw/vim-tags'
 " Quickly run specs in tmux
 Plugin 'jgdavey/tslime.vim'
 Plugin 'jgdavey/vim-turbux'
+" tmux syntax
+Plugin 'tmux-plugins/vim-tmux'
 " AppleScript
 Plugin 'applescript.vim'
 " Air pairing
