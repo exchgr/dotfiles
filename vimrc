@@ -15,7 +15,8 @@ Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
 Plugin 'Shougo/neocomplete.vim'
 " Snippets
-Plugin 'SirVer/ultisnips'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 Plugin 'honza/vim-snippets'
 " Switch between alternate files
 Plugin 'a.vim'
@@ -277,8 +278,10 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 1
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger='<C-j>'
+" Neo-snippet
+imap <C-j>     <Plug>(neosnippet_expand_or_jump)
+smap <C-j>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-j>     <Plug>(neosnippet_expand_target)
 
 " Turbux/tslime
 "let g:turbux_command_prefix = 'bundle exec'
