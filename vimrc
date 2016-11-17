@@ -230,11 +230,6 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-cnoreabbrev ag Ack
-cnoreabbrev aG Ack
-cnoreabbrev Ag Ack
-cnoreabbrev AG Ack
-
 let g:ack_qhandler="botright copen"
 let g:ack_lhandler="botright lopen"
 
