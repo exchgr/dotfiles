@@ -14,7 +14,6 @@ Plugin 'bkad/CamelCaseMotion'
 Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
 Plugin 'Valloric/YouCompleteMe'
-
 " Snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -91,7 +90,6 @@ Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-unimpaired'
 " Quickly (un)comment lines
 Plugin 'tpope/vim-commentary'
-Plugin 'scrooloose/nerdcommenter'
 " Cross-editor space/tab configuration for projects
 Plugin 'editorconfig/editorconfig-vim'
 " Graphical undo tree
@@ -99,7 +97,7 @@ Plugin 'sjl/gundo.vim'
 " MultiMarkdown syntax
 Plugin 'jngeist/vim-multimarkdown'
 " Syntax checker in the siderail
-Plugin 'scrooloose/syntastic'
+Plugin 'neomake/neomake'
 " Extended ruby magic
 Plugin 'vim-ruby/vim-ruby'
 " Write HTML quickly
@@ -224,6 +222,9 @@ inoremap <C-S-Tab> <Esc>gT
 
 " Delete key no longer deletes in normal mode
 nnoremap <del> <right>
+
+" neomake
+autocmd! BufWritePost * Neomake
 
 " ag instead of ack
 if executable('ag')
