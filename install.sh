@@ -25,6 +25,8 @@ if [ "$OS" = "Darwin" ]; then
   chsh -s `which bash`
 fi
 
+touch agignore bashrc_p
+
 for filename in *
 do
   # check if the file should be ignored

@@ -22,7 +22,8 @@ alias .....="cd ../../../.."
 alias :q="exit" # Vim is in
 alias :qa!="tmux kill-session"
 alias :qa="echo 'Are you sure? (add ! to quit)'"
-alias ag="ag -C3 --pager \"$PAGER\""
+alias gitignore="git status --ignored --porcelain | sed -ne '/^!! */s///p'"
+alias ag="agignore && ag -C3 --pager \"$PAGER\""
 alias back="cd -"
 alias be="bundle exec"
 alias cp="cp -R"
@@ -60,6 +61,10 @@ alias vi="vim"
 
 shopt -s autocd # Change to a directory without "cd"
 shopt -s globstar # Enable recursive globstar
+
+function agignore () {
+  gitignore > ~/.agignore
+}
 
 # rm moves files to trash
 function trash () {
