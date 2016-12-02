@@ -36,7 +36,7 @@ Plugin 'file-line'
 " HTML5 syntax, indent, omnicomplete
 Plugin 'othree/html5.vim'
 " Enhanced % matching
-Plugin 'edsono/vim-matchit'
+Plugin 'matchit.zip'
 " File browser sidebar
 Plugin 'scrooloose/nerdtree'
 " Rename files/buffers
