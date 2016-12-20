@@ -94,8 +94,9 @@ export EDITOR='vim'
 export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$PATH"
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
-# ssh-agent on linux
-if [ "$OS" = "Linux" ] && [ $TERM != "dumb" ]; then
+
+# ssh-agent on linux and mac
+if [ $TERM != "dumb" ]; then
   SSHAGENT=/usr/bin/ssh-agent
   SSHAGENTARGS="-s"
   if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
