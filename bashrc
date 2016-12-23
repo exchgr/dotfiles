@@ -132,6 +132,17 @@ fi
 commandExists "rbenv" && eval "$(rbenv init - --no-rehash)"
 commandExists "direnv" && eval "$(direnv hook bash)"
 
+# SSH keychain
+export KEYCHAIN="keychain"
+export KEYCHAIN_ARGS="--eval --agents ssh"
+export KEYFILE="id_rsa"
+
+if [ "$OS" = "Darwin" ]; then
+  export KEYCHAIN_ARGS="$KEYCHAIN_ARGS --inherit any"
+fi
+
+commandExists $KEYCHAIN && eval "$($KEYCHAIN $KEYCHAIN_ARGS $KEYFILE)"
+
 . ~/.bashrc_p
 
 commandExists "teamocil" && complete -W "$(teamocil --list)" teamocil
