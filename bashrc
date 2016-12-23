@@ -95,17 +95,6 @@ export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/loca
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
 
-# ssh-agent on linux and mac
-if [ $TERM != "dumb" ]; then
-  SSHAGENT=/usr/bin/ssh-agent
-  SSHAGENTARGS="-s"
-  if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
-    eval `$SSHAGENT $SSHAGENTARGS`
-    ssh-add
-    trap "kill $SSH_AGENT_PID" 0
-  fi
-fi
-
 # Mac/Linux PS1s that account for different hostname commands
 if [ "$OS" = "Darwin" ]; then
   host=$(hostname -s)
@@ -134,7 +123,7 @@ commandExists "direnv" && eval "$(direnv hook bash)"
 
 # SSH keychain
 export KEYCHAIN="keychain"
-export KEYCHAIN_ARGS="--eval --agents ssh"
+export KEYCHAIN_ARGS="--quiet --eval --agents ssh"
 export KEYFILE="id_rsa"
 
 if [ "$OS" = "Darwin" ]; then
