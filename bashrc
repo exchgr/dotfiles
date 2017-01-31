@@ -134,7 +134,12 @@ commandExists $KEYCHAIN && eval "$($KEYCHAIN $KEYCHAIN_ARGS $KEYFILE)"
 
 . ~/.bashrc_p
 
-commandExists "teamocil" && complete -W "$(teamocil --list)" teamocil
+if [ $TERM != "dumb" ]; then
+  # Base16 Shell
+  BASE16_SCHEME="bright"
+  BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.light.sh"
+  [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
+fi
 
 export NVM_DIR="/Users/exchgr/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

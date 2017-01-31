@@ -123,16 +123,16 @@ Plugin 'applescript.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 
 " Colorschemes
-Plugin 'chriskempson/base16-vim'
-Plugin 'jonathanfilip/vim-lucius'
+" Plugin 'chriskempson/base16-vim'
+" Plugin 'jonathanfilip/vim-lucius'
 
 set background=light
 
+colorscheme base16-bright
+
 if has("gui_running")
-  colorscheme base16-summerfruit-light
 else
-  colorscheme lucius
-  LuciusWhiteLowContrast
+  let base16colorspace=256
 endif
 
 " Basic settings
