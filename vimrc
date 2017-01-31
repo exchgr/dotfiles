@@ -279,6 +279,9 @@ autocmd FileType go set commentstring=//\ %s
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 1
+" <Down> and <Up> cycle like <Tab> and <S-Tab>
+inoremap <expr><Down>  pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 
 " Neo-snippet
 imap <C-j>     <Plug>(neosnippet_expand_or_jump)
