@@ -283,10 +283,11 @@ let g:neocomplete#sources#syntax#min_keyword_length = 1
 inoremap <expr><Down>  pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 
-" Neo-snippet
+" Neosnippet
 imap <C-j>     <Plug>(neosnippet_expand_or_jump)
 smap <C-j>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-j>     <Plug>(neosnippet_expand_target)
+let g:neosnippet#snippets_directory = "~/.neosnippet/"
 
 " Turbux/tslime
 "let g:turbux_command_prefix = 'bundle exec'
