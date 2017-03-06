@@ -139,6 +139,7 @@ if [ $TERM != "dumb" ]; then
   BASE16_SCHEME="bright"
   BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.light.sh"
   [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
+  alias base16=$BASE16_SHELL
 fi
 
 export NVM_DIR="/Users/exchgr/.nvm"
