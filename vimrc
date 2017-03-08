@@ -119,7 +119,7 @@ Plugin 'tmux-plugins/vim-tmux'
 " AppleScript
 Plugin 'applescript.vim'
 " Air pairing
-" Plugin 'floobits/floobits-vim'
+Plugin 'floobits/floobits-neovim'
 Plugin 'mustache/vim-mustache-handlebars'
 
 " Colorschemes
