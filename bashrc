@@ -29,7 +29,6 @@ alias cp="cp -R"
 alias df="df -H"
 alias diff="colordiff"
 alias dotfiles="cd ~/dotfiles"
-alias du="du -h"
 alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias gitignore="git status --ignored --porcelain | sed -ne '/^!! */s///p'"
@@ -62,6 +61,10 @@ alias vim="nvim"
 
 shopt -s autocd # Change to a directory without "cd"
 shopt -s globstar # Enable recursive globstar
+
+function du () {
+  sudo du -hxd 1 $@ | sort -h
+}
 
 function agignore () {
   gitignore > ~/.agignore
