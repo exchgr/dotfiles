@@ -121,6 +121,8 @@ Plugin 'applescript.vim'
 " Air pairing
 Plugin 'floobits/floobits-neovim'
 Plugin 'mustache/vim-mustache-handlebars'
+" dust templating
+Plugin 'jimmyhchan/dustjs.vim'
 
 " Colorschemes
 " Plugin 'chriskempson/base16-vim'
