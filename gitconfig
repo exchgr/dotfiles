@@ -38,12 +38,13 @@
   d = diff
   dc = diff --cached
   dhh = diff HEAD^ HEAD
+  dm = diff --stat origin/master
   dt = difftool
   dtc = difftool --cached
   f = fetch
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad - %ar) %C(bold blue)<%an>%Creset' --abbrev-commit
   lh = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit | head
-  lm = !git l origin/master..`git bc` && git d --stat origin/master
+  lm = !git l origin/master..`git bc`
   m = !echo "mff or mnoff?"
   mnoff = merge --no-ff
   mff = merge --ff-only
