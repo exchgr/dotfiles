@@ -57,7 +57,8 @@ alias ss="spring stop"
 alias ssh="ssh -AC" # A: agent key forwarding. C: compression.
 alias sshfs="sshfs -o follow_symlinks"
 alias vac="source ENV/bin/activate"
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 
 shopt -s autocd # Change to a directory without "cd"
 shopt -s globstar # Enable recursive globstar
@@ -89,8 +90,8 @@ commandExists () {
 }
 
 # Environment
-export GIT_EDITOR='vim'
-export EDITOR='vim'
+export GIT_EDITOR='nvim'
+export EDITOR='nvim'
 export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$PATH"
 export GOPATH=~/Projects/code/go
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
