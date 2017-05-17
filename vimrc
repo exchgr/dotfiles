@@ -13,7 +13,8 @@ Plugin 'bkad/CamelCaseMotion'
 " Highlight matching HTML tags
 Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
-Plugin 'Shougo/neocomplete.vim'
+" Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/deoplete.nvim'
 " Snippets
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
