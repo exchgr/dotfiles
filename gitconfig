@@ -80,9 +80,9 @@
   urb = pull --rebase
   urbi = pull --rebase=interactive
 [difftool "vimdiff"]
-  cmd = $(echo $GIT_EDITOR)diff -R $LOCAL $REMOTE
+  cmd = $(echo $GIT_EDITOR) -d -R $LOCAL $REMOTE
 [mergetool "vimdiff"]
-  cmd = $(echo $GIT_EDITOR)diff $MERGED
+  cmd = $(echo $GIT_EDITOR) -d $MERGED
   keepBackup = false
 [web]
   browser = open
