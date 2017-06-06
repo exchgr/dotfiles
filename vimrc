@@ -159,6 +159,8 @@ set breakindent " wrap lines with the same indentation as the original line
 " Show tab-complete options in command mode
 set wildmode=longest,list,full
 set wildmenu
+set autoread " Automatically reload open files changed outside of Vim
+autocmd BufEnter,FocusGained * checktime " Ask to reload changed files
 
 "mouse support
 set mouse=a
