@@ -43,6 +43,7 @@
 *~
 *.vis
 .vimrc
+.nvimrc
 engines/*/config/environment.rb
 
 # Ruby files #

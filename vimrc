@@ -397,5 +397,4 @@ if has("gui_running")
   set guioptions-=e " Display tabs textually instead of graphically
 endif
 
-set exrc
-set secure
+set secure exrc
