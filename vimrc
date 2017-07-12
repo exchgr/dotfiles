@@ -122,6 +122,8 @@ Plugin 'floobits/floobits-neovim'
 Plugin 'mustache/vim-mustache-handlebars'
 " dust templating
 Plugin 'jimmyhchan/dustjs.vim'
+" Varnish VCL
+Plugin 'smerrill/vcl-vim-plugin'
 
 " Colorschemes
 " Plugin 'chriskempson/base16-vim'
