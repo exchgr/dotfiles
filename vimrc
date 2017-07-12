@@ -38,8 +38,6 @@ Plugin 'file-line'
 Plugin 'othree/html5.vim'
 " Enhanced % matching
 Plugin 'matchit.zip'
-" File browser sidebar
-Plugin 'scrooloose/nerdtree'
 " Rename files/buffers
 Plugin 'danro/rename.vim'
 " Tumblr syntax highlighting
@@ -242,10 +240,15 @@ endif
 let g:ack_qhandler="botright copen"
 let g:ack_lhandler="botright lopen"
 
-" NERDTree
-nnoremap <space><space> :NERDTreeToggle<cr>
-nnoremap <space>f :NERDTreeFind<cr>
-nnoremap <Leader><space> :NERDTree<cr>
+" netrw
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+nnoremap <space><space> :vsp.<cr>
+nnoremap <space>f :Vexplore<cr>
+nnoremap <Leader><space> :vsp.<cr>
 
 " lite-dfm
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
