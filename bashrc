@@ -62,9 +62,15 @@ alias vim="nvim"
 shopt -s autocd # Change to a directory without "cd"
 shopt -s globstar # Enable recursive globstar
 
-function du () {
-  sudo du -hxd 1 $@ | sort -h
-}
+if [ "$OS" = "Darwin" ]; then
+  function du () {
+    sudo du -hxd 1 $@ | /usr/local/opt/coreutils/libexec/gnubin/sort -h
+  }
+elif [ "$OS" = "Linux" ]; then
+  function du () {
+    sudo du -hxd 1 $@ | sort -h
+  }
+fi
 
 function agignore () {
   gitignore > ~/.agignore
