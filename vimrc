@@ -15,6 +15,10 @@ Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
 " Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/deoplete.nvim'
+" javascript for deoplete
+Plugin 'carlitux/deoplete-ternjs'
+" js function parameter completion for deoplete
+Plugin 'othree/jspc.vim'
 " Snippets
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
@@ -233,6 +237,7 @@ nnoremap <del> <right>
 
 " neomake
 autocmd! BufWritePost * Neomake
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 " ag instead of ack
 if executable('ag')
@@ -285,11 +290,23 @@ nmap <Leader>D <Plug>DashGlobalSearch
 " vim-commentary
 autocmd FileType go set commentstring=//\ %s
 
-" neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 1
-" <Down> and <Up> cycle like <Tab> and <S-Tab>
+" deoplete
+if !exists('g:deoplete#omni#functions')
+  let g:deoplete#omni#functions = {}
+endif
+
+let g:deoplete#omni#functions.javascript = [
+  \ 'tern#Complete',
+  \ 'jspc#omni'
+\]
+
+if !exists('g:deoplete#sources')
+  let g:deoplete#sources = {}
+endif
+
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+set completeopt-=preview
+
 inoremap <expr><Down>  pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 

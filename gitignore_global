@@ -69,3 +69,4 @@ tags.log # logfile for ctags generation
 .agignore
 tmux.conf
 Procfile.dev
+.tern-port
