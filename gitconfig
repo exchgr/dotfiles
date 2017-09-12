@@ -37,8 +37,11 @@
   cp = cherry-pick
   d = diff
   dc = diff --cached
+  dcs = diff --cached --stat
   dhh = diff HEAD^ HEAD
-  dm = diff --stat origin/master
+  dm = diff origin/master
+  ds = diff --stat
+  dsm = diff --stat origin/master
   dt = difftool
   dtc = difftool --cached
   f = fetch
@@ -66,6 +69,7 @@
   rv = remote -v
   s = status
   sa = submodule add
+  ss = show --stat
   st = stash
   sta = stash apply
   stc = stash clear
