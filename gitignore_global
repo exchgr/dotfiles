@@ -53,6 +53,10 @@ Gemfile.dev*
 .byebug_history
 .rspec
 
+# JavaScript files #
+####################
+node_modules/
+
 # Image editor files #
 ######################
 *.psd
