@@ -1,0 +1,14 @@
+[
+  {
+    title: "bntp"
+    paths: [
+      "/Users/exchgr/Projects/code/web/hackerati/bauerpub/bntp"
+    ]
+    settings:
+      "*":
+        "linter-rubocop":
+          command: "rubocop -c config/lint/.ruby-style.yml"
+        "linter-scss-lint":
+          configName: "config/lint/.scss-style.yml"
+  }
+]

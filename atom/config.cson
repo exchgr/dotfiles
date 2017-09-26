@@ -1,0 +1,70 @@
+"*":
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+    buildTimeout: 100000
+    cmd: "/usr/local/bin/ctags"
+    cmdArgs: "--exclude=node_modules"
+    extraTagFiles: "tags"
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
+  "autocomplete-ctags":
+    maximumTagFileSize: 200
+  "autocomplete-ruby":
+    rsensePath: "/Users/exchgr/.rbenv/shims/rsense"
+  "base16-syntax":
+    scheme: "Bright"
+  "bracket-matcher": {}
+  core:
+    closeEmptyWindows: false
+    disabledPackages: [
+      "local-config"
+      "autocomplete-ctags"
+      "symbols-view"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "base16-syntax"
+    ]
+  "daylight-ui":
+    layoutMode: "Compact"
+  editor:
+    fontFamily: "Inconsolata"
+    fontSize: 13
+    invisibles: {}
+    lineHeight: 1.2
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "40b0852e-db07-47eb-88be-a78dee06666f"
+  "git-blame":
+    columnWidth: 272
+  "highlight-line":
+    hideHighlightOnSelect: true
+  "linter-rubocop":
+    command: "rubocop -c config/lint/.ruby-style.yml"
+  "linter-scss-lint":
+    configName: "config/lint/.scss-style.yml"
+  "linter-ui-default":
+    panelHeight: 183
+  "local-config":
+    applyOnActivation: true
+  "local-settings":
+    configFilePath: ".atom"
+  "platformio-ide-terminal":
+    toggles:
+      autoClose: true
+      selectToCopy: false
+  "project-plus": {}
+  "ruby-test":
+    rspecAllCommand: "rs rspec --tty spec"
+    rspecFileCommand: "rs rspec --tty {relative_path}"
+    rspecSingleCommand: "rs rspec --tty {relative_path}:{line_number}"
+  "vim-mode-plus":
+    keymapPToPutWithAutoIndent: true
+    keymapYToYankToLastCharacterOfLine: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

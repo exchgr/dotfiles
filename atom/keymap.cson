@@ -1,0 +1,87 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+"atom-text-editor.vim-mode-plus:not(.insert-mode)":
+  # CamelCaseMotion
+  "\\ w": "vim-mode-plus:move-to-next-subword"
+  "\\ b": "vim-mode-plus:move-to-previous-subword"
+  "\\ e": "vim-mode-plus:move-to-end-of-subword"
+  "\\ i w": "vim-mode-plus:inner-subword"
+
+  # argtextobj
+  "a a": "vim-mode-plus:a-arguments"
+  "i a": "vim-mode-plus:inner-arguments"
+  "g c": "vim-mode-plus:toggle-line-comments"
+  "a c": "vim-mode-plus:a-comment"
+  "i c": "vim-mode-plus:inner-comment"
+
+  # turbux
+  "\\ r": "ruby-test:test-file"
+  "\\ R": "ruby-test:test-single"
+  "\\ l": "ruby-test:test-previous"
+  "\\ E": "ruby-test:test-all"
+
+  # macros
+  "q": "atom-keyboard-macros-vim:toggle_record_macro_vim"
+  "@": "atom-keyboard-macros-vim:execute_macro_vim"
+  "Q": "atom-keyboard-macros:call_last_kbd_macro"
+
+  # vim-abolish coercion
+  "c r c": "change-case:camel"
+  "c r u": "change-case:constant"
+  "c r .": "change-case:dot"
+  "c r -": "change-case:param"
+  "c r m": "change-case:pascal"
+  "c r s": "change-case:snake"
+  "c r t": "change-case:title"
+
+  "ctrl-b": "git-blame:toggle"
+
+"atom-text-editor.vim-mode-plus.insert-mode":
+  "ctrl-x /": "bracket-matcher:close-tag"
+
+"atom-text-editor.vim-mode-plus.normal-mode":
+  "ctrl-]": "atom-ctags:go-to-declaration"
+
+"atom-text-editor.vim-mode-plus":
+  "ctrl-l": "window:focus-pane-on-right"
+  "ctrl-h": "window:focus-pane-on-left"
+  "ctrl-j": "window:focus-pane-below"
+  "ctrl-k": "window:focus-pane-above"
+
+"*":
+  "ctrl-tab": "unset!"
+  "ctrl-shift-tab": "unset!"
+
+"body":
+  "ctrl-tab": "pane:show-next-item"
+  "ctrl-shift-tab": "pane:show-previous-item"
