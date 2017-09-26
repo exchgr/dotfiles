@@ -70,3 +70,5 @@ tags.log # logfile for ctags generation
 tmux.conf
 Procfile.dev
 .tern-port
+.atom
+.tags*
