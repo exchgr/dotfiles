@@ -48,15 +48,6 @@
   "@": "atom-keyboard-macros-vim:execute_macro_vim"
   "Q": "atom-keyboard-macros:call_last_kbd_macro"
 
-  # vim-abolish coercion
-  "c r c": "change-case:camel"
-  "c r u": "change-case:constant"
-  "c r .": "change-case:dot"
-  "c r -": "change-case:param"
-  "c r m": "change-case:pascal"
-  "c r s": "change-case:snake"
-  "c r t": "change-case:title"
-
   "ctrl-b": "git-blame:toggle"
 
 "atom-text-editor.vim-mode-plus.operator-pending-mode":
@@ -66,6 +57,16 @@
   "g c": "vim-mode-plus:toggle-line-comments"
   "a c": "vim-mode-plus:a-comment"
   "i c": "vim-mode-plus:inner-comment"
+
+"atom-text-editor.vim-mode-plus:not(.operator-pending-mode)":
+  # vim-abolish coercion
+  "c r c": "change-case:camel"
+  "c r u": "change-case:constant"
+  "c r .": "change-case:dot"
+  "c r -": "change-case:param"
+  "c r m": "change-case:pascal"
+  "c r s": "change-case:snake"
+  "c r t": "change-case:title"
 
 "atom-text-editor.vim-mode-plus.insert-mode":
   "ctrl-x /": "bracket-matcher:close-tag"
