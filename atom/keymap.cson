@@ -76,6 +76,11 @@
   "g f":      "open-this:here"
   "ctrl-w f": "open-this:split-down"
   "ctrl-w F": "open-this:split-right"
+  "space space": "tree-view:toggle"
+  "space f": "tree-view:reveal-active-file"
+
+".tree-view":
+  "space space": "tree-view:toggle"
 
 "atom-text-editor.vim-mode-plus":
   "ctrl-l": "window:focus-pane-on-right"
