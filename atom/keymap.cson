@@ -58,7 +58,7 @@
   "a c": "vim-mode-plus:a-comment"
   "i c": "vim-mode-plus:inner-comment"
 
-"atom-text-editor.vim-mode-plus:not(.operator-pending-mode)":
+"atom-text-editor.vim-mode-plus.normal-mode:not(.operator-pending-mode)":
   # vim-abolish coercion
   "c r c": "change-case:camel"
   "c r u": "change-case:constant"
