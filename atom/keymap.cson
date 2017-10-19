@@ -50,11 +50,13 @@
 
   "ctrl-b": "git-blame:toggle"
 
+  # argtextobj
+  "g c": "vim-mode-plus:toggle-line-comments"
+
 "atom-text-editor.vim-mode-plus.operator-pending-mode":
   # argtextobj
   "a a": "vim-mode-plus:a-arguments"
   "i a": "vim-mode-plus:inner-arguments"
-  "g c": "vim-mode-plus:toggle-line-comments"
   "a c": "vim-mode-plus:a-comment"
   "i c": "vim-mode-plus:inner-comment"
 
