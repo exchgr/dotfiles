@@ -59,6 +59,7 @@
       scrollback: 10000
     toggles:
       autoClose: true
+      loginShell: false
       selectToCopy: false
   "project-plus": {}
   "ruby-test":
