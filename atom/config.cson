@@ -41,7 +41,7 @@
   "exception-reporting":
     userId: "40b0852e-db07-47eb-88be-a78dee06666f"
   "git-blame":
-    columnWidth: 272
+    columnWidth: 187
   "highlight-line":
     hideHighlightOnSelect: true
   "linter-rubocop":
