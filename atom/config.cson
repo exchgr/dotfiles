@@ -63,9 +63,9 @@
       selectToCopy: false
   "project-plus": {}
   "ruby-test":
-    rspecAllCommand: "rs rspec --tty spec"
-    rspecFileCommand: "rs rspec --tty {relative_path}"
-    rspecSingleCommand: "rs rspec --tty {relative_path}:{line_number}"
+    rspecAllCommand: "rs rspec spec"
+    rspecFileCommand: "rs rspec {relative_path}"
+    rspecSingleCommand: "rs rspec {relative_path}:{line_number}"
   "vim-mode-plus":
     keymapPToPutWithAutoIndent: true
     keymapYToYankToLastCharacterOfLine: true
