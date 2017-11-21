@@ -154,5 +154,5 @@ if [ $TERM != "dumb" ]; then
   alias base16=$BASE16_SHELL
 fi
 
-export NVM_DIR="/Users/exchgr/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
