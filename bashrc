@@ -57,6 +57,7 @@ alias sk9="sudo kill -9"
 alias ss="spring stop"
 alias ssh="ssh -AC" # A: agent key forwarding. C: compression.
 alias sshfs="sshfs -o follow_symlinks"
+alias tf="terraform"
 alias vac="source ENV/bin/activate"
 alias vi="nvim"
 alias vim="nvim"
