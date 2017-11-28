@@ -23,6 +23,7 @@
       "local-config"
       "autocomplete-ctags"
       "symbols-view"
+      "atom-ctags"
     ]
     telemetryConsent: "no"
     themes: [
@@ -69,7 +70,6 @@
   "vim-mode-plus":
     keymapPToPutWithAutoIndent: true
     keymapYToYankToLastCharacterOfLine: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   welcome:
     showOnStartup: false
   whitespace:
