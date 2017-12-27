@@ -37,10 +37,13 @@
     fontSize: 13
     invisibles: {}
     lineHeight: 1.2
+    scrollPastEnd: true
     softWrap: true
     tabType: "soft"
   "exception-reporting":
     userId: "40b0852e-db07-47eb-88be-a78dee06666f"
+  floobits:
+    audioOnly: true
   "git-blame":
     columnWidth: 187
   "highlight-line":
@@ -51,6 +54,7 @@
     configName: "config/lint/.scss-style.yml"
   "linter-ui-default":
     panelHeight: 183
+    showPanel: true
   "local-config":
     applyOnActivation: true
   "local-settings":
