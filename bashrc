@@ -104,8 +104,9 @@ commandExists () {
 # Environment
 export GIT_EDITOR='nvim'
 export EDITOR='nvim'
-export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$PATH"
 export GOPATH=~/Projects/code/go
+export CLOUDSDK_PYTHON="/usr/local/bin/python2.7"
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
 
 # Mac/Linux PS1s that account for different hostname commands
@@ -158,3 +159,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/emundy/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/emundy/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/emundy/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/emundy/Downloads/google-cloud-sdk/completion.bash.inc'; fi
