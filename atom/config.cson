@@ -6,6 +6,7 @@
     cmdArgs: "--exclude=node_modules"
     extraTagFiles: "tags"
   "atom-ide-ui":
+    "atom-ide-outline-view": {}
     use:
       "atom-ide-diagnostics-ui": false
   "autocomplete-ctags":
@@ -19,11 +20,14 @@
     abbreviateValues: true
   core:
     closeEmptyWindows: false
+    debugLSP: true
     disabledPackages: [
       "local-config"
       "autocomplete-ctags"
       "symbols-view"
       "atom-ctags"
+      "linter-rubocop"
+      "symbols-tree-view"
     ]
     telemetryConsent: "no"
     themes: [
@@ -48,13 +52,18 @@
     columnWidth: 187
   "highlight-line":
     hideHighlightOnSelect: true
-  "linter-rubocop":
-    command: "rubocop -c config/lint/.ruby-style.yml"
+  "ide-java":
+    errors:
+      incompleteClasspathSeverity: "ignore"
+  "ide-scala":
+    jvm: {}
+  "linter-rubocop": {}
   "linter-scss-lint":
     configName: "config/lint/.scss-style.yml"
   "linter-ui-default":
     panelHeight: 183
-    showPanel: true
+    statusBarClickBehavior: "Jump to next issue"
+    statusBarRepresents: "Current File"
   "local-config":
     applyOnActivation: true
   "local-settings":

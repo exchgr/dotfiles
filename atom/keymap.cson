@@ -74,12 +74,17 @@
   "ctrl-x /": "bracket-matcher:close-tag"
 
 "atom-text-editor.vim-mode-plus.normal-mode":
-  "ctrl-]": "atom-ctags:go-to-declaration"
+  # "ctrl-]": "atom-ctags:go-to-declaration"
+  "ctrl-]": "hyperclick:confirm-cursor"
   "g f":      "open-this:here"
   "ctrl-w f": "open-this:split-down"
   "ctrl-w F": "open-this:split-right"
   "space space": "tree-view:toggle"
   "space f": "tree-view:reveal-active-file"
+  "ctrl-i": "cursor-history:next"
+  "ctrl-o": "cursor-history:prev"
+  "ctrl-cmd-i": "cursor-history:next-within-editor"
+  "ctrl-cmd-o": "cursor-history:prev-within-editor"
 
 ".tree-view":
   "space space": "tree-view:toggle"
