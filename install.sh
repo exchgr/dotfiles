@@ -59,7 +59,7 @@ do
 done
 
 mkdir -p ~/.config
-ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vim -T ~/.config/nvim
 
 # Install Vundle and packages
 if [ ! -e ${DIR}/vim/bundle/vundle ]; then
