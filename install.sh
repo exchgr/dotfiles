@@ -14,16 +14,19 @@ fi
 
 # Install dependencies
 if [ "$OS" = "Linux" ]; then
-  sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || (sudo pacman -Syu wget gvim base-devel cmake python2 python2-pip clang python-markdown fakeroot jshon expac bash-completion && wget https://aur.archlinux.org/packages/pa/packer/PKGBUILD && makepkg && sudo pacman -U packer-*.pkg.tar.xz && sudo packer -S python2-smartypants multimarkdown && pip2 install rauth)
+  sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || (sudo pacman -Syu wget gvim base-devel cmake python2 python2-pip clang python-markdown fakeroot jshon expac bash-completion && wget https://aur.archlinux.org/packages/pa/packer/PKGBUILD && makepkg && sudo pacman -U packer-*.pkg.tar.xz && sudo packer -S python2-smartypants multimarkdown && pip2 install rauth) || brew -v bundle
 
   rm -rf PKGBUILD* packer-*.pkg.tar.xz packer/ pkg/ src/
 fi
 
 if [ "$OS" = "Darwin" ]; then
-  brew bundle
+  brew -v bundle
   sudo bash -c "echo `which bash` >> /etc/shells"
   chsh -s `which bash`
 fi
+
+sudo `which pip3` install neovim
+sudo pip install rauth
 
 touch agignore bashrc_p
 
@@ -55,17 +58,14 @@ do
   fi
 done
 
+mkdir -p ~/.config
+ln -s ~/.vim ~/.config/nvim
+
 # Install Vundle and packages
 if [ ! -e ${DIR}/vim/bundle/vundle ]; then
   git clone https://github.com/gmarik/vundle ${DIR}/vim/bundle/vundle
   vim +BundleInstall +qa
-fi
-
-# Compile YouCompleteMe
-if [ ! -e ${DIR}/vim/bundle/YouCompleteMe/third_party/ycmd/ycm_core.so ]; then
-  cd ${DIR}/vim/bundle/YouCompleteMe
-  ./install.py --clang-completer
-  cd -
+  vim +UpdateRemotePlugins +qa
 fi
 
 # Compile ctrlp-cmatcher
