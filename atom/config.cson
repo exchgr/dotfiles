@@ -1,4 +1,7 @@
 "*":
+  Ensime:
+    ensimeServerVersion: "2.0.0"
+    sbtExec: "/usr/local/bin/sbt"
   "atom-ctags":
     autoBuildTagsWhenActive: true
     buildTimeout: 100000
@@ -8,14 +11,31 @@
   "atom-ide-ui":
     "atom-ide-outline-view": {}
     use:
-      "atom-ide-diagnostics-ui": false
+      "atom-ide-busy-signal": "default"
+      "atom-ide-code-actions": "default"
+      "atom-ide-code-format": "default"
+      "atom-ide-code-highlight": "default"
+      "atom-ide-console": "default"
+      "atom-ide-datatip": "default"
+      "atom-ide-definitions": "default"
+      "atom-ide-diagnostics": "default"
+      "atom-ide-diagnostics-ui": "never"
+      "atom-ide-find-references": "default"
+      "atom-ide-global": "default"
+      "atom-ide-outline-view": "default"
+      "atom-ide-signature-help": "default"
+      hyperclick: "default"
   "autocomplete-ctags":
     maximumTagFileSize: 200
   "autocomplete-ruby":
     rsensePath: "/Users/exchgr/.rbenv/shims/rsense"
   "base16-syntax":
     scheme: "Bright"
+    style: "Light"
+  "better-git-blame":
+    searchInLayerEnabled: false
   "bracket-matcher": {}
+  "city-lights-ui": {}
   "color-picker":
     abbreviateValues: true
   core:
@@ -28,6 +48,8 @@
       "atom-ctags"
       "linter-rubocop"
       "symbols-tree-view"
+      "Ensime"
+      "ide-python"
     ]
     telemetryConsent: "no"
     themes: [
@@ -40,8 +62,9 @@
     fontFamily: "Inconsolata"
     fontSize: 13
     invisibles: {}
-    lineHeight: 1.2
+    lineHeight: 1.1
     scrollPastEnd: true
+    showInvisibles: true
     softWrap: true
     tabType: "soft"
   "exception-reporting":
@@ -57,10 +80,14 @@
       incompleteClasspathSeverity: "ignore"
   "ide-scala":
     jvm: {}
+    metals:
+      sbt: {}
   "linter-rubocop": {}
   "linter-scss-lint":
     configName: "config/lint/.scss-style.yml"
   "linter-ui-default":
+    alwaysTakeMinimumSpace: true
+    hidePanelWhenEmpty: false
     panelHeight: 183
     statusBarClickBehavior: "Jump to next issue"
     statusBarRepresents: "Current File"
@@ -68,6 +95,7 @@
     applyOnActivation: true
   "local-settings":
     configFilePath: ".atom"
+  "one-light-ui": {}
   "platformio-ide-terminal":
     core:
       scrollback: 10000
@@ -80,6 +108,8 @@
     rspecAllCommand: "rs rspec spec"
     rspecFileCommand: "rs rspec {relative_path}"
     rspecSingleCommand: "rs rspec {relative_path}:{line_number}"
+  "tree-view":
+    squashDirectoryNames: true
   "vim-mode-plus":
     keymapPToPutWithAutoIndent: true
     keymapYToYankToLastCharacterOfLine: true

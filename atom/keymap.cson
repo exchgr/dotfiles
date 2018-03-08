@@ -48,8 +48,6 @@
   "@": "atom-keyboard-macros-vim:execute_macro_vim"
   "Q": "atom-keyboard-macros:call_last_kbd_macro"
 
-  "ctrl-b": "git-blame:toggle"
-
   # argtextobj
   "g c": "vim-mode-plus:toggle-line-comments"
 
