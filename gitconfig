@@ -8,6 +8,7 @@
   quotepath = false
   pager = less -FRX
   editor = $GIT_EDITOR
+  compression = 9
 [color]
   diff = auto
 [merge]
