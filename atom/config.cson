@@ -11,20 +11,7 @@
   "atom-ide-ui":
     "atom-ide-outline-view": {}
     use:
-      "atom-ide-busy-signal": "default"
-      "atom-ide-code-actions": "default"
-      "atom-ide-code-format": "default"
-      "atom-ide-code-highlight": "default"
-      "atom-ide-console": "default"
-      "atom-ide-datatip": "default"
-      "atom-ide-definitions": "default"
-      "atom-ide-diagnostics": "default"
       "atom-ide-diagnostics-ui": "never"
-      "atom-ide-find-references": "default"
-      "atom-ide-global": "default"
-      "atom-ide-outline-view": "default"
-      "atom-ide-signature-help": "default"
-      hyperclick: "default"
   "autocomplete-ctags":
     maximumTagFileSize: 200
   "autocomplete-ruby":
@@ -49,7 +36,7 @@
       "linter-rubocop"
       "symbols-tree-view"
       "Ensime"
-      "ide-python"
+      "floobits"
     ]
     telemetryConsent: "no"
     themes: [
@@ -59,7 +46,7 @@
   "daylight-ui":
     layoutMode: "Compact"
   editor:
-    fontFamily: "Inconsolata"
+    fontFamily: "inconsolata"
     fontSize: 13
     invisibles: {}
     lineHeight: 1.1
@@ -76,8 +63,9 @@
   "highlight-line":
     hideHighlightOnSelect: true
   "ide-java":
-    errors:
-      incompleteClasspathSeverity: "ignore"
+    errors: {}
+    javaHome: "/usr/local/java"
+    virtualMachine: {}
   "ide-scala":
     jvm: {}
     metals:
@@ -95,6 +83,9 @@
     applyOnActivation: true
   "local-settings":
     configFilePath: ".atom"
+  minimap:
+    adjustMinimapWidthOnlyIfSmaller: false
+    displayMinimapOnLeft: true
   "one-light-ui": {}
   "platformio-ide-terminal":
     core:
