@@ -84,8 +84,12 @@
   "local-settings":
     configFilePath: ".atom"
   minimap:
+    absoluteMode: true
     adjustMinimapWidthOnlyIfSmaller: false
-    displayMinimapOnLeft: true
+    minimapScrollIndicator: false
+    moveCursorOnMinimapClick: true
+    scrollAnimation: true
+    textOpacity: 0.1
   "one-light-ui": {}
   "platformio-ide-terminal":
     core:
