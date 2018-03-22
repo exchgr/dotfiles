@@ -193,6 +193,7 @@ set lbr
 
 " Search
 set hlsearch " Highlights search results
+set inccommand=nosplit " Highlights subtitution results
 set ignorecase " Case-insensitive search
 set smartcase " If a search contains an uppercase character, it is case-sensitive
 set incsearch " Incremental search: search as you type
