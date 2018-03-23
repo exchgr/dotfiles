@@ -76,3 +76,4 @@ Procfile.dev
 .tern-port
 .atom
 .tags*
+.ropeproject
