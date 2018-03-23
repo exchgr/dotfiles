@@ -37,8 +37,4 @@ atom.packages.onDidActivateInitialPackages(() => {
   const BracketMatcher = require(matcherPath)
 
   BracketMatcher.prototype.isCursorOnInterpolatedString = () => false
-
-  // Hide tree-view on launch
-  var workspaceView = atom.views.getView(atom.workspace);
-  atom.commands.dispatch(workspaceView, 'tree-view:toggle');
 })
