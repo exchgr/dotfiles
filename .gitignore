@@ -5,3 +5,5 @@ vim/bundle
 vim/spell
 agignore
 atom/packages
+atom/projects.cson
+atom/recovery
