@@ -26,6 +26,7 @@
   "color-picker":
     abbreviateValues: true
   core:
+    closeDeletedFileTabs: true
     closeEmptyWindows: false
     debugLSP: true
     disabledPackages: [
@@ -66,6 +67,8 @@
     errors: {}
     javaHome: "/usr/local/java"
     virtualMachine: {}
+  "ide-ruby":
+    lintLevel: "2"
   "ide-scala":
     jvm: {}
     metals:
