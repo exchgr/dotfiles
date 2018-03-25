@@ -133,6 +133,8 @@ Plugin 'smerrill/vcl-vim-plugin'
 " Plugin 'chriskempson/base16-vim'
 " Plugin 'jonathanfilip/vim-lucius'
 
+au BufRead,BufNewFile *.cson set ft=coffee
+
 set background=light
 
 colorscheme base16-bright
