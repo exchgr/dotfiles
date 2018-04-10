@@ -50,7 +50,7 @@
     fontFamily: "SF Mono"
     fontSize: 12
     invisibles: {}
-    lineHeight: 1.1
+    lineHeight: 1.2
     scrollPastEnd: true
     showInvisibles: true
     softWrap: true
