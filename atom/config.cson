@@ -47,8 +47,8 @@
   "daylight-ui":
     layoutMode: "Compact"
   editor:
-    fontFamily: "inconsolata"
-    fontSize: 13
+    fontFamily: "SF Mono"
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.1
     scrollPastEnd: true
