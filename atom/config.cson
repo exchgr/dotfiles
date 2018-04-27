@@ -36,6 +36,7 @@
       "symbols-tree-view"
       "Ensime"
       "floobits"
+      "linter-eslint"
     ]
     telemetryConsent: "no"
     themes: [
