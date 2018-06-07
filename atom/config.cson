@@ -51,6 +51,7 @@
     invisibles: {}
     lineHeight: 1.2
     scrollPastEnd: true
+    showIndentGuide: true
     showInvisibles: true
     softWrap: true
     tabType: "soft"
