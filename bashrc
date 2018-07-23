@@ -76,6 +76,14 @@ function agignore () {
   gitignore > ~/.agignore
 }
 
+function redcat () {
+  cat $@ | grep -Eo $'\e\\[31m[^\e]*\e\\[[03]?m'
+}
+
+function redless () {
+  redcat $@ | less
+}
+
 # rm moves files to trash
 function trash () {
   local path
