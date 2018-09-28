@@ -25,7 +25,7 @@ atom.packages.onDidActivatePackage((pack) => {
         atom.views.getView(
           atom.workspace.getActiveTextEditor()
         ),
-        'better-git-blame:toggle'
+        'git-blame:toggle'
       )
     )
   }
