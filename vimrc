@@ -167,6 +167,8 @@ set wildmode=longest,list,full
 set wildmenu
 set autoread " Automatically reload open files changed outside of Vim
 autocmd BufEnter,FocusGained * checktime " Ask to reload changed files
+let g:python_host_prog = '/usr/local/opt/python@2/bin/python'
+let g:python3_host_prog = '/usr/local/opt/python/bin/python3'
 
 "mouse support
 set mouse=a
