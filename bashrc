@@ -30,7 +30,6 @@ alias cp="cp -R"
 alias de="docker exec -it"
 alias df="df -H"
 alias diff="colordiff"
-alias dockerclean="docker volume ls | awk '{if(NR>1)print \$2}' | xargs docker volume rm"
 alias dotfiles="cd ~/dotfiles"
 alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
@@ -67,6 +66,15 @@ alias vim="nvim"
 
 shopt -s autocd # Change to a directory without "cd"
 shopt -s globstar # Enable recursive globstar
+
+function dockerclean () {
+  echo "Containers:"
+  docker container ls -a | awk '{if(NR>1)print $1}' | xargs docker rm
+
+  echo "Volumes:"
+  docker volume ls | awk '{if(NR>1)print $2}' | xargs docker volume rm
+}
+
 
 function du () {
   sudo du -hxd 1 $@ | sort -h
