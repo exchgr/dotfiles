@@ -92,6 +92,10 @@ function redless () {
   redcat $@ | less
 }
 
+function repeatUntilSuccessful() {
+  $@; while [ $? -ne 0 ]; do $@; done
+}
+
 # rm moves files to trash
 function trash () {
   local path
