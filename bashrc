@@ -69,10 +69,10 @@ shopt -s globstar # Enable recursive globstar
 
 function dockerclean () {
   echo "Containers:"
-  docker container ls -a | awk '{if(NR>1)print $1}' | xargs docker rm
+  docker container ls -aq | xargs docker rm
 
   echo "Volumes:"
-  docker volume ls | awk '{if(NR>1)print $2}' | xargs docker volume rm
+  docker volume ls -q | xargs docker volume rm
 }
 
 
