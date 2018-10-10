@@ -1,166 +1,128 @@
-{
-  "*": {
-    "Ensime": {
-      "ensimeServerVersion": "2.0.0",
-      "sbtExec": "/usr/local/bin/sbt"
-    },
-    "atom-ctags": {
-      "autoBuildTagsWhenActive": true,
-      "buildTimeout": 100000,
-      "cmd": "/usr/local/bin/ctags",
-      "cmdArgs": "--exclude=node_modules",
-      "extraTagFiles": "tags"
-    },
-    "atom-ide-ui": {
-      "atom-ide-outline-view": {},
-      "use": {
-        "atom-ide-diagnostics-ui": "never"
-      }
-    },
-    "autocomplete-ctags": {
-      "maximumTagFileSize": 200
-    },
-    "autocomplete-ruby": {
-      "rsensePath": "/Users/exchgr/.rbenv/shims/rsense"
-    },
-    "base16-syntax": {
-      "scheme": "Bright"
-    },
-    "better-git-blame": {
-      "searchInLayerEnabled": false
-    },
-    "bracket-matcher": {},
-    "city-lights-ui": {},
-    "color-picker": {
-      "abbreviateValues": true
-    },
-    "core": {
-      "closeEmptyWindows": false,
-      "debugLSP": true,
-      "disabledPackages": [
-        "local-config",
-        "autocomplete-ctags",
-        "symbols-view",
-        "atom-ctags",
-        "linter-rubocop",
-        "symbols-tree-view",
-        "Ensime",
-        "floobits",
-        "linter-eslint"
-      ],
-      "telemetryConsent": "no",
-      "themes": [
-        "one-light-ui",
-        "one-light-syntax"
-      ]
-    },
-    "daylight-ui": {
-      "layoutMode": "Compact"
-    },
-    "editor": {
-      "fontFamily": "SF Mono",
-      "fontSize": 12,
-      "invisibles": {},
-      "lineHeight": 1.2,
-      "scrollPastEnd": true,
-      "showIndentGuide": true,
-      "showInvisibles": true,
-      "softWrap": true,
-      "tabType": "soft"
-    },
-    "exception-reporting": {
-      "userId": "40b0852e-db07-47eb-88be-a78dee06666f"
-    },
-    "floobits": {
-      "audioOnly": true
-    },
-    "git-blame": {
-      "columnWidth": 187
-    },
-    "highlight-line": {
-      "hideHighlightOnSelect": true
-    },
-    "ide-java": {
-      "errors": {},
-      "javaHome": "/usr/local/java",
-      "virtualMachine": {}
-    },
-    "ide-ruby": {
-      "lintLevel": "2"
-    },
-    "ide-scala": {
-      "defaultServer": "dotty",
-      "jvm": {},
-      "metals": {
-        "sbt": {},
-        "scalac": {
-          "completions": {
-            "enabled": true
-          },
-          "diagnostics": {
-            "enabled": true
-          }
-        }
-      }
-    },
-    "linter-rubocop": {},
-    "linter-scss-lint": {
-      "configName": "config/lint/.scss-style.yml"
-    },
-    "linter-ui-default": {
-      "alwaysTakeMinimumSpace": true,
-      "hidePanelWhenEmpty": false,
-      "panelHeight": 183,
-      "statusBarClickBehavior": "Jump to next issue",
-      "statusBarRepresents": "Current File"
-    },
-    "local-config": {
-      "applyOnActivation": true
-    },
-    "local-settings": {
-      "configFilePath": ".atom"
-    },
-    "minimap": {
-      "absoluteMode": true,
-      "adjustMinimapWidthOnlyIfSmaller": false,
-      "minimapScrollIndicator": false,
-      "moveCursorOnMinimapClick": true,
-      "plugins": {
-        "highlight-selected": true,
-        "highlight-selectedDecorationsZIndex": 0
-      },
-      "scrollAnimation": true,
-      "textOpacity": 0.1
-    },
-    "one-light-ui": {},
-    "platformio-ide-terminal": {
-      "core": {
-        "scrollback": 10000
-      },
-      "toggles": {
-        "autoClose": true,
-        "loginShell": false,
-        "selectToCopy": false
-      }
-    },
-    "project-plus": {},
-    "ruby-test": {
-      "rspecAllCommand": "rs rspec spec",
-      "rspecFileCommand": "rs rspec {relative_path}",
-      "rspecSingleCommand": "rs rspec {relative_path}:{line_number}"
-    },
-    "tree-view": {
-      "squashDirectoryNames": true
-    },
-    "vim-mode-plus": {
-      "keymapPToPutWithAutoIndent": true,
-      "keymapYToYankToLastCharacterOfLine": true
-    },
-    "welcome": {
-      "showOnStartup": false
-    },
-    "whitespace": {
-      "ignoreWhitespaceOnCurrentLine": false
-    }
-  }
-}
+"*":
+  Ensime:
+    ensimeServerVersion: "2.0.0"
+    sbtExec: "/usr/local/bin/sbt"
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+    buildTimeout: 100000
+    cmd: "/usr/local/bin/ctags"
+    cmdArgs: "--exclude=node_modules"
+    extraTagFiles: "tags"
+  "atom-ide-ui":
+    "atom-ide-outline-view": {}
+    use:
+      "atom-ide-diagnostics-ui": "never"
+  "autocomplete-ctags":
+    maximumTagFileSize: 200
+  "autocomplete-ruby":
+    rsensePath: "/Users/exchgr/.rbenv/shims/rsense"
+  "base16-syntax":
+    scheme: "Bright"
+  "better-git-blame":
+    searchInLayerEnabled: false
+  "bracket-matcher": {}
+  "city-lights-ui": {}
+  "color-picker":
+    abbreviateValues: true
+  core:
+    closeEmptyWindows: false
+    debugLSP: true
+    disabledPackages: [
+      "local-config"
+      "autocomplete-ctags"
+      "symbols-view"
+      "atom-ctags"
+      "linter-rubocop"
+      "symbols-tree-view"
+      "Ensime"
+      "floobits"
+      "linter-eslint"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  "daylight-ui":
+    layoutMode: "Compact"
+  editor:
+    fontFamily: "SF Mono"
+    fontSize: 12
+    invisibles: {}
+    lineHeight: 1.2
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "40b0852e-db07-47eb-88be-a78dee06666f"
+  floobits:
+    audioOnly: true
+  "git-blame":
+    columnWidth: 187
+  "highlight-line":
+    hideHighlightOnSelect: true
+  "ide-java":
+    errors: {}
+    javaHome: "/usr/local/java"
+    virtualMachine: {}
+  "ide-ruby":
+    lintLevel: "2"
+  "ide-scala":
+    defaultServer: "dotty"
+    jvm: {}
+    metals:
+      sbt: {}
+      scalac:
+        completions:
+          enabled: true
+        diagnostics:
+          enabled: true
+  "linter-rubocop": {}
+  "linter-scss-lint":
+    configName: "config/lint/.scss-style.yml"
+  "linter-ui-default":
+    alwaysTakeMinimumSpace: true
+    hidePanelWhenEmpty: false
+    panelHeight: 183
+    statusBarClickBehavior: "Jump to next issue"
+    statusBarRepresents: "Current File"
+  "local-config":
+    applyOnActivation: true
+  "local-settings":
+    configFilePath: ".atom"
+  minimap:
+    absoluteMode: true
+    adjustMinimapWidthOnlyIfSmaller: false
+    minimapScrollIndicator: false
+    moveCursorOnMinimapClick: true
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+    scrollAnimation: true
+    textOpacity: 0.1
+  "one-light-ui": {}
+  "platformio-ide-terminal":
+    core:
+      scrollback: 10000
+    toggles:
+      autoClose: true
+      loginShell: false
+      selectToCopy: false
+  "project-plus": {}
+  "ruby-test":
+    rspecAllCommand: "rs rspec spec"
+    rspecFileCommand: "rs rspec {relative_path}"
+    rspecSingleCommand: "rs rspec {relative_path}:{line_number}"
+  "split-diff":
+    ignoreWhitespace: true
+  "tree-view":
+    squashDirectoryNames: true
+  "vim-mode-plus":
+    keymapPToPutWithAutoIndent: true
+    keymapYToYankToLastCharacterOfLine: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
