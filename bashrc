@@ -166,7 +166,9 @@ if [ "$OS" = "Darwin" ]; then
   export KEYCHAIN_ARGS="$KEYCHAIN_ARGS --inherit any"
 fi
 
-commandExists $KEYCHAIN && eval "$($KEYCHAIN $KEYCHAIN_ARGS $KEYFILE)"
+keys () {
+  commandExists $KEYCHAIN && eval "$($KEYCHAIN $KEYCHAIN_ARGS $KEYFILE)"
+}
 
 . ~/.bashrc_p
 
