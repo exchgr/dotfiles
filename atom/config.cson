@@ -60,7 +60,7 @@
   floobits:
     audioOnly: true
   "git-blame":
-    columnWidth: 187
+    columnWidth: 263
   "highlight-line":
     hideHighlightOnSelect: true
   "ide-java":
