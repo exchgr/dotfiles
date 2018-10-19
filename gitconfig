@@ -30,12 +30,14 @@
   c = !git commit -v
   ca = !git commit -av
   cam = !git commit --amend -v
+  camw = !git cam --author=\"$NAME <$WORK_EMAIL>\"
   cl = clone
   cm = !git commit -amv
   co = checkout
   cob = !git checkout -b
   cot = !git checkout --track
   cp = cherry-pick
+  cw = !git commit -v --author=\"$NAME <$WORK_EMAIL>\"
   d = diff
   dc = diff --cached
   dcs = diff --cached --stat
