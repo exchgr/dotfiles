@@ -35,6 +35,7 @@ alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
 alias gitignore="git status --ignored --porcelain | sed -ne '/^!! */s///p'"
 alias haste="haste | pbcopy"
+alias pr="hub pull-request -o"
 alias js="node"
 alias la="ls -a" # a: hidden files
 alias less="$PAGER" # tame less with colors
