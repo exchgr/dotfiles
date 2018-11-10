@@ -197,3 +197,5 @@ alias gam="/Users/emundy/bin/gam/gam"
 [ -f /Users/emundy/.nvm/versions/node/v8.9.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /Users/emundy/.nvm/versions/node/v8.9.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+oblique
