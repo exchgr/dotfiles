@@ -39,6 +39,7 @@ alias pr="hub pull-request -o"
 alias js="node"
 alias la="ls -a" # a: hidden files
 alias less="$PAGER" # tame less with colors
+alias linux="docker run -it --entrypoint bash debian:stable-slim"
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias mkdir="mkdir -p"
 alias myip6="curl ipv6.icanhazip.com"
