@@ -189,3 +189,13 @@ alias gam="/Users/emundy/bin/gam/gam"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 oblique
+# the following was inserted by https://github.com/meetup/meetup/bootstrap.sh
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+# pyenv inserted by meetup/bootstrap.sh
+# Load pyenv automatically by appending
+# the following to ~/.bash_profile:
+
+eval "$(pyenv init -)"
+export PATH="$HOME/.nenv/bin:$PATH"
+eval "$(nenv init -)"
