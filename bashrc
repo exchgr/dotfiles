@@ -155,11 +155,6 @@ fi
 commandExists "rbenv" && eval "$(rbenv init - --no-rehash)"
 commandExists "direnv" && eval "$(direnv hook bash)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # SSH keychain
 export KEYCHAIN="keychain"
 export KEYCHAIN_ARGS="--quiet --eval --agents ssh"
