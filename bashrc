@@ -24,6 +24,7 @@ alias :qa!="tmux kill-session"
 alias :qa="echo 'Are you sure? (add ! to quit)'"
 alias ag="ag -C3 --pager \"$PAGER\""
 alias apmi="apm install --packages-file $HOME/.atom/packages.txt"
+alias awslogin='$(aws ecr get-login --no-include-email)'
 alias back="cd -"
 alias be="bundle exec"
 alias cp="cp -R"
