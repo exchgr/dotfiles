@@ -53,7 +53,7 @@
   lm = !git l origin/master..`git bc`
   m = !echo "mff or mnoff?"
   mb = merge-base
-  MERGEBRANCH = !git urb origin master && git pf && git co master && git u && git mnoff - && git p
+  MERGEBRANCH = !git rbm && git co master && git u && git mnoff - && git p
   mnoff = merge --no-ff
   mff = merge --ff-only
   ms = merge --squash
@@ -69,6 +69,7 @@
   rbc = rebase --continue
   rbd = !git push origin --delete
   rbi = rebase -i
+  rbm = !git urb origin master && git pf
   rbs = rebase --skip
   rl = reflog
   rr = remote rm
