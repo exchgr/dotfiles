@@ -41,6 +41,7 @@ brew "neovim"
 brew "nethogs"
 brew "nmap"
 brew "openssl"
+brew "pivotal/tap/git-together"
 brew "pkg-config"
 brew "protobuf241", link: true
 brew "python"
