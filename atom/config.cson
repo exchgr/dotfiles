@@ -64,7 +64,8 @@
   "highlight-line":
     hideHighlightOnSelect: true
   "ide-java":
-    errors: {}
+    errors:
+      incompleteClasspathSeverity: "ignore"
     javaHome: "/usr/local/java"
     virtualMachine: {}
   "ide-ruby":
