@@ -200,3 +200,5 @@ eval "$(jenv init -)"
 eval "$(pyenv init -)"
 export PATH="$HOME/.nenv/bin:$PATH"
 eval "$(nenv init -)"
+# the following was inserted by https://github.com/meetup/meetup/bootstrap.sh
+source /Users/emundy/.meetup_bootstrap
