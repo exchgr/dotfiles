@@ -258,9 +258,6 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
-nnoremap <space><space> :vsp.<cr>
-nnoremap <space>f :Vexplore<cr>
-nnoremap <Leader><space> :vsp.<cr>
 
 " lite-dfm
 nnoremap <Leader>l :LiteDFMToggle<CR>i<Esc>`^
