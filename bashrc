@@ -35,7 +35,6 @@ alias dotfiles="cd ~/dotfiles"
 alias ecrlogin='$(aws ecr get-login --no-include-email)'
 alias emptytrash="`which rm` -rf ~/.Trash/*"
 alias getkey="gpg --keyserver pgp.mit.edu --recv-key"
-alias git="git-together"
 alias gitignore="git status --ignored --porcelain | sed -ne '/^!! */s///p'"
 alias haste="haste | pbcopy"
 alias pr="hub pull-request -o"
