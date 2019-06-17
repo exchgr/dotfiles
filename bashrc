@@ -201,6 +201,7 @@ awsp () {
             export AWS_DEFAULT_REGION=${aws_default_region};
             export AWS_REGION=${aws_region};
             export AWS_ACCOUNT=$(aws iam get-user --query 'User.[Arn]' --output text | cut -d: -f5);
+            export AWS_PROFILE=${1}
         else
             echo "Profile ${1} doesn't appear to be configured in ~/.aws/credentials" 1>&2;
         fi;
