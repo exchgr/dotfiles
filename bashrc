@@ -189,6 +189,25 @@ alias gam="/Users/emundy/bin/gam/gam"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+awsp () {
+    if [[ -f ~/.aws/credentials && -n "${1}" ]]; then
+        local aws_access_key_id=$(awk '/^\['"${1}"'\]/{f=1} f==1&&/aws_access_key_id/{print $3;exit}' ~/.aws/credentials);
+        local aws_secret_access_key=$(awk '/^\['"${1}"'\]/{f=1} f==1&&/aws_secret_access_key/{print $3;exit}' ~/.aws/credentials);
+        local aws_default_region=$(awk '/^\[profile '"${1}"'\]/{f=1} f==1&&/region/{print $3;exit}' ~/.aws/config);
+        if [[ -n "${aws_access_key_id}" && -n "${aws_secret_access_key}" ]]; then
+            export AWS_ACCESS_KEY_ID=${aws_access_key_id};
+            export AWS_SECRET_ACCESS_KEY=${aws_secret_access_key};
+            export AWS_DEFAULT_REGION=${aws_default_region};
+            export AWS_REGION=${aws_region};
+            export AWS_ACCOUNT=$(aws iam get-user --query 'User.[Arn]' --output text | cut -d: -f5);
+        else
+            echo "Profile ${1} doesn't appear to be configured in ~/.aws/credentials" 1>&2;
+        fi;
+    else
+        echo "File ~/.aws/credentials don't exist || no profile given" 1>&2;
+    fi
+}
+
 oblique
 # the following was inserted by https://github.com/meetup/meetup/bootstrap.sh
 source /Users/emundy/.meetup_bootstrap
