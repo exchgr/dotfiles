@@ -191,8 +191,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 awsp () {
     if [[ -f ~/.aws/credentials && -n "${1}" ]]; then
-        local aws_access_key_id=$(awk '/^\['"${1}"'\]/{f=1} f==1&&/aws_access_key_id/{print $3;exit}' ~/.aws/credentials);
-        local aws_secret_access_key=$(awk '/^\['"${1}"'\]/{f=1} f==1&&/aws_secret_access_key/{print $3;exit}' ~/.aws/credentials);
+        local aws_access_key_id=$(awk '/^\[profile '"${1}"'\]/{f=1} f==1&&/aws_access_key_id/{print $3;exit}' ~/.aws/credentials);
+        local aws_secret_access_key=$(awk '/^\[profile '"${1}"'\]/{f=1} f==1&&/aws_secret_access_key/{print $3;exit}' ~/.aws/credentials);
         local aws_default_region=$(awk '/^\[profile '"${1}"'\]/{f=1} f==1&&/region/{print $3;exit}' ~/.aws/config);
         if [[ -n "${aws_access_key_id}" && -n "${aws_secret_access_key}" ]]; then
             export AWS_ACCESS_KEY_ID=${aws_access_key_id};
