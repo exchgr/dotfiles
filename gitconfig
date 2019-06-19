@@ -61,6 +61,7 @@
   ms = merge --squash
   ma = merge --abort
   mt = mergetool
+  own = codeowners
   p = push
   pf = push --force-with-lease
   pu = !git push -u origin `git bc`
