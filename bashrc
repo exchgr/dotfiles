@@ -72,6 +72,9 @@ shopt -s autocd # Change to a directory without "cd"
 shopt -s globstar # Enable recursive globstar
 
 function dockerclean () {
+  echo "Killing containers:"
+  docker ps -q | xargs docker kill
+
   echo "Containers:"
   docker container ls -aq | xargs docker rm
 
