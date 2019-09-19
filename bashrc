@@ -213,6 +213,8 @@ awsp () {
     fi
 }
 
+awsp prod
+
 oblique
 # the following was inserted by https://github.com/meetup/meetup/bootstrap.sh
 source /Users/emundy/.meetup_bootstrap
