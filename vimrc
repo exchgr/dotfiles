@@ -137,13 +137,6 @@ au BufRead,BufNewFile *.cson set ft=coffee
 
 set background=light
 
-colorscheme base16-bright
-
-if has("gui_running")
-else
-  let base16colorspace=256
-endif
-
 " Basic settings
 filetype plugin indent on
 syntax on " Syntax Highlighting
