@@ -44,8 +44,6 @@ Plugin 'othree/html5.vim'
 Plugin 'matchit.zip'
 " Rename files/buffers
 Plugin 'danro/rename.vim'
-" Tumblr syntax highlighting
-Plugin 'sonesuke/tumblr-vim'
 " Arduino compilation and delpoyment
 Plugin 'tclem/vim-arduino'
 " Coffeescript syntax
