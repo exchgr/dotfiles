@@ -26,7 +26,8 @@ if [ "$OS" = "Darwin" ]; then
 fi
 
 sudo `which pip3` install neovim
-sudo pip install rauth
+
+git clone https://github.com/ryuone/nenv.git ~/.nenv
 
 touch agignore bashrc_p
 
