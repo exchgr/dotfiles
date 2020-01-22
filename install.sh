@@ -30,6 +30,7 @@ sudo `which pip3` install neovim
 git clone https://github.com/ryuone/nenv.git ~/.nenv
 
 bash < <(curl -s https://raw.githubusercontent.com/mattreduce/oblique-fortunes/master/get)
+rm $DIR/oblique-fortunes
 
 touch agignore bashrc_p
 
