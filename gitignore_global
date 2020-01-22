@@ -77,3 +77,4 @@ Procfile.dev
 .atom
 .tags*
 .ropeproject
+*.iml
