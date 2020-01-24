@@ -128,10 +128,11 @@ commandExists () {
 # Environment
 export GIT_EDITOR='nvim'
 export EDITOR='nvim'
-export PATH="/usr/local/opt/llvm/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.rbenv/bin:$HOME/bin:/usr/local/opt/python@2/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$HOME/.nenv/versions/4.0.0/bin:$HOME/.nenv/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.rbenv/bin:$HOME/bin:/usr/local/opt/python@2/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$HOME/.nenv/versions/4.0.0/bin:$HOME/.nenv/bin:$PYENV_ROOT/bin:$PATH"
 export GOPATH=~/Projects/code/go
 export CLOUDSDK_PYTHON="/usr/local/bin/python2.7"
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
+export PYENV_ROOT="$HOME/.pyenv"
 
 # Mac/Linux PS1s that account for different hostname commands
 if [ "$OS" = "Darwin" ]; then
@@ -159,6 +160,7 @@ fi
 commandExists "rbenv" && eval "$(rbenv init - --no-rehash)"
 commandExists "direnv" && eval "$(direnv hook bash)"
 commandExists "nenv" && eval "$(nenv init -)"
+commandExists "pyenv" && eval "$(pyenv init -)"
 
 # SSH keychain
 export KEYCHAIN="keychain"

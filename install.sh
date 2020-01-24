@@ -25,6 +25,7 @@ if [ "$OS" = "Darwin" ]; then
   chsh -s `which bash`
 fi
 
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 sudo `which pip3` install neovim
 
 git clone https://github.com/ryuone/nenv.git ~/.nenv
