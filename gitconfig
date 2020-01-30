@@ -55,7 +55,8 @@
   lm = !git l origin/master..`git bc`
   m = !echo "mff or mnoff?"
   mb = merge-base
-  MERGEBRANCH = !git rbm && git co master && git u && git mnoff - && git p
+  MERGEBRANCHFF = !git rbm && git co master && git u && git mff - && git p
+  MERGEBRANCHNOFF = !git rbm && git co master && git u && git mnoff - && git p
   mnoff = merge --no-ff
   mff = merge --ff-only
   ms = merge --squash
