@@ -141,7 +141,7 @@ elif [ "$OS" = "Linux" ]; then
   host=$(hostname)
 fi
 
-export PS1='\[\e[0;33m\]$(date "+%Y-%m-%d %r") \[\e[0;32m\]$host: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \n\[\e[0;31m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
+export PS1='\[\e[0;33m\]$(date "+%Y-%m-%d %r") \[\e[0;32m\]$host: $([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") "$PWD")\[\e[0;36m\]\W\[\e[0;35m\]$(__git_ps1 " ± %s")\[\e[m\] \n\[\e[0;38;05;202m\]\$\[\e[m\] ' # The best prompt ever, with colors and wd's git branch
 
 export HISTCONTROL=ignoredups:erasedups # Keeps history concise
 
