@@ -134,7 +134,7 @@ Plugin 'smerrill/vcl-vim-plugin'
 au BufRead,BufNewFile *.cson set ft=coffee
 
 set background=light
-colorscheme quiet-light
+colorscheme Tomorrow
 
 " Basic settings
 filetype plugin indent on
