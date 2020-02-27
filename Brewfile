@@ -71,6 +71,7 @@ cask "docker"
 cask "dropbox"
 cask "iterm2"
 cask "stay"
+cask "intellij-idea"
 
 mas "1Password", id: 1333542190
 mas "Things 3", id: 904280696
