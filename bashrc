@@ -185,6 +185,9 @@ if [ $TERM != "dumb" ]; then
   alias base16=$BASE16_SHELL
 fi
 
+export CLOUDSDK_PYTHON=/usr/bin/python2.7
+export CLOUDSDK_GSUTIL_PYTHON=/usr/bin/python2.7
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then . "$HOME/google-cloud-sdk/path.bash.inc"; fi
 
