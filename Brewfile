@@ -1,12 +1,11 @@
 brew "mas"
+
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "AdoptOpenJDK/openjdk"
-cask "docker"
-cask "osxfuse"
-cask "adoptopenjdk11"
+
 brew "autoconf"
 brew "automake"
 brew "awscli"
@@ -45,7 +44,6 @@ brew "openssl"
 brew "pivotal/tap/git-together"
 brew "pkg-config"
 brew "python"
-brew "python@2"
 brew "qemu"
 brew "rbenv"
 brew "rbenv-vars"
@@ -65,9 +63,15 @@ brew "unzip"
 brew "watch"
 brew "wget"
 
-cask "atom"
+cask "osxfuse"
+cask "adoptopenjdk11"
 cask "alfred"
 cask "bettertouchtool"
 cask "docker"
 cask "dropbox"
 cask "iterm2"
+cask "stay"
+
+mas "1Password", id: 1333542190
+mas "Things 3", id: 904280696
+mas "Focus", id: 777233759

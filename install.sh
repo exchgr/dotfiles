@@ -14,12 +14,14 @@ fi
 
 # Install dependencies
 if [ "$OS" = "Linux" ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
   sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || (sudo pacman -Syu wget gvim base-devel cmake python2 python2-pip clang python-markdown fakeroot jshon expac bash-completion && wget https://aur.archlinux.org/packages/pa/packer/PKGBUILD && makepkg && sudo pacman -U packer-*.pkg.tar.xz && sudo packer -S python2-smartypants multimarkdown && pip2 install rauth) || brew -v bundle
 
   rm -rf PKGBUILD* packer-*.pkg.tar.xz packer/ pkg/ src/
 fi
 
 if [ "$OS" = "Darwin" ]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew -v bundle
   sudo bash -c "echo `which bash` >> /etc/shells"
   chsh -s `which bash`
@@ -31,7 +33,7 @@ sudo `which pip3` install neovim
 git clone https://github.com/ryuone/nenv.git ~/.nenv
 
 bash < <(curl -s https://raw.githubusercontent.com/mattreduce/oblique-fortunes/master/get)
-rm $DIR/oblique-fortunes
+rm -rf $DIR/oblique-fortunes
 
 touch agignore bashrc_p
 
@@ -65,6 +67,11 @@ done
 
 mkdir -p ~/.config
 ln -s ~/.vim ~/.config/nvim
+
+if [ -e ~/.bash_profile ]; then
+  mv ~/.bash_profile $DIR/backups/
+fi
+
 ln -s ~/.bashrc ~/.bash_profile
 
 # Install Vundle and packages
