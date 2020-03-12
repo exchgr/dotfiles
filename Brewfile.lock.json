@@ -1241,6 +1241,10 @@
             }
           }
         }
+      },
+      "speedtest-cli": {
+        "version": "2.1.2",
+        "bottle": false
       }
     },
     "tap": {
