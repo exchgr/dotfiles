@@ -1318,6 +1318,12 @@
         "options": {
           "full_name": "intellij-idea"
         }
+      },
+      "cursorcerer": {
+        "version": "latest",
+        "options": {
+          "full_name": "cursorcerer"
+        }
       }
     },
     "mas": {
