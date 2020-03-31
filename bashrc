@@ -80,6 +80,9 @@ function dockerclean () {
 
   echo "Volumes:"
   docker volume ls -q | xargs docker volume rm
+
+  echo "Images:"
+  docker image ls -q | xargs docker image rm -f
 }
 
 
