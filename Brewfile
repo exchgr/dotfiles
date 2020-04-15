@@ -64,16 +64,16 @@ brew "unzip"
 brew "watch"
 brew "wget"
 
-cask "osxfuse"
 cask "adoptopenjdk11"
 cask "alfred"
 cask "bettertouchtool"
 cask "cursorcerer"
 cask "docker"
 cask "dropbox"
-cask "iterm2"
-cask "stay"
 cask "intellij-idea"
+cask "iterm2"
+cask "osxfuse"
+cask "stay"
 
 mas "1Password", id: 1333542190
 mas "Things 3", id: 904280696
