@@ -227,3 +227,5 @@ awsp () {
 }
 
 oblique
+
+complete -C /usr/local/bin/terraform terraform
