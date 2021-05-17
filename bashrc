@@ -187,7 +187,7 @@ keys () {
 if [ $TERM != "dumb" ]; then
   # Base16 Shell
   BASE16_SCHEME="bright"
-  BASE16_BACKGROUND=$(defaults read -g AppleInterfaceStyle | awk '{print tolower($0)}')
+  BASE16_BACKGROUND=$(defaults read -g AppleInterfaceStyle 2>/dev/null | awk '{print tolower($0)}')
 
   if [ -z $BASE16_BACKGROUND ]; then
     BASE16_BACKGROUND="light"
