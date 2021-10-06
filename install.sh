@@ -6,6 +6,9 @@ ignore=( install.sh uninstall.sh .git .gitmodules README.mdown backups )
 DIR=~/dotfiles
 OS=$(uname -s)
 
+cd $DIR/base16
+git submodule init
+git submodule update
 cd $DIR
 
 if [ ! -e ${DIR}/backups ]; then
