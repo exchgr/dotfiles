@@ -82,3 +82,4 @@ mas "1Password", id: 1333542190
 mas "Things 3", id: 904280696
 mas "Focus", id: 777233759
 mas "1Blocker", id: 1107421413
+mas "Fantastical", id: 975937182
