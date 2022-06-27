@@ -196,19 +196,22 @@ keys () {
 
 . ~/.bashrc_p
 
-if [ $TERM != "dumb" ]; then
-  # Base16 Shell
-  BASE16_SCHEME="bright"
-  BASE16_BACKGROUND=$(defaults read -g AppleInterfaceStyle 2>/dev/null | awk '{print tolower($0)}')
+base16 () {
+  if [ $TERM != "dumb" ]; then
+    # Base16 Shell
+    BASE16_SCHEME="bright"
+    BASE16_BACKGROUND=$(defaults read -g AppleInterfaceStyle 2>/dev/null | awk '{print tolower($0)}')
 
-  if [ -z $BASE16_BACKGROUND ]; then
-    BASE16_BACKGROUND="light"
+    if [ -z $BASE16_BACKGROUND ]; then
+      BASE16_BACKGROUND="light"
+    fi
+
+    BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.$BASE16_BACKGROUND.sh"
+    [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
   fi
+}
 
-  BASE16_SHELL="$HOME/.base16/base16-$BASE16_SCHEME.$BASE16_BACKGROUND.sh"
-  [[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL
-  alias base16=$BASE16_SHELL
-fi
+base16
 
 export CLOUDSDK_PYTHON=/usr/bin/python2.7
 export CLOUDSDK_GSUTIL_PYTHON=/usr/bin/python2.7
