@@ -98,6 +98,18 @@ function agignore () {
   gitignore > ~/.agignore
 }
 
+function psgrep () {
+  ps ax | grep $1
+}
+
+function psid() {
+  psgrep $1 | awk '{print $1}'
+}
+
+function pskill() {
+  psid $1 | xargs kill
+}
+
 function redcat () {
   cat $@ | grep -Eo $'\e\\[31m[^\e]*\e\\[[03]?m'
 }
