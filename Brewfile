@@ -4,7 +4,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "AdoptOpenJDK/openjdk"
 
 brew "autoconf"
 brew "automake"
@@ -12,20 +11,14 @@ brew "awscli"
 brew "bash"
 brew "bash-completion"
 brew "bash-git-prompt"
-brew "cmake"
 brew "colordiff"
 brew "coreutils"
-brew "ctags"
 brew "curl"
 brew "direnv"
 brew "fortune"
-brew "gdbm"
 brew "git"
-brew "glib"
 brew "gnu-tar"
 brew "htop"
-brew "httpie"
-brew "hub"
 brew "jq"
 brew "keychain"
 brew "libtool"
@@ -47,10 +40,7 @@ brew "reattach-to-user-namespace"
 brew "rsync"
 brew "ruby-build"
 brew "shared-mime-info"
-brew "smartypants"
 brew "speedtest-cli"
-brew "tcpdump"
-brew "telnet"
 brew "terraform"
 brew "the_silver_searcher"
 brew "tmux"
@@ -75,7 +65,7 @@ cask "tg-pro"
 mas "1Password", id: 1333542190
 mas "Things 3", id: 904280696
 mas "Focus", id: 777233759
-mas "1Blocker", id: 1107421413
+mas "1Blocker", id: 1365531024
 mas "Fantastical", id: 975937182
 mas "Reeder 5", id: 1529448980
 mas "Temperature Gauge", id: 467830521
