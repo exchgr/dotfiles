@@ -63,6 +63,7 @@ cask "intellij-idea"
 cask "iterm2"
 cask "macmediakeyforwarder"
 cask "macfuse"
+cask "sonos"
 cask "stay"
 cask "tg-pro"
 
