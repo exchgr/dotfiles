@@ -250,3 +250,4 @@ awsp () {
 oblique
 
 complete -C /usr/local/bin/terraform terraform
+eval "$(/opt/homebrew/bin/brew shellenv)"
