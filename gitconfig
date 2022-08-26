@@ -9,6 +9,7 @@
   pager = less -FRX
   editor = $GIT_EDITOR
   compression = 9
+	sshCommand = ssh -i ~/.ssh/id_ed25519
 [color]
   diff = auto
 [merge]

@@ -184,7 +184,7 @@ commandExists "pyenv" && eval "$(pyenv init -)"
 # SSH keychain
 export KEYCHAIN="keychain"
 export KEYCHAIN_ARGS="--quiet --eval --agents ssh"
-export KEYFILE="id_rsa"
+export KEYFILE="id_ed25519"
 
 if [ "$OS" = "Darwin" ]; then
   export KEYCHAIN_ARGS="$KEYCHAIN_ARGS --inherit any"
