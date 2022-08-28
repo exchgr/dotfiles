@@ -35,7 +35,9 @@ sudo `which pip3` install neovim
 
 git clone https://github.com/ryuone/nenv.git ~/.nenv
 
-bash < <(curl -s https://raw.githubusercontent.com/mattreduce/oblique-fortunes/master/get)
+git clone https://github.com/mattreduce/oblique-fortunes.git
+cd oblique-fortunes
+cp oblique* /opt/homebrew/Cellar/fortune/**/share/games/fortunes/
 rm -rf $DIR/oblique-fortunes
 
 touch agignore bashrc_p
