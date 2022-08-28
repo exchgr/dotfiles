@@ -171,8 +171,8 @@ export HISTFILESIZE=4096
 export HISTSIZE=4096
 
 # bash completion
-if [ "$OS" = "Darwin" ] && [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if [ "$OS" = "Darwin" ] && [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]]; then
+  . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 elif [ "$OS" = "Linux" ] && [ -f /usr/share/bash-completion/bash_completion ]; then
   . /usr/share/bash-completion/completions/git
   . /usr/share/git/git-prompt.sh # for __git_ps1
