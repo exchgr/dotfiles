@@ -150,6 +150,7 @@ export GIT_EDITOR="$VISUAL"
 export EDITOR="$VISUAL"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="/usr/local/opt/llvm/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.rbenv/bin:$HOME/bin:/usr/local/opt/python@2/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:$PYENV_ROOT/bin:/usr/local/opt/node@14/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export GOPATH=~/Projects/code/go
 export CLOUDSDK_PYTHON="/usr/local/bin/python2.7"
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
@@ -250,4 +251,3 @@ awsp () {
 oblique
 
 complete -C /usr/local/bin/terraform terraform
-eval "$(/opt/homebrew/bin/brew shellenv)"
