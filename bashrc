@@ -32,6 +32,7 @@ alias cp="cp -R"
 alias de="docker exec -it"
 alias df="df -H"
 alias diff="colordiff"
+alias dig="dig +noall +answer"
 alias docker="open -gja Docker && while ! docker system info > /dev/null 2>&1; do sleep 1; done && docker"
 alias dotfiles="cd ~/dotfiles"
 alias ecrlogin='$(aws ecr get-login --no-include-email)'
