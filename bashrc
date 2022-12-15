@@ -92,7 +92,7 @@ function dockerclean () {
 
 
 function du () {
-  sudo du -hxd 1 $@ | sort -h
+  ncdu
 }
 
 function agignore () {
