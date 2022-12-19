@@ -97,3 +97,6 @@ if [ ! -e ${DIR}/vim/bundle/ctrlp-cmatcher/autoload/build/lib* ]; then
 
   ./install.sh
 fi
+
+# install fzf
+$(brew --prefix)/opt/fzf/install

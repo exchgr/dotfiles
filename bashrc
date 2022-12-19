@@ -254,3 +254,5 @@ oblique
 complete -C /opt/homebrew/bin/terraform terraform
 complete -C terraform tf
 complete -C rsync scp
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
