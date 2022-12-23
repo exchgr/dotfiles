@@ -1,7 +1,7 @@
 #! /bin/bash
 # from dpeticol's dotfiles, with mods
 
-ignore=( install.sh uninstall.sh .git .gitmodules README.mdown backups )
+ignore=( install.sh uninstall.sh .git .gitmodules README.mdown backups macOS\ copy.xml )
 
 DIR=~/dotfiles
 OS=$(uname -s)
