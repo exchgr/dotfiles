@@ -100,3 +100,6 @@ fi
 
 # install fzf
 $(brew --prefix)/opt/fzf/install
+
+# install fzf-tab-completion
+git clone https://github.com/lincheney/fzf-tab-completion ~/.fzf-tab-completion
