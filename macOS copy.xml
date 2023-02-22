@@ -8,6 +8,8 @@
   <action id="ChooseRunConfiguration">
     <keyboard-shortcut first-keystroke="shift ctrl alt r" />
   </action>
+  <action id="CompareTwoFiles" />
+  <action id="Console.TableResult.CompareCells" />
   <action id="CopyAbsolutePath" />
   <action id="CopyPathFromRepositoryRootProvider">
     <keyboard-shortcut first-keystroke="shift ctrl alt c" />
@@ -17,15 +19,19 @@
   </action>
   <action id="Diff.FocusOppositePane" />
   <action id="Diff.FocusOppositePaneAndScroll" />
+  <action id="Diff.ShowDiff" />
+  <action id="Diff.ShowSettingsPopup" />
   <action id="EditorDecreaseFontSize">
     <keyboard-shortcut first-keystroke="ctrl meta alt minus" />
   </action>
+  <action id="EditorDuplicate" />
   <action id="EditorIncreaseFontSize">
     <keyboard-shortcut first-keystroke="ctrl meta alt equals" />
   </action>
   <action id="EditorResetFontSize">
     <keyboard-shortcut first-keystroke="ctrl meta alt 0" />
   </action>
+  <action id="FileChooser.GotoDesktop" />
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt b" />
   </action>
@@ -35,6 +41,7 @@
   <action id="GithubCopyPathProvider">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt c" />
   </action>
+  <action id="GuiDesigner.Duplicate" />
   <action id="MoveEditorToOppositeTabGroup">
     <keyboard-shortcut first-keystroke="shift ctrl o" />
   </action>
@@ -53,7 +60,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl r" />
   </action>
   <action id="RunClass" />
+  <action id="RunDashboard.CopyConfiguration" />
   <action id="RunDashboard.Run" />
+  <action id="Scala.RunConsole" />
   <action id="Scala.ShowImplicits">
     <keyboard-shortcut first-keystroke="shift ctrl alt equals" />
     <keyboard-shortcut first-keystroke="shift ctrl alt add" />
@@ -61,6 +70,7 @@
   <action id="SelectInProjectView">
     <keyboard-shortcut first-keystroke="ctrl alt t" />
   </action>
+  <action id="SendEOF" />
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="shift ctrl alt l" />
   </action>
@@ -69,10 +79,19 @@
   <action id="Terminal.OpenInTerminal">
     <keyboard-shortcut first-keystroke="shift ctrl alt t" />
   </action>
+  <action id="Terminal.SplitHorizontally">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+  </action>
+  <action id="Terminal.SplitVertically">
+    <keyboard-shortcut first-keystroke="meta d" />
+  </action>
   <action id="Terminal.SwitchFocusToEditor" />
   <action id="Tool_External Tools_Gazelle">
     <keyboard-shortcut first-keystroke="shift ctrl g" />
   </action>
+  <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
+  <action id="XDebugger.CopyWatch" />
+  <action id="openAssertEqualsDiff" />
   <action id="runShellFileAction" />
 </keymap>
