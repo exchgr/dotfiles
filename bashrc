@@ -57,6 +57,7 @@ alias reboot="sudo reboot"
 alias rebundle="rm Gemfile.dev.lock && cp Gemfile.lock Gemfile.dev.lock && bundle"
 alias recd="cd .. && cd -"
 alias reset="source $HOME/.bashrc && clear"
+alias rg="rg -i"
 alias rm="rm -rf"
 alias rmswp="find . -name \"*.swp\" -exec rm {} \; && rm ~/.local/share/nvim/swap/*.swp"
 alias rr="rbenv rehash"
@@ -100,7 +101,7 @@ function agignore () {
 }
 
 function psgrep () {
-  ps ax | grep $1
+  ps ax | rg $1
 }
 
 function psid() {
