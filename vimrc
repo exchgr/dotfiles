@@ -411,3 +411,4 @@ if has("gui_running")
 endif
 
 set secure exrc
+set backupcopy=yes
