@@ -152,7 +152,6 @@ export EDITOR="$VISUAL"
 export PATH="/usr/local/opt/llvm/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.rbenv/bin:$HOME/bin:/usr/local/opt/python@2/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/mysql/bin:/usr/local/go/bin:$HOME/.cabal/bin:/usr/local/opt/node@14/bin:$HOME/go/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export GOPATH=~/Projects/code/go
-export CLOUDSDK_PYTHON="/usr/local/bin/python2.7"
 GIT_PS1_SHOWDIRTYSTATE=1 # Indicate changed files
 
 # Mac/Linux PS1s that account for different hostname commands
@@ -212,8 +211,8 @@ base16 () {
 
 base16
 
-export CLOUDSDK_PYTHON=/usr/bin/python2.7
-export CLOUDSDK_GSUTIL_PYTHON=/usr/bin/python2.7
+export CLOUDSDK_PYTHON=$(which python3)
+export CLOUDSDK_GSUTIL_PYTHON=$CLOUDSDK_PYTHON
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then . "$HOME/google-cloud-sdk/path.bash.inc"; fi
