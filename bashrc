@@ -92,7 +92,7 @@ function dockerclean () {
 
 
 function du () {
-  ncdu
+  ncdu "$@"
 }
 
 function agignore () {
