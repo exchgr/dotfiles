@@ -1,14 +1,9 @@
 brew "mas"
 
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/cask-drivers"
-
 brew "autoconf"
 brew "automake"
 brew "awscli"
+brew "asdf"
 brew "bash"
 brew "bash-completion@2"
 brew "bash-git-prompt"

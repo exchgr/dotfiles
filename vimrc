@@ -14,10 +14,10 @@ Plugin 'bkad/CamelCaseMotion'
 Plugin 'gregsexton/MatchTag'
 " Life-changing autocomplete
 " Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/deoplete.nvim'
-" javascript for deoplete
-Plugin 'carlitux/deoplete-ternjs'
-" js function parameter completion for deoplete
+" Plugin 'Shougo/deoplete.nvim'
+" " javascript for deoplete
+" Plugin 'carlitux/deoplete-ternjs'
+" " js function parameter completion for deoplete
 Plugin 'othree/jspc.vim'
 " Snippets
 Plugin 'Shougo/neosnippet'
@@ -35,7 +35,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-ragtag'
 " Fuzzy file (etc) matching
 Plugin 'kien/ctrlp.vim'
-Plugin 'JazzCore/ctrlp-cmatcher'
+" Plugin 'JazzCore/ctrlp-cmatcher'
 " Open files at specific lines from
 Plugin 'file-line'
 " HTML5 syntax, indent, omnicomplete
@@ -140,7 +140,7 @@ set history=300 "300 lines of history"
 set backspace=indent,eol,start " Backspace over autoindent, line breaks, and the start of insert
 set ruler " Show the ruler
 set virtualedit=onemore " Allows cursor placement over the line's end in normal mode
-set pastetoggle=<F2> " F2 enters paste mode in Insert mode
+" set pastetoggle=<F2> " F2 enters paste mode in Insert mode
 set clipboard=unnamed " OS-level clipboard integration for yank and put
 set number " Show line numbers
 let &t_Co=256 " 256 colors in the terminal

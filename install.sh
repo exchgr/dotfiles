@@ -15,31 +15,6 @@ if [ ! -e ${DIR}/backups ]; then
   mkdir backups
 fi
 
-# Install dependencies
-if [ "$OS" = "Linux" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-  sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || (sudo pacman -Syu wget gvim base-devel cmake python2 python2-pip clang python-markdown fakeroot jshon expac bash-completion && wget https://aur.archlinux.org/packages/pa/packer/PKGBUILD && makepkg && sudo pacman -U packer-*.pkg.tar.xz && sudo packer -S python2-smartypants multimarkdown && pip2 install rauth) || brew -v bundle
-
-  rm -rf PKGBUILD* packer-*.pkg.tar.xz packer/ pkg/ src/
-fi
-
-if [ "$OS" = "Darwin" ]; then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew -v bundle
-  sudo bash -c "echo `which bash` >> /etc/shells"
-  chsh -s `which bash`
-fi
-
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-sudo `which pip3` install neovim
-
-git clone https://github.com/ryuone/nenv.git ~/.nenv
-
-git clone https://github.com/mattreduce/oblique-fortunes.git
-cd oblique-fortunes
-cp oblique* /opt/homebrew/Cellar/fortune/**/share/games/fortunes/
-rm -rf $DIR/oblique-fortunes
-
 touch agignore bashrc_p
 
 for filename in *
@@ -79,6 +54,34 @@ fi
 
 ln -s ~/.bashrc ~/.bash_profile
 
+# Install dependencies
+if [ "$OS" = "Linux" ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  sudo apt-get install build-essential cmake python-dev libclang-dev markdown smartypants multimarkdown || (sudo pacman -Syu wget gvim base-devel cmake python2 python2-pip clang python-markdown fakeroot jshon expac bash-completion && wget https://aur.archlinux.org/packages/pa/packer/PKGBUILD && makepkg && sudo pacman -U packer-*.pkg.tar.xz && sudo packer -S python2-smartypants multimarkdown && pip2 install rauth) || brew -v bundle
+
+  rm -rf PKGBUILD* packer-*.pkg.tar.xz packer/ pkg/ src/
+fi
+
+if [ "$OS" = "Darwin" ]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /opt/homebrew/bin/brew -v bundle
+  # sudo bash -c "echo `which bash` >> /etc/shells"
+  # chsh -s `which bash`
+fi
+
+# git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+pip3 install --break-system-packages neovim
+
+# git clone https://github.com/ryuone/nenv.git ~/.nenv
+asdf install node
+
+git clone https://github.com/mattreduce/oblique-fortunes.git
+cd oblique-fortunes
+cp oblique* /opt/homebrew/Cellar/fortune/**/share/games/fortunes/
+rm -rf $DIR/oblique-fortunes
+
+cd .. && cd ${DIR}
+
 # Install Vundle and packages
 if [ ! -e ${DIR}/vim/bundle/vundle ]; then
   git clone https://github.com/gmarik/vundle ${DIR}/vim/bundle/vundle
@@ -87,16 +90,16 @@ if [ ! -e ${DIR}/vim/bundle/vundle ]; then
 fi
 
 # Compile ctrlp-cmatcher
-if [ ! -e ${DIR}/vim/bundle/ctrlp-cmatcher/autoload/build/lib* ]; then
-  cd ${DIR}/vim/bundle/ctrlp-cmatcher
+# if [ ! -e ${DIR}/vim/bundle/ctrlp-cmatcher/autoload/build/lib* ]; then
+#   cd ${DIR}/vim/bundle/ctrlp-cmatcher
 
-  if [ "$OS" = "Darwin" ]; then
-    CFLAGS=-Qunused-arguments
-    CPPFLAGS=-Qunused-arguments
-  fi
+#   if [ "$OS" = "Darwin" ]; then
+#     CFLAGS=-Qunused-arguments
+#     CPPFLAGS=-Qunused-arguments
+#   fi
 
-  ./install.sh
-fi
+#   ./install.sh
+# fi
 
 # install fzf
 $(brew --prefix)/opt/fzf/install
