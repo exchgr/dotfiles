@@ -141,6 +141,10 @@ function trash () {
   done
 }
 
+function cur () {
+  curl -L "$@" | tar xf -
+}
+
 # check whether a command exists
 commandExists () {
   command -v $@ >/dev/null 2>&1 || { echo >&2 "I require $@ but it's not installed."; return 1; }
