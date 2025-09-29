@@ -2,8 +2,17 @@
   <action id="ActivatePullRequestsToolWindow">
     <keyboard-shortcut first-keystroke="ctrl alt p" />
   </action>
+  <action id="Annotate">
+    <keyboard-shortcut first-keystroke="shift ctrl a" />
+  </action>
   <action id="Blaze.PartialSync">
     <keyboard-shortcut first-keystroke="shift ctrl s" />
+  </action>
+  <action id="ChangeSplitOrientation">
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt right" />
+  </action>
+  <action id="ChooseDebugConfiguration">
+    <keyboard-shortcut first-keystroke="shift ctrl alt d" />
   </action>
   <action id="ChooseRunConfiguration">
     <keyboard-shortcut first-keystroke="shift ctrl alt r" />
@@ -42,6 +51,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl meta alt c" />
   </action>
   <action id="GuiDesigner.Duplicate" />
+  <action id="MaximizeEditorInSplit">
+    <keyboard-shortcut first-keystroke="shift meta alt up" />
+  </action>
   <action id="MoveEditorToOppositeTabGroup">
     <keyboard-shortcut first-keystroke="shift ctrl o" />
   </action>
@@ -56,10 +68,10 @@
     <keyboard-shortcut first-keystroke="ctrl left" />
     <keyboard-shortcut first-keystroke="shift ctrl tab" />
   </action>
-  <action id="Run">
-    <keyboard-shortcut first-keystroke="shift ctrl r" />
+  <action id="QuickChangeScheme">
+    <keyboard-shortcut first-keystroke="shift ctrl alt q" />
   </action>
-  <action id="RunClass" />
+  <action id="Run" />
   <action id="RunDashboard.CopyConfiguration" />
   <action id="RunDashboard.Run" />
   <action id="Scala.RunConsole" />
@@ -74,6 +86,7 @@
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="shift ctrl alt l" />
   </action>
+  <action id="SurroundWith" />
   <action id="Switcher" />
   <action id="TableResult.UnselectPreviousOccurrence" />
   <action id="Terminal.OpenInTerminal">
@@ -88,6 +101,9 @@
   <action id="Terminal.SwitchFocusToEditor" />
   <action id="Tool_External Tools_Gazelle">
     <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
+  <action id="TypeScriptExtractTypeAlias">
+    <keyboard-shortcut first-keystroke="meta alt t" />
   </action>
   <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
