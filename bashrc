@@ -58,6 +58,7 @@ alias rebundle="rm Gemfile.dev.lock && cp Gemfile.lock Gemfile.dev.lock && bundl
 alias recd="cd .. && cd -"
 alias reset="source $HOME/.bashrc && clear"
 alias rg="rg -i"
+alias rgf="rg --files | rg"
 alias rm="rm -rf"
 alias rmswp="find . -name \"*.swp\" -exec rm {} \; && rm ~/.local/share/nvim/swap/*.swp"
 alias rr="rbenv rehash"
