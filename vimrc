@@ -17,8 +17,8 @@ Plugin 'gregsexton/MatchTag'
 " Plugin 'Shougo/deoplete.nvim'
 " " javascript for deoplete
 " Plugin 'carlitux/deoplete-ternjs'
-" " js function parameter completion for deoplete
-Plugin 'othree/jspc.vim'
+" js function parameter completion for deoplete
+" Plugin 'othree/jspc.vim'
 " Snippets
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
@@ -120,7 +120,7 @@ Plugin 'tmux-plugins/vim-tmux'
 " AppleScript
 Plugin 'applescript.vim'
 " Air pairing
-Plugin 'floobits/floobits-neovim'
+" Plugin 'floobits/floobits-neovim'
 Plugin 'mustache/vim-mustache-handlebars'
 " dust templating
 Plugin 'jimmyhchan/dustjs.vim'
@@ -282,21 +282,21 @@ nmap <Leader>D <Plug>DashGlobalSearch
 autocmd FileType go set commentstring=//\ %s
 
 " deoplete
-if !exists('g:deoplete#omni#functions')
-  let g:deoplete#omni#functions = {}
-endif
+" if !exists('g:deoplete#omni#functions')
+"   let g:deoplete#omni#functions = {}
+" endif
 
-let g:deoplete#omni#functions.javascript = [
-  \ 'tern#Complete',
-  \ 'jspc#omni'
-\]
+" let g:deoplete#omni#functions.javascript = [
+"   \ 'tern#Complete',
+"   \ 'jspc#omni'
+" \]
 
-if !exists('g:deoplete#sources')
-  let g:deoplete#sources = {}
-endif
+" if !exists('g:deoplete#sources')
+"   let g:deoplete#sources = {}
+" endif
 
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-set completeopt-=preview
+" let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+" set completeopt-=preview
 
 inoremap <expr><Down>  pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
