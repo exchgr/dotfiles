@@ -46,7 +46,11 @@ alias kc="kubectl"
 alias ke="kubectl exec -it"
 alias la="ls -a" # a: hidden files
 alias less="$PAGER" # tame less with colors
-alias linux="docker run -it --entrypoint bash debian:stable-slim"
+if [ "$OS" = "Darwin" ]; then
+  alias linux="container run -it --rm debian:stable-slim"
+elif [ "$OS" = "Linux" ]; then
+  alias linux="docker run -it --entrypoint bash debian:stable-slim"
+fi
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias mkdir="mkdir -p"
 alias myip6="curl -L https://ipv6.icanhazip.com"
