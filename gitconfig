@@ -10,6 +10,8 @@
   editor = $GIT_EDITOR
   compression = 9
 	sshCommand = ssh -i ~/.ssh/id_ed25519
+[init]
+	defaultBranch = main
 [color]
   diff = auto
 [merge]
