@@ -72,3 +72,4 @@ mas "1Blocker", id: 1365531024
 mas "Fantastical", id: 975937182
 mas "Reeder 5", id: 1529448980
 mas "Temperature Gauge", id: 467830521
+mas "StopTheMadness Pro", id: 6471380298
