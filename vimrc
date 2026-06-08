@@ -130,7 +130,12 @@ Plugin 'smerrill/vcl-vim-plugin'
 " Colorschemes
 " Plugin 'chriskempson/base16-vim'
 " Plugin 'jonathanfilip/vim-lucius'
-set background=light
+
+" Auto-detect dark/light mode from shell environment
+if $BASE16_BACKGROUND
+  set background=$BASE16_BACKGROUND
+endif
+
 colorscheme base16-bright
 
 au BufRead,BufNewFile *.cson set ft=coffee

@@ -1,7 +1,7 @@
 #! /bin/bash
 # from dpeticol's dotfiles, with mods
 
-ignore=( install.sh uninstall.sh .git .gitmodules README.mdown backups macOS\ copy.xml )
+ignore=( install.sh uninstall.sh .git .gitmodules README.mdown backups macOS\ copy.xml ghostty )
 
 DIR=~/dotfiles
 OS=$(uname -s)
@@ -47,6 +47,8 @@ done
 
 mkdir -p ~/.config
 ln -s ~/.vim ~/.config/nvim
+
+ln -s $DIR/ghostty ~/.config/ghostty
 
 if [ -e ~/.bash_profile ]; then
   mv ~/.bash_profile $DIR/backups/
