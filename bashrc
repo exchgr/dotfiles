@@ -249,6 +249,8 @@ complete -C /opt/homebrew/bin/terraform terraform
 complete -C terraform tf
 complete -C rsync scp
 
+eval "$(direnv hook bash)"
+
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # source ~/.fzf-tab-completion/bash/fzf-bash-completion.sh
 # bind -x '"\t": fzf_bash_completion'
