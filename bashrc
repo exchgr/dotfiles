@@ -53,6 +53,7 @@ elif [ "$OS" = "Linux" ]; then
 fi
 alias lstree="tree" # It's a shortcut to save me from googling it every time.
 alias mkdir="mkdir -p"
+alias mtr="sudo TERM=xterm-256color mtr"
 alias myip6="curl -L https://ipv6.icanhazip.com"
 alias myip="curl -L https://ipv4.icanhazip.com"
 alias oblique="fortune oblique"
