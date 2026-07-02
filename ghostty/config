@@ -6,6 +6,7 @@ adjust-cell-width = -4%
 adjust-cell-height = 4%
 adjust-cursor-thickness = 2
 quit-after-last-window-closed = true
+fullscreen = true
 
 theme = light:base16-bright-light,dark:base16-bright-dark
 window-theme = system
