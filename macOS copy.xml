@@ -17,6 +17,7 @@
   <action id="ChooseRunConfiguration">
     <keyboard-shortcut first-keystroke="shift ctrl alt r" />
   </action>
+  <action id="CodeGlancePro.toggle" />
   <action id="CompareTwoFiles" />
   <action id="Console.TableResult.CompareCells" />
   <action id="CopyAbsolutePath" />
@@ -41,11 +42,15 @@
     <keyboard-shortcut first-keystroke="ctrl meta alt 0" />
   </action>
   <action id="FileChooser.GotoDesktop" />
+  <action id="FindPrevious" />
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt b" />
   </action>
   <action id="Github.Create.Pull.Request">
     <keyboard-shortcut first-keystroke="shift ctrl alt p" />
+  </action>
+  <action id="Github.Open.In.Browser">
+    <keyboard-shortcut first-keystroke="shift meta g" />
   </action>
   <action id="GithubCopyPathProvider">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt c" />
@@ -74,6 +79,7 @@
   <action id="Run" />
   <action id="RunDashboard.CopyConfiguration" />
   <action id="RunDashboard.Run" />
+  <action id="Scala.RenameJavaToScala" />
   <action id="Scala.RunConsole" />
   <action id="Scala.ShowImplicits">
     <keyboard-shortcut first-keystroke="shift ctrl alt equals" />
