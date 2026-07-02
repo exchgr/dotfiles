@@ -255,3 +255,5 @@ eval "$(direnv hook bash)"
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # source ~/.fzf-tab-completion/bash/fzf-bash-completion.sh
 # bind -x '"\t": fzf_bash_completion'
+
+export OPENCODE_DISABLE_CLAUDE_CODE=1
