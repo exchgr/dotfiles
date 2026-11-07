@@ -12,3 +12,4 @@ link-url = true
 
 theme = light:base16-bright-light,dark:base16-bright-dark
 window-theme = system
+window-padding-y = 0,10
